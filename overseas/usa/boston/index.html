@@ -257,27 +257,17 @@
   let map, polyline;
   let markers = [];
 
-  const itineraryData = [
-    { day: "1일차", time: "14:30", title: "호텔 체크인", desc: "Back Bay 권장 · 체크인 후 짐 정리", theme: "essential relaxed hard foodie", coord: [42.3493, -71.0790], mapName: "Back Bay Boston" },
-    { day: "1일차", time: "16:00", title: "Boston Public Garden", desc: "시차 적응 산책 (도보 10~15분)", theme: "essential relaxed", coord: [42.3541, -71.0706], mapName: "Boston Public Garden" },
-    { day: "1일차", time: "17:30", title: "Newbury Street", desc: "쇼핑 + 카페 브레이크", theme: "essential relaxed foodie", coord: [42.3496, -71.0825], mapName: "Newbury Street Boston" },
-    { day: "1일차", time: "19:00", title: "Union Oyster House 저녁", desc: "클램차우더/랍스터롤", theme: "essential foodie", coord: [42.3614, -71.0567], mapName: "Union Oyster House Boston" },
+  let itineraryData = [];
 
-    { day: "2일차", time: "08:30", title: "Boston Common 출발", desc: "Freedom Trail 시작", theme: "essential hard", coord: [42.3550, -71.0656], mapName: "Boston Common" },
-    { day: "2일차", time: "10:00", title: "Old State House", desc: "핵심 역사 구간", theme: "essential hard", coord: [42.3588, -71.0579], mapName: "Old State House Boston" },
-    { day: "2일차", time: "12:00", title: "Quincy Market 점심", desc: "푸드홀에서 빠른 식사", theme: "essential foodie hard", coord: [42.3601, -71.0547], mapName: "Quincy Market Boston" },
-    { day: "2일차", time: "14:00", title: "North End + Mike's Pastry", desc: "카놀리 디저트", theme: "essential foodie", coord: [42.3637, -71.0537], mapName: "Mike's Pastry Boston" },
-    { day: "2일차", time: "16:30", title: "Waterfront 휴식", desc: "도보 이동 후 휴식 시간", theme: "relaxed essential", coord: [42.3599, -71.0495], mapName: "Long Wharf Boston" },
-
-    { day: "3일차", time: "09:30", title: "Harvard Square", desc: "Red Line 이동 (Park St → Harvard)", theme: "essential relaxed", coord: [42.3734, -71.1182], mapName: "Harvard Square" },
-    { day: "3일차", time: "11:30", title: "Harvard Coop 쇼핑", desc: "대학 굿즈 구매", theme: "essential relaxed", coord: [42.3732, -71.1201], mapName: "Harvard Coop" },
-    { day: "3일차", time: "13:30", title: "MIT/Kendall 산책", desc: "캠브리지 강변 뷰", theme: "hard relaxed", coord: [42.3624, -71.0860], mapName: "Kendall MIT" },
-    { day: "3일차", time: "18:00", title: "Seaport 저녁", desc: "야경 + 레스토랑", theme: "foodie relaxed", coord: [42.3510, -71.0440], mapName: "Seaport Boston" },
-
-    { day: "4일차", time: "09:30", title: "Isabella Stewart Gardner Museum", desc: "예약 시간 사전 확인", theme: "essential relaxed", coord: [42.3381, -71.0994], mapName: "Isabella Stewart Gardner Museum" },
-    { day: "4일차", time: "11:30", title: "Fenway Park 외부/샵", desc: "출국 전 마지막 쇼핑", theme: "essential hard", coord: [42.3467, -71.0972], mapName: "Fenway Park" },
-    { day: "4일차", time: "13:00", title: "공항 이동", desc: "Back Bay 기준 35~50분 여유", theme: "essential relaxed hard foodie", coord: [42.3656, -71.0096], mapName: "Boston Logan International Airport" }
-  ];
+  async function loadItineraryData() {
+    try {
+      const res = await fetch('./data/itinerary.json');
+      itineraryData = await res.json();
+    } catch (e) {
+      console.error('itinerary.json 로드 실패', e);
+      itineraryData = [];
+    }
+  }
 
   function initMap() {
     map = L.map('map').setView([42.3551, -71.0656], 13);
@@ -305,7 +295,7 @@
       document.querySelector(`.theme-btn[onclick*="${theme}"]`)?.classList.add('active');
     }
 
-    const filtered = itineraryData.filter(i => theme === 'all' || i.theme.includes(theme));
+    const filtered = itineraryData.filter(i => theme === 'all' || (i.themes || []).includes(theme));
     
     // Table
     const tbody = document.getElementById('itinerary-body');
@@ -349,8 +339,9 @@
     });
   }
 
-  window.onload = () => {
+  window.onload = async () => {
     bindImageFallback();
+    await loadItineraryData();
     initMap();
   };
 </script>
