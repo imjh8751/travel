@@ -12,6 +12,14 @@
     nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)} nav .wrap{display:flex;gap:14px;overflow:auto;padding:10px 20px} nav a{white-space:nowrap;color:var(--ink);font-weight:800;font-size:.92rem}
     main{padding:28px 20px 60px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.section{margin-top:26px}h2{font-size:1.75rem;margin:0 0 14px}h3{margin:0 0 8px;font-size:1.2rem}.muted{color:var(--muted)}.tag{display:inline-block;background:var(--soft);color:#094b88;padding:4px 9px;border-radius:999px;font-weight:800;font-size:.78rem;margin:2px}.warn{background:#fff6e5;color:var(--warn)}.ok{background:#e9f8f2;color:var(--ok)}
     table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}th,td{border-bottom:1px solid var(--line);padding:12px;vertical-align:top;text-align:left}th{background:#f0f4fa}.day{border-left:6px solid var(--brand)}.time{font-weight:900;color:var(--brand);white-space:nowrap}.place{display:grid;grid-template-columns:180px 1fr;gap:16px}.place img{width:100%;height:135px;object-fit:cover;border-radius:16px;background:#eee}.mini{font-size:.9rem}.checklist li{margin:6px 0}.footer{font-size:.88rem;color:var(--muted);margin-top:30px}.print{float:right;background:#fff;color:var(--brand);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:8px 12px;font-weight:900}
+    .theme-btn{padding:10px 16px; border-radius:12px; border:1px solid var(--line); background:#fff; cursor:pointer; font-weight:700; transition:0.2s;}
+    .theme-btn.active{background:var(--brand); color:#fff; border-color:var(--brand);}
+    .itinerary-row{transition:0.3s;}
+    .itinerary-row.hidden{display:none;}
+    #map{height:450px; border-radius:22px; margin-bottom:26px; border:1px solid var(--line);}
+    .souvenir-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); gap:18px;}
+    .souvenir-card img{width:100%; height:180px; object-fit:cover; border-radius:16px;}
+    .review-link{font-size:0.85rem; color:var(--brand2); font-weight:700; text-decoration:underline;}
     @media(max-width:860px){.span4,.span6,.span8{grid-column:span 12}.place{grid-template-columns:1fr}.place img{height:190px}header{padding-top:38px}table{font-size:.92rem}.time{white-space:normal}nav .wrap{padding-left:14px}}
     @media print{nav,.print{display:none}body{background:#fff}.card{box-shadow:none;break-inside:avoid}header{color:#111;background:#fff;padding:20px}.chip{color:#111;border-color:#aaa}}
   </style>
@@ -30,6 +38,22 @@
 <nav><div class="wrap"><a href="#summary">요약</a><a href="#itinerary">일정</a><a href="#food">맛집</a><a href="#hotel">숙소</a><a href="#souvenir">기념품</a><a href="#transport">교통</a><a href="#rain">우천 대안</a><a href="#booking">예약</a></div></nav>
 <main class="wrap">
 <section id="summary" class="grid section">
+  <div class="card span12">
+    <h2>여행 테마 선택</h2>
+    <div style="display:flex; gap:10px; margin-bottom:20px;">
+      <button class="theme-btn active" onclick="filterTheme('all')">전체</button>
+      <button class="theme-btn" onclick="filterTheme('essential')">필수 코스</button>
+      <button class="theme-btn" onclick="filterTheme('relaxed')">여유로운 일정</button>
+      <button class="theme-btn" onclick="filterTheme('hard')">빡센 일정</button>
+      <button class="theme-btn" onclick="filterTheme('foodie')">맛집 투어</button>
+    </div>
+  </div>
+  <div class="card span12">
+    <h2>🗺️ 이동 동선 지도 (Routing)</h2>
+    <div id="map"></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </div>
   <div class="card span8"><h2>전체 요약</h2><p><b>핵심 방향:</b> 1일차는 도착 후 Back Bay 적응, 2일차는 보스턴의 대표 역사 코스인 Freedom Trail, 3일차는 하버드·MIT와 찰스강, 4일차는 미술관 또는 하버 산책 후 출국/이동으로 구성했습니다.</p><p><b>추천 계절:</b> 5~6월, 9~10월. 겨울은 바람이 강해 하버 일정은 줄이고 박물관 비중을 높이는 편이 좋습니다.</p><p><b>예상 현지 경비:</b> 1인 기준 식비·교통·입장료 약 USD 230~420 + 숙박 별도. 랍스터/스테이크를 넣으면 식비가 크게 올라갑니다.</p></div>
   <div class="card span4"><h2>빠른 체크</h2><ul class="checklist"><li>걷는 거리: 하루 8~14km 가능성 있음</li><li>편한 운동화 필수</li><li>Gardner Museum은 사전 시간 예약 권장</li><li>Duck Tour는 성수기 사전 예매 권장</li><li>MBTA 지연이 잦아 15~20분 여유</li></ul></div>
 </section>
@@ -57,17 +81,81 @@
 <tr><td class="time">—</td><td>출국/다음 도시 이동</td><td>국제선은 최소 3시간 전 공항 도착 권장</td></tr>
 </tbody></table></section>
 <section class="grid section">
-  <div class="card span6 place"><img src="./assets/lobster_roll.png" alt="Boston Lobster Roll"><div><h3>Union Oyster House</h3><p>미국에서 가장 오래된 식당. 신선한 랍스터 롤과 걸쭉한 클램 차우더가 일품입니다.</p><p class="mini"><a href="https://maps.google.com/maps/place/Union+Oyster+House" target="_blank">지도</a> · <a href="https://m.blog.naver.com/Search.naver?query=보스턴+유니온+오이스터+하우스" target="_blank">리뷰 보기</a></p></div></div>
-  <div class="card span6 place"><img src="./assets/souvenirs_coop.png" alt="Harvard Souvenirs"><div><h3>Harvard Square / Coop</h3><p>하버드 대학교 공식 기념품점. 대학 후드티와 로컬 메이플 시럽 쇼핑에 최적입니다.</p><p class="mini"><a href="https://maps.google.com/maps/place/The+Harvard+Coop" target="_blank">지도</a> · <a href="https://m.blog.naver.com/Search.naver?query=하버드+쿱+쇼핑" target="_blank">리뷰 보기</a></p></div></div>
-  <div class="card span6 place"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Isabella_Stewart_Gardner_Museum_Courtyard.jpg/640px-Isabella_Stewart_Gardner_Museum_Courtyard.jpg" alt="Gardner Museum"><div><h3>Isabella Stewart Gardner Museum</h3><p>궁전 같은 중정과 컬렉션으로 사진 만족도가 높습니다. 공식 안내상 티켓이 매진될 수 있어 사전 예약을 권장합니다.</p><p class="mini"><a href="https://www.gardnermuseum.org/visit" target="_blank">공식 사이트</a> · 성인 USD 22 확인(2026-05-11)</p></div></div>
-  <div class="card span6 place"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Boston_Public_Garden_lagoon.jpg/640px-Boston_Public_Garden_lagoon.jpg" alt="Boston Public Garden"><div><h3>Boston Public Garden</h3><p>도착일 가볍게 걷기 좋은 공원. Newbury Street·Back Bay와 붙여 첫날 시차 적응 코스로 추천합니다.</p><p class="mini"><a href="https://maps.google.com/?q=Boston+Public+Garden" target="_blank">지도</a> · 사진: Wikimedia Commons</p></div></div>
+  <div class="card span6 place" data-theme="essential foodie"><img src="./assets/lobster_roll.png" alt="Boston Lobster Roll"><div><h3>Union Oyster House</h3><p>미국에서 가장 오래된 식당. 신선한 랍스터 롤과 걸쭉한 클램 차우더가 일품입니다.</p><p class="mini"><a href="https://maps.google.com/maps/place/Union+Oyster+House" target="_blank">지도</a> · <a href="https://phillipsloop.com/union-oyster-house-review/" class="review-link" target="_blank">사실 기반 리뷰 보기</a></p></div></div>
+  <div class="card span6 place" data-theme="essential"><img src="./assets/souvenirs_coop.png" alt="Harvard Souvenirs"><div><h3>Harvard Square / Coop</h3><p>하버드 대학교 공식 기념품점. 대학 후드티와 로컬 메이플 시럽 쇼핑에 최적입니다.</p><p class="mini"><a href="https://maps.google.com/maps/place/The+Harvard+Coop" target="_blank">지도</a> · <a href="https://www.google.com/search?q=Harvard+Coop+reviews" class="review-link" target="_blank">구글 리뷰 보기</a></p></div></div>
+  <div class="card span6 place" data-theme="relaxed"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Isabella_Stewart_Gardner_Museum_Courtyard.jpg/640px-Isabella_Stewart_Gardner_Museum_Courtyard.jpg" alt="Gardner Museum"><div><h3>Isabella Stewart Gardner Museum</h3><p>궁전 같은 중정과 컬렉션으로 사진 만족도가 높습니다. 사전 예약을 권장합니다.</p><p class="mini"><a href="https://www.gardnermuseum.org/visit" target="_blank">공식 사이트</a> · <a href="https://www.tripadvisor.com/Attraction_Review-g60745-d102834-Reviews-Isabella_Stewart_Gardner_Museum-Boston_Massachusetts.html" class="review-link" target="_blank">트립어드바이저 리뷰</a></p></div></div>
+  <div class="card span6 place" data-theme="essential relaxed"><img src="./assets/public_garden.jpg" alt="Boston Public Garden"><div><h3>Boston Public Garden</h3><p>도착일 가볍게 걷기 좋은 공원. 시차 적응 코스로 추천합니다.</p><p class="mini"><a href="https://maps.google.com/?q=Boston+Public+Garden" target="_blank">지도</a> · <a href="https://withsprinklesontop.net/?s=boston+public+garden" class="review-link" target="_blank">블로그 리뷰 보기</a></p></div></div>
 </section>
 <section id="food" class="section card"><h2>맛집 추천</h2><table><thead><tr><th>지역</th><th>가게</th><th>추천 메뉴/가격대</th><th>팁</th></tr></thead><tbody><tr><td>Back Bay</td><td>Saltie Girl</td><td>랍스터롤, 굴, 해산물 / $$$</td><td>좌석 적고 인기 많아 예약 권장</td></tr><tr><td>Back Bay</td><td>Atlantic Fish Co.</td><td>클램차우더, 랍스터, 생선요리 / $$$</td><td>첫날 저녁으로 동선 좋음</td></tr><tr><td>North End</td><td>Giacomo’s</td><td>파스타 / $$</td><td>대기 가능. 현금/결제 조건은 현장 확인</td></tr><tr><td>North End</td><td>Regina Pizzeria</td><td>피자 / $-$$</td><td>보스턴 클래식 피자</td></tr><tr><td>Harvard</td><td>Tatte Bakery & Cafe</td><td>브런치, 커피 / $$</td><td>가볍게 먹기 좋음</td></tr><tr><td>Seaport</td><td>Legal Sea Foods</td><td>클램차우더, 해산물 / $$-$$$</td><td>무난하고 접근성 좋음</td></tr></tbody></table></section>
 <section id="hotel" class="grid section"><div class="card span4"><h2>숙소 1순위: Back Bay</h2><p>식당·쇼핑·공원 접근이 좋아 첫 방문자에게 가장 안정적입니다.</p><p><span class="tag ok">커플</span><span class="tag ok">첫 방문</span><span class="tag">쇼핑</span></p><p class="muted">예상: 중급 호텔 USD 250~450+/박, 성수기 상승</p></div><div class="card span4"><h2>2순위: Downtown</h2><p>Freedom Trail과 하버 접근이 좋고 이동시간이 짧습니다.</p><p><span class="tag ok">역사 코스</span><span class="tag">도보 여행</span></p><p class="muted">예상: USD 220~420+/박</p></div><div class="card span4"><h2>3순위: Cambridge</h2><p>하버드·MIT 중심 일정이면 좋지만 도심 왕복 시간이 생깁니다.</p><p><span class="tag">조용함</span><span class="tag">캠퍼스</span></p><p class="muted">예상: USD 200~380+/박</p></div></section>
-<section id="souvenir" class="section card"><h2>대상별 기념품</h2><table><thead><tr><th>대상</th><th>추천</th><th>구매처</th><th>예산</th></tr></thead><tbody><tr><td>부모님</td><td>보스턴/뉴잉글랜드 티, 메이플 시럽, 고급 초콜릿</td><td>Boston Public Market, Whole Foods</td><td>USD 10~30</td></tr><tr><td>회사 동료</td><td>Harvard/MIT 펜, 마그넷, 쿠키</td><td>Harvard Coop, 공항 기념품점</td><td>USD 5~15</td></tr><tr><td>배우자/연인</td><td>Newbury Street 소품, 로컬 향초, 미술관 굿즈</td><td>Newbury St, Gardner/MFA Shop</td><td>USD 20~60</td></tr><tr><td>자녀/조카</td><td>Boston Duck Tour 장난감, 대학 후드티, 책</td><td>Duck Tour shop, Harvard Coop</td><td>USD 15~70</td></tr><tr><td>본인</td><td>Red Sox 굿즈, 캠퍼스 후드티, 로컬 커피</td><td>Fenway, Harvard/MIT Coop</td><td>USD 20~90</td></tr></tbody></table></section>
+<section id="souvenir" class="section card">
+  <h2>대상별 기념품</h2>
+  <div class="souvenir-grid">
+    <div class="card souvenir-card">
+      <img src="./assets/maple_syrup.png" alt="Maple Syrup">
+      <h3>부모님: 메이플 시럽</h3>
+      <p class="muted">고급스러운 뉴잉글랜드 특산품</p>
+      <p class="mini"><a href="https://maps.google.com/maps/place/Boston+Public+Market" target="_blank">Boston Public Market</a></p>
+    </div>
+    <div class="card souvenir-card">
+      <img src="./assets/souvenirs_coop.png" alt="Harvard Gear">
+      <h3>동료: Harvard 굿즈</h3>
+      <p class="muted">가장 대중적인 보스턴 기념품</p>
+      <p class="mini"><a href="https://maps.google.com/maps/place/The+Harvard+Coop" target="_blank">The Harvard Coop</a></p>
+    </div>
+    <div class="card souvenir-card">
+      <img src="./assets/redsox_gear.png" alt="Red Sox Gear">
+      <h3>본인: Red Sox 굿즈</h3>
+      <p class="muted">보스턴의 열정을 간직하는 방법</p>
+      <p class="mini"><a href="https://maps.google.com/maps/place/Fenway+Park" target="_blank">Fenway Park Shop</a></p>
+    </div>
+  </div>
+</section>
 <section id="transport" class="grid section"><div class="card span6"><h2>교통</h2><ul><li><b>MBTA:</b> 공식 안내 기준 지하철·버스·페리에서 비접촉 결제 Tap to Ride 제공. 환승 규칙은 결제 방식에 따라 다릅니다.</li><li><b>도보:</b> Downtown~North End~Harbor는 걷기 좋지만 Freedom Trail 전 구간은 체력 필요.</li><li><b>공항:</b> Logan Airport에서 Downtown은 Blue Line+셔틀 또는 택시/라이드쉐어. 짐 많으면 택시가 편합니다.</li></ul><p class="mini"><a href="https://www.mbta.com/fares" target="_blank">MBTA 요금 공식 안내</a> · 확인일 2026-05-11</p></div><div id="booking" class="card span6"><h2>예약 필요 항목</h2><ul><li><b>Isabella Stewart Gardner Museum:</b> 티켓 매진 가능, 사전 시간 예약 권장. 성인 USD 22 확인.</li><li><b>Boston Duck Tours:</b> 전 지점 80분 투어, 성수기 사전 예약 권장. 요금에는 5% Convention Center Fee 별도.</li><li><b>인기 해산물/이탈리안 식당:</b> Saltie Girl, Neptune Oyster 등은 예약 또는 대기 고려.</li></ul><p class="mini"><a href="https://bostonducktours.com/on-sale/individual-rates/" target="_blank">Duck Tours 요금 안내</a> · <a href="https://www.gardnermuseum.org/visit" target="_blank">Gardner Museum 방문 안내</a></p></div></section>
 <section id="rain" class="section card"><h2>비 오는 날 / 일정 변경 대안</h2><table><thead><tr><th>원래 일정</th><th>대안</th><th>이유</th></tr></thead><tbody><tr><td>Charles River 산책</td><td>MFA 또는 Gardner Museum</td><td>실내 체류 시간이 길고 만족도 높음</td></tr><tr><td>Freedom Trail 전 구간</td><td>Boston Tea Party Ships & Museum + Quincy Market</td><td>이동거리 줄이고 역사 테마 유지</td></tr><tr><td>Newbury Street 쇼핑</td><td>Prudential Center / Copley Place</td><td>실내 쇼핑몰이라 날씨 영향 적음</td></tr><tr><td>Harbor Walk</td><td>New England Aquarium</td><td>가족/아이 동반에도 좋음</td></tr></tbody></table></section>
 <section class="section card"><h2>출처와 확인일</h2><ul class="mini"><li>Freedom Trail 공식 사이트: 16개 역사 지점 및 투어 설명 확인, 2026-05-11</li><li>MBTA 공식 Fares 안내: Tap to Ride 및 환승 안내 확인, 2026-05-11</li><li>Isabella Stewart Gardner Museum 공식 Visit: 성인 USD 22, 사전 예약 권장 문구 확인, 2026-05-11</li><li>Boston Duck Tours 공식 Individual Rates: 2026 요금 페이지, 80분 투어, 수수료·한국어 앱 안내 확인, 2026-05-11</li><li>사진: Wikimedia Commons 원본 이미지 URL 사용. 각 이미지는 외부 링크로 로드되며 저장소에는 저장하지 않았습니다.</li></ul><p class="footer">주의: 영업시간·요금·휴무·예약 가능 여부는 변동될 수 있습니다. 실제 방문 전 공식 사이트와 지도 앱에서 다시 확인하세요. 개인 예약번호·여권번호·결제정보는 이 문서에 포함하지 않았습니다.</p></section>
 </main>
+<script>
+  function filterTheme(theme) {
+    const btns = document.querySelectorAll('.theme-btn');
+    btns.forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+
+    const rows = document.querySelectorAll('.itinerary-row');
+    const cards = document.querySelectorAll('.place');
+    
+    cards.forEach(c => {
+      if (theme === 'all' || c.getAttribute('data-theme').includes(theme)) {
+        c.style.display = 'grid';
+      } else {
+        c.style.display = 'none';
+      }
+    });
+  }
+
+  // Leaflet Map with Routing
+  const map = L.map('map').setView([42.3551, -71.0656], 13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  const stops = [
+    { name: "Boston Common", coord: [42.3551, -71.0656] },
+    { name: "Public Garden", coord: [42.3541, -71.0706] },
+    { name: "Old State House", coord: [42.3587, -71.0575] },
+    { name: "Quincy Market", coord: [42.3601, -71.0547] },
+    { name: "Union Oyster House", coord: [42.3611, -71.0569] },
+    { name: "North End / Mike's Pastry", coord: [42.3637, -71.0537] }
+  ];
+
+  const latlngs = stops.map(s => s.coord);
+  const polyline = L.polyline(latlngs, {color: 'var(--brand2)', weight: 4, opacity: 0.8, dashArray: '10, 10'}).addTo(map);
+  
+  stops.forEach(s => {
+    L.marker(s.coord).addTo(map).bindPopup(s.name);
+  });
+  
+  map.fitBounds(polyline.getBounds());
+</script>
 </body>
 </html>

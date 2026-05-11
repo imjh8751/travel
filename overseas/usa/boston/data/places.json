@@ -6,42 +6,47 @@
     {
       "name": "Freedom Trail",
       "type": "landmark/history",
+      "themes": ["essential", "hard"],
       "map": "https://maps.google.com/maps/search/Freedom+Trail+Boston",
       "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/freedom_trail.jpg",
       "review": "https://www.tripadvisor.com/Attraction_Review-g60745-d102804-Reviews-Freedom_Trail-Boston_Massachusetts.html",
-      "note": "16개 역사 지점을 잇는 대표 코스. 보스턴 커먼에서 시작하세요."
+      "note": "16개 역사 지점을 잇는 대표 코스. 전체를 다 걸으려면 체력이 필요합니다 (Hard)."
     },
     {
       "name": "Boston Public Garden",
       "type": "landmark/park",
+      "themes": ["essential", "relaxed"],
       "map": "https://maps.google.com/maps/place/Boston+Public+Garden",
       "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/public_garden.jpg",
-      "review": "https://www.tripadvisor.com/Attraction_Review-g60745-d102715-Reviews-Boston_Public_Garden-Boston_Massachusetts.html",
-      "note": "미국 최초의 공공 식물원. Swan Boat 타기를 추천합니다."
+      "review": "https://withsprinklesontop.net/?s=boston+public+garden",
+      "note": "시차 적응과 여유로운 산책에 최적 (Relaxed). Swan Boat가 유명합니다."
     },
     {
       "name": "Union Oyster House",
       "type": "restaurant/seafood",
+      "themes": ["foodie", "essential"],
       "map": "https://maps.google.com/maps/place/Union+Oyster+House",
       "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/lobster_roll.png",
-      "review": "https://m.blog.naver.com/Search.naver?query=보스턴+유니온+오이스터+하우스",
-      "note": "미국에서 가장 오래된 식당. 클램 차우더와 굴 요리가 필수입니다."
+      "review": "https://phillipsloop.com/union-oyster-house-review/",
+      "note": "미국에서 가장 오래된 식당. 클램 차우더와 콘브레드가 사실상 필수 메뉴입니다 (Foodie)."
     },
     {
       "name": "Mike's Pastry",
       "type": "restaurant/dessert",
+      "themes": ["foodie", "essential"],
       "map": "https://maps.google.com/maps/place/Mike's+Pastry",
       "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/mikes_pastry.jpg",
-      "review": "https://m.blog.naver.com/Search.naver?query=보스턴+마이크스+페이스트리",
-      "note": "노스엔드 필수 코스. 줄이 길지만 카놀리 맛은 보장합니다."
+      "review": "https://eatsbyxtina.com/mikes-pastry-boston/",
+      "note": "노스엔드의 전설적인 카놀리 전문점. 관광객의 필수 코스입니다."
     },
     {
       "name": "Fenway Park",
       "type": "landmark/sports",
+      "themes": ["essential", "hard"],
       "map": "https://maps.google.com/maps/place/Fenway+Park",
       "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/fenway_park.jpg",
       "review": "https://www.tripadvisor.com/Attraction_Review-g60745-d102711-Reviews-Fenway_Park-Boston_Massachusetts.html",
-      "note": "레드삭스의 홈구장. 경기가 없어도 구장 투어가 가능합니다."
+      "note": "레드삭스의 홈구장. 구장 투어는 미리 예약하는 것이 좋습니다."
     }
   ]
 }

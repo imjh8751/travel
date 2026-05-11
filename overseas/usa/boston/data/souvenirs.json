@@ -6,7 +6,7 @@
       "items": ["뉴잉글랜드 티", "메이플 시럽"],
       "where": "Boston Public Market",
       "map": "https://maps.google.com/maps/place/Boston+Public+Market",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/maple_syrup.jpg",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/maple_syrup.png",
       "budgetUsd": "10-30"
     },
     {
@@ -22,7 +22,7 @@
       "items": ["Newbury Street 소품", "미술관 굿즈"],
       "where": "Newbury Street",
       "map": "https://maps.google.com/maps/search/Newbury+Street+shopping",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/newbury_shopping.jpg",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/boston_skyline.jpg",
       "budgetUsd": "20-60"
     },
     {
@@ -30,7 +30,7 @@
       "items": ["Red Sox 굿즈", "캠퍼스 후드티"],
       "where": "Fenway Park shop",
       "map": "https://maps.google.com/maps/place/Fenway+Park",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/redsox_gear.jpg",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/redsox_gear.png",
       "budgetUsd": "20-90"
     }
   ]
