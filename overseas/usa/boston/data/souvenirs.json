@@ -1,10 +1,37 @@
 {
   "updatedAt": "2026-05-11",
   "souvenirs": [
-    {"for":"부모님","items":["뉴잉글랜드 티", "메이플 시럽", "고급 초콜릿"],"where":["Boston Public Market", "Whole Foods"],"budgetUsd":"10-30"},
-    {"for":"회사 동료","items":["Harvard/MIT 펜", "마그넷", "쿠키"],"where":["Harvard Coop", "공항 기념품점"],"budgetUsd":"5-15"},
-    {"for":"배우자/연인","items":["Newbury Street 소품", "로컬 향초", "미술관 굿즈"],"where":["Newbury Street", "Gardner/MFA Shop"],"budgetUsd":"20-60"},
-    {"for":"자녀/조카","items":["Duck Tour 장난감", "대학 후드티", "책"],"where":["Duck Tour shop", "Harvard Coop"],"budgetUsd":"15-70"},
-    {"for":"본인","items":["Red Sox 굿즈", "캠퍼스 후드티", "로컬 커피"],"where":["Fenway", "Harvard/MIT Coop"],"budgetUsd":"20-90"}
+    {
+      "for": "부모님",
+      "items": ["뉴잉글랜드 티", "메이플 시럽"],
+      "where": "Boston Public Market",
+      "map": "https://maps.google.com/maps/place/Boston+Public+Market",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/maple_syrup.jpg",
+      "budgetUsd": "10-30"
+    },
+    {
+      "for": "회사 동료",
+      "items": ["Harvard/MIT 펜", "마그넷"],
+      "where": "Harvard Coop",
+      "map": "https://maps.google.com/maps/place/The+Harvard+Coop",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/souvenirs_coop.png",
+      "budgetUsd": "5-15"
+    },
+    {
+      "for": "배우자/연인",
+      "items": ["Newbury Street 소품", "미술관 굿즈"],
+      "where": "Newbury Street",
+      "map": "https://maps.google.com/maps/search/Newbury+Street+shopping",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/newbury_shopping.jpg",
+      "budgetUsd": "20-60"
+    },
+    {
+      "for": "본인",
+      "items": ["Red Sox 굿즈", "캠퍼스 후드티"],
+      "where": "Fenway Park shop",
+      "map": "https://maps.google.com/maps/place/Fenway+Park",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/redsox_gear.jpg",
+      "budgetUsd": "20-90"
+    }
   ]
 }

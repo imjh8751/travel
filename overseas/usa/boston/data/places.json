@@ -1,11 +1,47 @@
 {
   "updatedAt": "2026-05-11",
   "region": "Boston, USA",
+  "itinerary_route": "https://www.google.com/maps/dir/Boston+Common/Faneuil+Hall+Marketplace/Union+Oyster+House/Mike's+Pastry/Regina+Pizzeria/",
   "places": [
-    {"name":"Freedom Trail","type":"history walk","officialUrl":"https://www.thefreedomtrail.org/","map":"https://maps.google.com/?q=Freedom+Trail+Boston","note":"16개 역사 지점을 잇는 대표 코스"},
-    {"name":"Boston Public Garden","type":"park","map":"https://maps.google.com/?q=Boston+Public+Garden","note":"도착일 산책 추천"},
-    {"name":"Harvard Square","type":"campus/shopping","map":"https://maps.google.com/?q=Harvard+Square","note":"Harvard Yard, Harvard Book Store, Harvard Coop 연계"},
-    {"name":"Isabella Stewart Gardner Museum","type":"museum","officialUrl":"https://www.gardnermuseum.org/visit","adultPriceUsd":"22","note":"시간 예약 권장"},
-    {"name":"Boston Duck Tours","type":"tour","officialUrl":"https://bostonducktours.com/on-sale/individual-rates/","duration":"80 minutes","note":"성수기 예약 권장, 한국어 앱 안내 있음"}
+    {
+      "name": "Freedom Trail",
+      "type": "landmark/history",
+      "map": "https://maps.google.com/maps/search/Freedom+Trail+Boston",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/freedom_trail.jpg",
+      "review": "https://www.tripadvisor.com/Attraction_Review-g60745-d102804-Reviews-Freedom_Trail-Boston_Massachusetts.html",
+      "note": "16개 역사 지점을 잇는 대표 코스. 보스턴 커먼에서 시작하세요."
+    },
+    {
+      "name": "Boston Public Garden",
+      "type": "landmark/park",
+      "map": "https://maps.google.com/maps/place/Boston+Public+Garden",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/public_garden.jpg",
+      "review": "https://www.tripadvisor.com/Attraction_Review-g60745-d102715-Reviews-Boston_Public_Garden-Boston_Massachusetts.html",
+      "note": "미국 최초의 공공 식물원. Swan Boat 타기를 추천합니다."
+    },
+    {
+      "name": "Union Oyster House",
+      "type": "restaurant/seafood",
+      "map": "https://maps.google.com/maps/place/Union+Oyster+House",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/lobster_roll.png",
+      "review": "https://m.blog.naver.com/Search.naver?query=보스턴+유니온+오이스터+하우스",
+      "note": "미국에서 가장 오래된 식당. 클램 차우더와 굴 요리가 필수입니다."
+    },
+    {
+      "name": "Mike's Pastry",
+      "type": "restaurant/dessert",
+      "map": "https://maps.google.com/maps/place/Mike's+Pastry",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/mikes_pastry.jpg",
+      "review": "https://m.blog.naver.com/Search.naver?query=보스턴+마이크스+페이스트리",
+      "note": "노스엔드 필수 코스. 줄이 길지만 카놀리 맛은 보장합니다."
+    },
+    {
+      "name": "Fenway Park",
+      "type": "landmark/sports",
+      "map": "https://maps.google.com/maps/place/Fenway+Park",
+      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/fenway_park.jpg",
+      "review": "https://www.tripadvisor.com/Attraction_Review-g60745-d102711-Reviews-Fenway_Park-Boston_Massachusetts.html",
+      "note": "레드삭스의 홈구장. 경기가 없어도 구장 투어가 가능합니다."
+    }
   ]
 }
