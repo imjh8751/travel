@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>보스턴 3박 4일 여행 가이드 | Boston 4D3N</title>
-  <meta name="description" content="보스턴 3박 4일 여행 일정, 맛집, 숙소 추천, 교통, 기념품, 비 오는 날 대안까지 한 번에 보는 GitHub Pages 여행 가이드" />
+  <meta name="description" content="보스턴 3박 4일 여행 일정, 맛집, 숙소 구역별 추천, 교통, 기념품 대량 업데이트 버전" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
@@ -13,11 +13,11 @@
     header{background:linear-gradient(135deg,rgba(11,92,171,.96),rgba(230,75,60,.90)),url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Boston_skyline_from_Longfellow_Bridge_September_2017_panorama_2.jpg') center/cover;color:#fff;padding:56px 20px 38px} .wrap{max-width:1120px;margin:auto}.eyebrow{letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;opacity:.9}.hero h1{font-size:clamp(2rem,5vw,4rem);line-height:1.1;margin:.25em 0}.hero p{max-width:780px;font-size:1.08rem}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-weight:700}
     nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)} nav .wrap{display:flex;gap:14px;overflow:auto;padding:10px 20px} nav a{white-space:nowrap;color:var(--ink);font-weight:800;font-size:.92rem}
     main{padding:28px 20px 60px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.section{margin-top:26px}h2{font-size:1.75rem;margin:0 0 14px}h3{margin:0 0 8px;font-size:1.2rem}.muted{color:var(--muted)}.tag{display:inline-block;background:var(--soft);color:#094b88;padding:4px 9px;border-radius:999px;font-weight:800;font-size:.78rem;margin:2px}.warn{background:#fff6e5;color:var(--warn)}.ok{background:#e9f8f2;color:var(--ok)}
-    table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}th,td{border-bottom:1px solid var(--line);padding:12px;vertical-align:top;text-align:left}th{background:#f0f4fa}.day{border-left:6px solid var(--brand);background:#fcfdff;width:80px;text-align:center}.time{font-weight:900;color:var(--brand);white-space:nowrap;width:100px}.place-card{display:grid;grid-template-columns:180px 1fr;gap:16px}.place-card img{width:100%;height:135px;object-fit:cover;border-radius:16px;background:#eee}.mini{font-size:.9rem}.footer{font-size:.88rem;color:var(--muted);margin-top:30px}.print{float:right;background:#fff;color:var(--brand);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:8px 12px;font-weight:900}
+    table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}th,td{border-bottom:1px solid var(--line);padding:12px;vertical-align:top;text-align:left}th{background:#f0f4fa}.day{border-left:6px solid var(--brand);background:#fcfdff;width:80px;text-align:center}.time{font-weight:900;color:var(--brand);white-space:nowrap;width:100px}.place-card{display:grid;grid-template-columns:180px 1fr;gap:16px}.place-card img{width:100%;height:135px;object-fit:cover;border-radius:16px;background:#eee}.mini{font-size:.85rem}.footer{font-size:.88rem;color:var(--muted);margin-top:30px}.print{float:right;background:#fff;color:var(--brand);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:8px 12px;font-weight:900}
     .theme-btn{padding:10px 16px; border-radius:12px; border:1px solid var(--line); background:#fff; cursor:pointer; font-weight:700; transition:0.2s;}
     .theme-btn.active{background:var(--brand); color:#fff; border-color:var(--brand);}
     #map{height:450px; border-radius:22px; margin-bottom:26px; border:1px solid var(--line);}
-    .souvenir-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); gap:18px;}
+    .souvenir-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:18px;}
     .souvenir-card img{width:100%; height:180px; object-fit:cover; border-radius:16px;}
     .review-link{font-size:0.85rem; color:var(--brand2); font-weight:700; text-decoration:underline;}
     @media(max-width:860px){.span4,.span6,.span8{grid-column:span 12}.place-card{grid-template-columns:1fr}.place-card img{height:190px}header{padding-top:38px}table{font-size:.92rem}.time{white-space:normal}nav .wrap{padding-left:14px}}
@@ -27,65 +27,142 @@
 <header>
   <div class="wrap hero">
     <button class="print" onclick="window.print()">PDF 저장</button>
-    <div class="eyebrow">Boston · 3 nights 4 days · checked 2026-05-11</div>
-    <h1>보스턴 3박 4일<br/>현실 동선 여행 가이드</h1>
-    <p>프리덤 트레일, 하버, 케임브리지·하버드, 미술관 지구를 무리 없이 묶은 일정입니다. 테마를 선택하면 일정과 지도가 자동으로 업데이트됩니다.</p>
-    <div class="chips"><span class="chip">추천 숙소: Back Bay / Downtown</span><span class="chip">교통: MBTA + 도보</span></div>
-    <div style="margin-top:20px;"><a id="google-maps-btn" href="#" target="_blank" class="chip" style="background:var(--brand2); border:none; cursor:pointer;">🗺️ 구글맵 전체 동선 보기</a></div>
+    <div class="eyebrow">Boston · 3 nights 4 days · updated 2026-05-11</div>
+    <h1>보스턴 3박 4일<br/>구역별 완벽 가이드</h1>
+    <p>테마별 일정부터 구역별 숙소 추천, 대량의 기념품 리스트까지 보스턴 여행의 모든 것을 담았습니다. 선택한 테마에 따라 지도와 일정이 즉시 동기화됩니다.</p>
+    <div class="chips"><span class="chip">중심가: Back Bay / Downtown</span><span class="chip">교통: MBTA Tap to Ride</span></div>
+    <div style="margin-top:20px;"><a id="google-maps-btn" href="#" target="_blank" class="chip" style="background:var(--brand2); border:none; cursor:pointer;">🗺️ 구글맵 테마별 동선 보기</a></div>
   </div>
 </header>
-<nav><div class="wrap"><a href="#summary">요약</a><a href="#itinerary">일정</a><a href="#food">맛집</a><a href="#souvenir">기념품</a><a href="#transport">교통</a></div></nav>
+<nav><div class="wrap"><a href="#itinerary">일정/지도</a><a href="#hotel">구역별 숙소</a><a href="#souvenir">기념품</a><a href="#food">맛집</a><a href="#transport">교통</a></div></nav>
 <main class="wrap">
 <section id="summary" class="grid section">
   <div class="card span12">
-    <h2>여행 테마 선택 (일정·지도 자동 동기화)</h2>
-    <div style="display:flex; gap:10px; margin-bottom:10px;">
+    <h2>여행 테마 선택 (일정·지도·외부링크 동시 동기화)</h2>
+    <div style="display:flex; gap:10px; margin-bottom:10px; flex-wrap:wrap;">
       <button class="theme-btn active" onclick="filterTheme('all')">전체</button>
       <button class="theme-btn" onclick="filterTheme('essential')">필수 코스</button>
       <button class="theme-btn" onclick="filterTheme('relaxed')">여유로운 일정</button>
       <button class="theme-btn" onclick="filterTheme('hard')">빡센 일정</button>
       <button class="theme-btn" onclick="filterTheme('foodie')">맛집 투어</button>
     </div>
+    <p class="muted">- 테마를 누르면 일정이 필터링되고, 지도의 경로와 구글맵 외부 링크가 자동으로 업데이트됩니다.</p>
   </div>
   <div class="card span12">
-    <h2>🗺️ 이동 동선 지도 (테마별 경로 반영)</h2>
+    <h2>🗺️ 동선 지도 (Routing)</h2>
     <div id="map"></div>
   </div>
 </section>
 
 <section id="itinerary" class="section card">
-  <h2>날짜별 일정</h2>
+  <h2>날짜별 상세 일정</h2>
   <table>
-    <thead><tr><th>일차</th><th>시간</th><th>일정</th><th>설명/팁</th></tr></thead>
+    <thead><tr><th>일차</th><th>시간</th><th>일정</th><th>팁/정보</th></tr></thead>
     <tbody id="itinerary-body"></tbody>
   </table>
 </section>
 
-<section class="grid section">
-  <div class="card span6 place-card" data-theme="essential foodie"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Union_Oyster_House%2C_Boston.jpg" alt="Union Oyster House"><div><h3>Union Oyster House</h3><p>미국에서 가장 오래된 식당. 신선한 랍스터 롤과 걸쭉한 클램 차우더가 일품입니다.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+Boston" target="_blank">지도</a> · <a href="https://phillipsloop.com/union-oyster-house-review/" class="review-link" target="_blank">리뷰 보기</a></p></div></div>
-  <div class="card span6 place-card" data-theme="essential"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Harvard_Cooperative_Society%2C_Cambridge_MA.jpg" alt="Harvard Coop"><div><h3>Harvard Square / Coop</h3><p>하버드 대학교 공식 기념품점. 대학 후드티와 로컬 메이플 시럽 쇼핑에 최적입니다.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Harvard+Coop+Cambridge" target="_blank">지도</a></p></div></div>
-  <div class="card span6 place-card" data-theme="relaxed"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Isabella_Stewart_Gardner_Museum_Courtyard.jpg" alt="Gardner Museum"><div><h3>Gardner Museum</h3><p>궁전 같은 중정이 아름다운 미술관. 사전 예약을 권장합니다.</p><p class="mini"><a href="https://www.gardnermuseum.org/visit" target="_blank">사이트</a></p></div></div>
-  <div class="card span6 place-card" data-theme="essential relaxed"><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Boston_Public_Garden_lagoon.jpg" alt="Public Garden"><div><h3>Boston Public Garden</h3><p>도착일 가볍게 걷기 좋은 공원. 시차 적응 코스로 추천합니다.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Boston+Public+Garden" target="_blank">지도</a></p></div></div>
+<section id="hotel" class="section card">
+  <h2>🏨 구역별 숙소 추천 (District Guide)</h2>
+  <div class="grid">
+    <div class="span6">
+      <h3>1. Back Bay (가장 추천)</h3>
+      <p class="mini muted">쇼핑, 맛집, 치안이 모두 훌륭한 최고의 구역입니다.</p>
+      <ul>
+        <li><b>추천:</b> Fairmont Copley Plaza, Westin Copley</li>
+        <li><b>장점:</b> Prudential Center, Newbury St 도보 가능</li>
+        <li><b>단점:</b> 가격대가 가장 높음</li>
+      </ul>
+    </div>
+    <div class="span6">
+      <h3>2. Downtown / Financial</h3>
+      <p class="mini muted">역사적 중심지이며 주요 관광지 접근성이 좋습니다.</p>
+      <ul>
+        <li><b>추천:</b> Omni Parker House, InterContinental Boston</li>
+        <li><b>장점:</b> Freedom Trail 시작점, 수변 공원 근접</li>
+        <li><b>단점:</b> 밤에는 사무지구라 조금 조용함</li>
+      </ul>
+    </div>
+    <div class="span6">
+      <h3>3. Seaport District</h3>
+      <p class="mini muted">가장 현대적이고 힙한 분위기의 신도심입니다.</p>
+      <ul>
+        <li><b>추천:</b> Envoy Hotel, YOTEL Boston</li>
+        <li><b>장점:</b> 신축 호텔 많음, 탁 트인 바다 전망</li>
+        <li><b>단점:</b> 지하철(Silver Line) 이용이 약간 불편함</li>
+      </ul>
+    </div>
+    <div class="span6">
+      <h3>4. Cambridge / Harvard</h3>
+      <p class="mini muted">대학가의 지적이고 여유로운 분위기를 선호한다면 추천합니다.</p>
+      <ul>
+        <li><b>추천:</b> The Charles Hotel, Sheraton Commander</li>
+        <li><b>장점:</b> 하버드/MIT 산책 용이, 로컬 카페 많음</li>
+        <li><b>단점:</b> 도심으로 나갈 때 Red Line 20~30분 소요</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <section id="souvenir" class="section card">
-  <h2>대상별 기념품</h2>
+  <h2>🎁 보스턴 기념품 대백과 (Souvenirs)</h2>
   <div class="souvenir-grid">
     <div class="card souvenir-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Boston_Public_Market_interior.jpg" alt="Maple Syrup">
-      <h3>부모님: 메이플 시럽</h3>
-      <p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Boston+Public+Market" target="_blank">Boston Public Market</a></p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Boston_Public_Market_interior.jpg" alt="Maple">
+      <h3>로컬 메이플 시럽</h3>
+      <p class="mini muted">뉴잉글랜드 지역의 깊은 맛</p>
+      <p class="mini">📍 Boston Public Market</p>
     </div>
     <div class="card souvenir-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Harvard_Cooperative_Society%2C_Cambridge_MA.jpg" alt="Harvard Gear">
-      <h3>동료: Harvard 굿즈</h3>
-      <p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Harvard+Coop" target="_blank">The Harvard Coop</a></p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Harvard_Cooperative_Society%2C_Cambridge_MA.jpg" alt="Harvard Hoody">
+      <h3>하버드/MIT 대학 굿즈</h3>
+      <p class="mini muted">공식 매장(Coop) 정품 후드티</p>
+      <p class="mini">📍 The Harvard Coop</p>
     </div>
     <div class="card souvenir-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Fenway_Park_-_inside.jpg" alt="Red Sox Gear">
-      <h3>본인: Red Sox 굿즈</h3>
-      <p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Fenway+Park" target="_blank">Fenway Park Shop</a></p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Fenway_Park_-_inside.jpg" alt="Red Sox">
+      <h3>레드삭스 스포츠 굿즈</h3>
+      <p class="mini muted">보스턴의 상징, 야구 모자/티셔츠</p>
+      <p class="mini">📍 Fenway Park Shop</p>
     </div>
+    <div class="card souvenir-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Boston_Tea_Party_Ships_and_Museum_-_Tea_Chest.jpg" alt="Tea">
+      <h3>보스턴 티 파티 티 세트</h3>
+      <p class="mini muted">역사의 한 장면을 담은 차</p>
+      <p class="mini">📍 Tea Party Museum Shop</p>
+    </div>
+    <div class="card souvenir-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Salt_Water_Taffy_Assorted.jpg/800px-Salt_Water_Taffy_Assorted.jpg" alt="Taffy">
+      <h3>솔트 워터 태피 (Taffy)</h3>
+      <p class="mini muted">해안가의 전통 캔디/젤리</p>
+      <p class="mini">📍 Quincy Market</p>
+    </div>
+    <div class="card souvenir-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Beacon_Hill_Chocolates.jpg/800px-Beacon_Hill_Chocolates.jpg" alt="Chocolate">
+      <h3>비컨 힐 수제 초콜릿</h3>
+      <p class="mini muted">선물용으로 최고의 퀄리티</p>
+      <p class="mini">📍 Beacon Hill Chocolates</p>
+    </div>
+    <div class="card souvenir-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Boston_Baked_Beans_Candy.jpg/800px-Boston_Baked_Beans_Candy.jpg" alt="Beans">
+      <h3>보스턴 베이크드 빈 캔디</h3>
+      <p class="mini muted">보스턴의 별명을 딴 시그니처 사탕</p>
+      <p class="mini">📍 Faneuil Hall Shops</p>
+    </div>
+    <div class="card souvenir-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MBTA_Token.jpg/800px-MBTA_Token.jpg" alt="MBTA">
+      <h3>MBTA 지하철 굿즈</h3>
+      <p class="mini muted">빈티지 노선도 및 토큰 테마 굿즈</p>
+      <p class="mini">📍 MBTA Online/Pop-up</p>
+    </div>
+  </div>
+</section>
+
+<section id="food" class="section card">
+  <h2>🍽️ 추천 맛집 (Featured)</h2>
+  <div class="grid">
+    <div class="card span6 place-card" data-theme="essential foodie"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Union_Oyster_House%2C_Boston.jpg" alt="Union Oyster"><div><h3>Union Oyster House</h3><p>미국에서 가장 오래된 식당. 랍스터 롤과 클램 차우더가 필수입니다.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+Boston" target="_blank">지도</a></p></div></div>
+    <div class="card span6 place-card" data-theme="foodie"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mike%27s_Pastry%2C_North_End%2C_Boston.jpg/800px-Mike%27s_Pastry%2C_North_End%2C_Boston.jpg" alt="Pastry"><div><h3>Mike's Pastry</h3><p>노스 엔드의 카놀리 맛집. 항상 긴 줄이 늘어서는 곳입니다.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Mike+s+Pastry+Boston" target="_blank">지도</a></p></div></div>
   </div>
 </section>
 </main>
@@ -95,17 +172,14 @@
   let markers = [];
 
   const itineraryData = [
-    { day: "1일차", time: "15:00", title: "호텔 체크인", desc: "Back Bay, Downtown 숙소", theme: "essential relaxed hard foodie", coord: [42.3551, -71.0656], mapName: "Boston Common" },
-    { day: "1일차", time: "16:30", title: "Public Garden 산책", desc: "시차 적응용 가벼운 산책", theme: "essential relaxed", coord: [42.3541, -71.0706], mapName: "Boston Public Garden" },
-    { day: "1일차", time: "18:00", title: "Newbury St 쇼핑", desc: "의류, 소품, 카페 거리", theme: "essential", coord: [42.3496, -71.0825], mapName: "Newbury Street" },
-    { day: "1일차", time: "19:30", title: "저녁 식사", desc: "Saltie Girl 등 해산물", theme: "foodie", coord: [42.3501, -71.0765], mapName: "Saltie Girl" },
-    { day: "2일차", time: "09:00", title: "Freedom Trail 시작", desc: "역사 코스 산책", theme: "essential hard", coord: [42.3551, -71.0656], mapName: "Boston Common" },
-    { day: "2일차", time: "10:30", title: "Old State House", desc: "미국 독립 역사 현장", theme: "essential hard", coord: [42.3587, -71.0575], mapName: "Old State House" },
-    { day: "2일차", time: "12:00", title: "Quincy Market 점심", desc: "로컬 푸드 및 랍스터롤", theme: "essential foodie", coord: [42.3601, -71.0547], mapName: "Quincy Market" },
-    { day: "2일차", time: "13:30", title: "North End 산책", desc: "리틀 이태리 & 카놀리", theme: "essential foodie", coord: [42.3637, -71.0537], mapName: "Mike's Pastry" },
-    { day: "3일차", time: "10:00", title: "Harvard University", desc: "캠퍼스 투어", theme: "essential relaxed", coord: [42.3736, -71.1190], mapName: "Harvard Square" },
-    { day: "3일차", time: "13:00", title: "Tatte Bakery 점심", desc: "브런치 카페", theme: "relaxed foodie", coord: [42.3731, -71.1195], mapName: "Tatte Bakery" },
-    { day: "4일차", time: "10:00", title: "Gardner Museum", desc: "미술관 관람", theme: "essential relaxed", coord: [42.3394, -71.0940], mapName: "Isabella Stewart Gardner Museum" }
+    { day: "1일차", time: "15:00", title: "호텔 체크인", desc: "Back Bay 또는 Downtown", theme: "essential relaxed hard foodie", coord: [42.3551, -71.0656], mapName: "Boston Common" },
+    { day: "1일차", time: "16:30", title: "Public Garden 산책", desc: "시차 적응용 산책", theme: "essential relaxed", coord: [42.3541, -71.0706], mapName: "Boston Public Garden" },
+    { day: "1일차", time: "18:00", title: "Newbury St 쇼핑", desc: "유럽풍 거리 구경", theme: "essential", coord: [42.3496, -71.0825], mapName: "Newbury Street" },
+    { day: "2일차", time: "09:00", title: "Freedom Trail", desc: "역사 탐방 시작", theme: "essential hard", coord: [42.3551, -71.0656], mapName: "Boston Common" },
+    { day: "2일차", time: "12:00", title: "Quincy Market", desc: "랍스터롤 점심", theme: "essential foodie", coord: [42.3601, -71.0547], mapName: "Quincy Market" },
+    { day: "2일차", time: "14:00", title: "North End 산책", desc: "카놀리 디저트", theme: "essential foodie", coord: [42.3637, -71.0537], mapName: "Mike's Pastry" },
+    { day: "3일차", time: "10:00", title: "Harvard University", desc: "캠퍼스 및 굿즈 쇼핑", theme: "essential relaxed", coord: [42.3736, -71.1190], mapName: "Harvard Square" },
+    { day: "4일차", time: "10:00", title: "Gardner Museum", desc: "아름다운 중정 관람", theme: "essential relaxed", coord: [42.3394, -71.0940], mapName: "Isabella Stewart Gardner Museum" }
   ];
 
   function initMap() {
@@ -124,7 +198,7 @@
 
     const filtered = itineraryData.filter(i => theme === 'all' || i.theme.includes(theme));
     
-    // 1. Table Render
+    // Table
     const tbody = document.getElementById('itinerary-body');
     tbody.innerHTML = '';
     let lastDay = '';
@@ -141,7 +215,7 @@
       tbody.appendChild(tr);
     });
 
-    // 2. Map Render
+    // Map
     if (polyline) map.removeLayer(polyline);
     markers.forEach(m => map.removeLayer(m));
     markers = [];
@@ -158,7 +232,7 @@
       document.getElementById('google-maps-btn').href = mapsUrl;
     }
 
-    // 3. Cards Filter
+    // Cards
     document.querySelectorAll('.place-card').forEach(c => {
       c.style.display = (theme === 'all' || c.getAttribute('data-theme').includes(theme)) ? 'grid' : 'none';
     });
