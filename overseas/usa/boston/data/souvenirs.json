@@ -5,32 +5,32 @@
       "for": "부모님",
       "items": ["뉴잉글랜드 티", "메이플 시럽"],
       "where": "Boston Public Market",
-      "map": "https://maps.google.com/maps/place/Boston+Public+Market",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/maple_syrup.png",
+      "map": "https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+100+Hanover+St+Boston+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Boston_Public_Market_interior.jpg/1280px-Boston_Public_Market_interior.jpg",
       "budgetUsd": "10-30"
     },
     {
       "for": "회사 동료",
       "items": ["Harvard/MIT 펜", "마그넷"],
       "where": "Harvard Coop",
-      "map": "https://maps.google.com/maps/place/The+Harvard+Coop",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/souvenirs_coop.png",
+      "map": "https://www.google.com/maps/search/?api=1&query=Harvard+Coop+1400+Massachusetts+Ave+Cambridge+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Harvard_Cooperative_Society%2C_Cambridge_MA.jpg/1280px-Harvard_Cooperative_Society%2C_Cambridge_MA.jpg",
       "budgetUsd": "5-15"
     },
     {
       "for": "배우자/연인",
       "items": ["Newbury Street 소품", "미술관 굿즈"],
       "where": "Newbury Street",
-      "map": "https://maps.google.com/maps/search/Newbury+Street+shopping",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/boston_skyline.jpg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Newbury+Street+Boston+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Newbury_Street%2C_Boston.jpg/1280px-Newbury_Street%2C_Boston.jpg",
       "budgetUsd": "20-60"
     },
     {
       "for": "본인",
       "items": ["Red Sox 굿즈", "캠퍼스 후드티"],
       "where": "Fenway Park shop",
-      "map": "https://maps.google.com/maps/place/Fenway+Park",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/redsox_gear.png",
+      "map": "https://www.google.com/maps/search/?api=1&query=Fenway+Park+4+Jersey+St+Boston+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Fenway_Park_-_inside.jpg/1280px-Fenway_Park_-_inside.jpg",
       "budgetUsd": "20-90"
     }
   ]

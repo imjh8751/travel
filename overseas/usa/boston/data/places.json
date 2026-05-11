@@ -7,8 +7,8 @@
       "name": "Freedom Trail",
       "type": "landmark/history",
       "themes": ["essential", "hard"],
-      "map": "https://maps.google.com/maps/search/Freedom+Trail+Boston",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/freedom_trail.jpg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Freedom+Trail+Boston+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Freedom_Trail_marker%2C_Boston.jpg/1280px-Freedom_Trail_marker%2C_Boston.jpg",
       "review": "https://www.tripadvisor.com/Attraction_Review-g60745-d102804-Reviews-Freedom_Trail-Boston_Massachusetts.html",
       "note": "16개 역사 지점을 잇는 대표 코스. 전체를 다 걸으려면 체력이 필요합니다 (Hard)."
     },
@@ -16,8 +16,8 @@
       "name": "Boston Public Garden",
       "type": "landmark/park",
       "themes": ["essential", "relaxed"],
-      "map": "https://maps.google.com/maps/place/Boston+Public+Garden",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/public_garden.jpg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Boston+Public+Garden+Boston+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Boston_Public_Garden_lagoon.jpg/1280px-Boston_Public_Garden_lagoon.jpg",
       "review": "https://withsprinklesontop.net/?s=boston+public+garden",
       "note": "시차 적응과 여유로운 산책에 최적 (Relaxed). Swan Boat가 유명합니다."
     },
@@ -25,8 +25,8 @@
       "name": "Union Oyster House",
       "type": "restaurant/seafood",
       "themes": ["foodie", "essential"],
-      "map": "https://maps.google.com/maps/place/Union+Oyster+House",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/lobster_roll.png",
+      "map": "https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+41+Union+St+Boston+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Union_Oyster_House%2C_Boston.jpg/1280px-Union_Oyster_House%2C_Boston.jpg",
       "review": "https://phillipsloop.com/union-oyster-house-review/",
       "note": "미국에서 가장 오래된 식당. 클램 차우더와 콘브레드가 사실상 필수 메뉴입니다 (Foodie)."
     },
@@ -34,8 +34,8 @@
       "name": "Mike's Pastry",
       "type": "restaurant/dessert",
       "themes": ["foodie", "essential"],
-      "map": "https://maps.google.com/maps/place/Mike's+Pastry",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/mikes_pastry.jpg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Mike's+Pastry+300+Hanover+St+Boston+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mike%27s_Pastry%2C_Boston.jpg/1280px-Mike%27s_Pastry%2C_Boston.jpg",
       "review": "https://eatsbyxtina.com/mikes-pastry-boston/",
       "note": "노스엔드의 전설적인 카놀리 전문점. 관광객의 필수 코스입니다."
     },
@@ -43,8 +43,8 @@
       "name": "Fenway Park",
       "type": "landmark/sports",
       "themes": ["essential", "hard"],
-      "map": "https://maps.google.com/maps/place/Fenway+Park",
-      "photo": "https://imjh8751.github.io/travel/overseas/usa/boston/assets/fenway_park.jpg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Fenway+Park+4+Jersey+St+Boston+MA",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Fenway_Park_exterior.jpg/1280px-Fenway_Park_exterior.jpg",
       "review": "https://www.tripadvisor.com/Attraction_Review-g60745-d102711-Reviews-Fenway_Park-Boston_Massachusetts.html",
       "note": "레드삭스의 홈구장. 구장 투어는 미리 예약하는 것이 좋습니다."
     }
