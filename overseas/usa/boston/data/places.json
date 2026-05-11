@@ -1,0 +1,11 @@
+{
+  "updatedAt": "2026-05-11",
+  "region": "Boston, USA",
+  "places": [
+    {"name":"Freedom Trail","type":"history walk","officialUrl":"https://www.thefreedomtrail.org/","map":"https://maps.google.com/?q=Freedom+Trail+Boston","note":"16개 역사 지점을 잇는 대표 코스"},
+    {"name":"Boston Public Garden","type":"park","map":"https://maps.google.com/?q=Boston+Public+Garden","note":"도착일 산책 추천"},
+    {"name":"Harvard Square","type":"campus/shopping","map":"https://maps.google.com/?q=Harvard+Square","note":"Harvard Yard, Harvard Book Store, Harvard Coop 연계"},
+    {"name":"Isabella Stewart Gardner Museum","type":"museum","officialUrl":"https://www.gardnermuseum.org/visit","adultPriceUsd":"22","note":"시간 예약 권장"},
+    {"name":"Boston Duck Tours","type":"tour","officialUrl":"https://bostonducktours.com/on-sale/individual-rates/","duration":"80 minutes","note":"성수기 예약 권장, 한국어 앱 안내 있음"}
+  ]
+}

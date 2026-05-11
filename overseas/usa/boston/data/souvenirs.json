@@ -1,0 +1,10 @@
+{
+  "updatedAt": "2026-05-11",
+  "souvenirs": [
+    {"for":"부모님","items":["뉴잉글랜드 티", "메이플 시럽", "고급 초콜릿"],"where":["Boston Public Market", "Whole Foods"],"budgetUsd":"10-30"},
+    {"for":"회사 동료","items":["Harvard/MIT 펜", "마그넷", "쿠키"],"where":["Harvard Coop", "공항 기념품점"],"budgetUsd":"5-15"},
+    {"for":"배우자/연인","items":["Newbury Street 소품", "로컬 향초", "미술관 굿즈"],"where":["Newbury Street", "Gardner/MFA Shop"],"budgetUsd":"20-60"},
+    {"for":"자녀/조카","items":["Duck Tour 장난감", "대학 후드티", "책"],"where":["Duck Tour shop", "Harvard Coop"],"budgetUsd":"15-70"},
+    {"for":"본인","items":["Red Sox 굿즈", "캠퍼스 후드티", "로컬 커피"],"where":["Fenway", "Harvard/MIT Coop"],"budgetUsd":"20-90"}
+  ]
+}
