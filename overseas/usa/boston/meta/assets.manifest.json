@@ -273,6 +273,20 @@
       "usedBy": [
         "souvenirs.jfk-library-museum-store.hero"
       ]
+    },
+    {
+      "id": "souvenir-trader-joe-s-back-bay",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://www.traderjoes.com/content/dam/trjo/products/m20906/60255.png",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "Nori Komi Furikake Japanese Multi-Purpose Seasoning",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.trader-joe-s-back-bay.hero"
+      ]
     }
   ]
 }

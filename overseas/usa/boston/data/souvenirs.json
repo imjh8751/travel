@@ -1595,6 +1595,364 @@
           ]
         }
       ]
+    },
+    {
+      "shopName": "Trader Joe's Back Bay",
+      "shopType": "grocery-store",
+      "area": "Back Bay",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trader+Joe%27s+Back+Bay+Boston+MA",
+      "shopUrl": "https://locations.traderjoes.com/ma/boston/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "must-visit",
+      "visitTip": "숙소 근처에서 먹거리, 뷰티, 생활형 기념품을 한 번에 고르기 좋아 관광객 실구매 비중이 높은 상점입니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
+        {
+          "name": "Nori Komi Furikake Japanese Multi-Purpose Seasoning",
+          "category": "snack",
+          "price": "$2.99",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/nori-komi-furikake-japanese-multi-purpose-seasoning-060255",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m20906/60255.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ],
+          "note": "가볍고 지역 마트형 선물로 설명하기 쉬운 조미료입니다."
+        },
+        {
+          "name": "Crunchy Chili Onion",
+          "category": "condiment",
+          "price": "$4.49",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/chili-onion-crunch-062480",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m20401/62480.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "회사 동료",
+            "본인"
+          ],
+          "note": "요리 좋아하는 사람에게 반응이 좋은 인기 소스형 상품입니다."
+        },
+        {
+          "name": "Coconut Body Butter",
+          "category": "beauty",
+          "price": "$5.99",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/coconut-body-butter-050130?=___psv__p_46036381__t_w_",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m502/50130.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "친구",
+            "본인"
+          ],
+          "note": "가격 부담이 적고 여행 후에도 쓰기 쉬운 드럭스토어형 기념품입니다."
+        },
+        {
+          "name": "Crispy Crunchy Chocolate Chip Cookies",
+          "category": "snack",
+          "price": "$6.49",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/crispy-crunchy-chocolate-chip-cookies-010727?hypwct=feed_kimbino_us_trader-joes_3838485",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m21002/10727.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "자녀",
+            "친구"
+          ],
+          "note": "나눠 먹기 쉬운 대중적인 과자류입니다."
+        },
+        {
+          "name": "Mini Insulated Totes Peach & Blue",
+          "category": "lifestyle",
+          "price": "$3.99",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/mini-insulated-totes-peach-blue-081833",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m501/81833.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "자녀",
+            "본인"
+          ],
+          "note": "가벼운 실사용형 소품이라 여행 후 만족도가 높은 편입니다."
+        },
+        {
+          "name": "Spicy Tempura Seaweed Snack",
+          "category": "snack",
+          "price": "$3.49",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/spicy-tempura-seaweed-snack-074086",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m21001/74086.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "회사 동료",
+            "본인"
+          ],
+          "note": "부피가 작고 선물 가방에 넣기 쉬운 스낵입니다."
+        },
+        {
+          "name": "Steamed Chicken Soup Dumplings",
+          "category": "frozen-food",
+          "price": "$3.49",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/steamed-chicken-soup-dumplings-054988",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m20602/54988.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "본인"
+          ],
+          "note": "현지 숙소에서 바로 먹는 실구매형 추천으로는 좋지만 귀국 선물용으로는 제한적입니다."
+        },
+        {
+          "name": "Shea Butter & Coconut Oil Hair Mask",
+          "category": "beauty",
+          "price": "$3.99",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/shea-butter-coconut-oil-hair-mask-061447?=___psv__p_5103267__t_w_",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m502/61447.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "친구",
+            "본인"
+          ],
+          "note": "가벼운 뷰티 기념품으로 무난합니다."
+        },
+        {
+          "name": "Unexpected Cheddar Cheese",
+          "category": "grocery",
+          "price": "$3.99",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/096923",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m20203/96923.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "본인"
+          ],
+          "note": "보스턴 체류 중 바로 즐기기 좋은 장보기 품목입니다."
+        },
+        {
+          "name": "Shimmering Candy Cane Body Butter",
+          "category": "beauty",
+          "price": "$5.99",
+          "productUrl": "https://www.traderjoes.com/home/products/pdp/076859",
+          "imageUrl": "https://www.traderjoes.com/content/dam/trjo/products/m502/76859.png",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "친구",
+            "본인"
+          ],
+          "note": "시즌 한정 감성이 강한 선물용 뷰티 품목입니다."
+        }
+      ]
+    },
+    {
+      "shopName": "CVS Pharmacy Copley Square",
+      "shopType": "drugstore",
+      "area": "Back Bay / Copley",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=CVS+Pharmacy+Copley+Square+Boston+MA",
+      "shopUrl": "https://www.cvs.com/store-locator/boston-ma-pharmacies",
+      "catalogStatus": "official-product-pages-text-verified",
+      "productCountKnown": 10,
+      "priority": "recommended",
+      "visitTip": "관광객들이 약, 립밤, 간단한 건강 보조 제품을 빠르게 사기 좋은 드럭스토어입니다. 이 환경에서는 공식 상품 이미지 자동 검증이 막혀 사진 없는 텍스트형 상품도 함께 노출합니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
+        {
+          "name": "CVS 250 MG Vitamin C Gummies, 150 CT",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/cvs-250-mg-vitamin-c-gummies-prodid-7200106?skuId=239251",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ],
+          "note": "관광객이 많이 사는 비타민류로 가벼운 드럭스토어형 구매 후보입니다."
+        },
+        {
+          "name": "CVS Melatonin Gummies, 90 CT",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/cvs-melatonin-gummies-prodid-7200027",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "본인"
+          ],
+          "note": "시차 적응이나 숙면 보조용으로 찾는 비중이 높습니다."
+        },
+        {
+          "name": "CVS Melatonin Sleep Aid Gummies, 60 CT",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/cvs-melatonin-sleep-aid-gummies-60-ct-prodid-1910062",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "본인"
+          ],
+          "note": "여행 중 실사용형 구매 후보입니다."
+        },
+        {
+          "name": "CVS Vitamin D3 Gummies, 150 CT",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/cvs-vitamin-d3-gummies-150-ct-prodid-239376",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "부모님",
+            "본인"
+          ],
+          "note": "드럭스토어 대표 영양제형 기념 구매 후보입니다."
+        },
+        {
+          "name": "Airborne Original Vitamin C Gummies, 42 Count",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/airborne-original-vitamin-c-gummies-prodid-1011919",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ],
+          "note": "미국 드럭스토어에서 많이 사는 면역 서포트 젤리류입니다."
+        },
+        {
+          "name": "Airborne Immune Support Vitamin C Gummies, Zesty Orange Flavor, 63 CT",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/airborne-immune-support-vitamin-c-gummies-zesty-orange-flavor-63-ct-prodid-167741",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "부모님",
+            "본인"
+          ],
+          "note": "시즌성 상비 구매로 많이 찾는 품목입니다."
+        },
+        {
+          "name": "Nature Made Vitamin C 250mg Gummies, 150 CT",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/nature-made-vitamin-c-250mg-per-serving-for-immune-support-vitamin-gummies-150-ct-prodid-416156",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "부모님",
+            "본인"
+          ],
+          "note": "대중적인 비타민 브랜드라 선호도가 무난한 편입니다."
+        },
+        {
+          "name": "Emergen-C Gummies with Vitamin C, 45 CT",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/emergen-c-gummies-with-vitamin-c-45-ct-prodid-1770279",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "회사 동료",
+            "본인"
+          ],
+          "note": "미국 여행 드럭스토어 구매 목록에서 자주 보이는 제품군입니다."
+        },
+        {
+          "name": "e.l.f. Squeeze Me Lip Balm, Vanilla Frosting",
+          "category": "beauty",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/e-l-f-squeeze-me-lip-balm-prodid-7200034",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "친구",
+            "배우자",
+            "본인"
+          ],
+          "note": "가격 부담이 적은 뷰티형 선물 후보입니다."
+        },
+        {
+          "name": "Biofreeze Day & Overnight Pain Relief Patches, 9 CT",
+          "category": "health",
+          "price": "공식 페이지 확인",
+          "productUrl": "https://www.cvs.com/shop/biofreeze-day-overnight-pain-relief-patches-9-ct-prodid-111879",
+          "imageUrl": null,
+          "imageType": "none",
+          "imageSource": "blocked",
+          "imageMatchLevel": "none",
+          "imageVerifiedBy": "text-only-official-link",
+          "forWhom": [
+            "부모님",
+            "본인"
+          ],
+          "note": "걷는 일정이 긴 여행자들이 많이 찾는 통증 완화용 구매 후보입니다."
+        }
+      ]
     }
   ]
 }

@@ -3,8 +3,12 @@
   "country": "USA",
   "tripLength": "3박 4일",
   "updatedAt": "2026-05-12",
-  "summary": "필수/여유/맛집 테마를 한 화면에서 비교하고, 10개 이상 맛집, 10개 공식 기념품 상점, 대상별 선물 추천까지 바로 확인하는 보스턴 실전 일정표",
-  "tags": ["10+ Food Spots", "10 Gift Shops", "Official Product Photos"],
+  "summary": "필수/여유/맛집 테마와 함께 공식 굿즈 상점, Trader Joe's, CVS 같은 실구매 상점의 기념품까지 비교하는 보스턴 실전 일정표",
+  "tags": [
+    "10+ Food Spots",
+    "Gift Shops + Grocery",
+    "Official Product Photos"
+  ],
   "routeUrlByTheme": {
     "all": "https://www.google.com/maps/dir/Back+Bay+Boston/Boston+Public+Garden/Union+Oyster+House+Boston/Boston+Common/Quincy+Market+Boston/Mike%27s+Pastry+Boston/Harvard+Square/Luke%27s+Lobster+Back+Bay/Boston+Tea+Party+Ships+%26+Museum/Boston+Logan+International+Airport",
     "essential": "https://www.google.com/maps/dir/Back+Bay+Boston/Boston+Public+Garden/Union+Oyster+House+Boston/Boston+Common/Quincy+Market+Boston/Mike%27s+Pastry+Boston/Harvard+Square/Boston+Tea+Party+Ships+%26+Museum/Boston+Logan+International+Airport",

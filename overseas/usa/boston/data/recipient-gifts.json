@@ -43,6 +43,14 @@
           "buyAt": "The Harvard Shop",
           "locationNote": "Harvard Square, Cambridge",
           "caution": "길이 있는 우산이라 짐 배치 확인이 필요합니다."
+        },
+        {
+          "name": "Nori Komi Furikake Japanese Multi-Purpose Seasoning",
+          "price": "$2.99",
+          "reason": "가볍고 현지 마트에서 사는 실구매형 선물이라 설명이 쉽습니다.",
+          "buyAt": "Trader Joe's Back Bay",
+          "locationNote": "Back Bay",
+          "caution": "조미료라 향 취향과 반입 규정을 먼저 확인하세요."
         }
       ]
     },
@@ -88,6 +96,14 @@
           "buyAt": "The COOP Harvard Square",
           "locationNote": "Harvard Square, Cambridge",
           "caution": "미니 보틀이라 용량을 먼저 확인하는 편이 좋습니다."
+        },
+        {
+          "name": "Coconut Body Butter",
+          "price": "$5.99",
+          "reason": "가격 부담이 적고 바로 쓰기 좋은 뷰티 기념품입니다.",
+          "buyAt": "Trader Joe's Back Bay",
+          "locationNote": "Back Bay",
+          "caution": "액상/크림류라 기내 반입 용량 기준을 확인하세요."
         }
       ]
     },
@@ -133,6 +149,14 @@
           "buyAt": "MFA Boston Shop",
           "locationNote": "Museum of Fine Arts, Fenway",
           "caution": "세트형 코스터라 모서리 파손을 주의하세요."
+        },
+        {
+          "name": "Crispy Crunchy Chocolate Chip Cookies",
+          "price": "$6.49",
+          "reason": "나눠 먹기 쉽고 미국 마트 감성이 분명한 간식입니다.",
+          "buyAt": "Trader Joe's Back Bay",
+          "locationNote": "Back Bay",
+          "caution": "부서지기 쉬워 눌림 주의가 필요합니다."
         }
       ]
     },
@@ -178,6 +202,14 @@
           "buyAt": "Linde Family Wing Bookstore and Shop",
           "locationNote": "MFA Art of the Americas Wing",
           "caution": "머그라서 파손 보호가 필요합니다."
+        },
+        {
+          "name": "Mini Insulated Totes Peach & Blue",
+          "price": "$3.99",
+          "reason": "가볍고 색감이 좋아 아이나 학생 선물로 반응이 좋습니다.",
+          "buyAt": "Trader Joe's Back Bay",
+          "locationNote": "Back Bay",
+          "caution": "시즌 한정 재고일 수 있습니다."
         }
       ]
     },
@@ -223,6 +255,14 @@
           "buyAt": "JFK Library Museum Store",
           "locationNote": "Columbia Point / Dorchester",
           "caution": "도금 스크래치만 주의하면 됩니다."
+        },
+        {
+          "name": "Crunchy Chili Onion",
+          "price": "$4.49",
+          "reason": "요리 좋아하는 친구에게 반응이 좋은 미국 마트 인기 소스입니다.",
+          "buyAt": "Trader Joe's Back Bay",
+          "locationNote": "Back Bay",
+          "caution": "유리병은 수하물 완충 포장이 필요합니다."
         }
       ]
     },
@@ -268,6 +308,14 @@
           "buyAt": "Museum of Science Shop",
           "locationNote": "Science Park",
           "caution": "패브릭류라 부피는 적지만 오염 주의가 필요합니다."
+        },
+        {
+          "name": "CVS Melatonin Gummies, 90 CT",
+          "price": "공식 페이지 확인",
+          "reason": "시차 적응용으로 여행 중 바로 쓰는 실구매형 품목입니다.",
+          "buyAt": "CVS Pharmacy Copley Square",
+          "locationNote": "Back Bay / Copley",
+          "caution": "복용 전 성분과 개인 체질을 먼저 확인하세요."
         }
       ]
     }

@@ -237,6 +237,28 @@
     .shop-table th, .shop-table td {
       padding: 8px 6px;
     }
+    .product-thumb {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #dfe7f2;
+      background: #f4f7fb;
+      display: block;
+    }
+    .thumb-empty {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      border: 1px dashed #cbd6e6;
+      background: #f7f9fc;
+      color: var(--muted);
+      font-size: 11px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      line-height: 1.2;
+    }
     .recipient-panel {
       border: 1px solid var(--line);
       border-radius: 16px;
@@ -368,7 +390,7 @@
       <div class="section-head">
         <div>
           <h2>기념품 상점 비교</h2>
-          <div class="muted">공식 상점 10곳과 상점별 대표 상품 10개를 비교하고, 동일 상품 실사진 검증이 끝난 경우만 사진을 노출합니다.</div>
+          <div class="muted">공식 굿즈 상점과 Trader Joe's 같은 실구매 상점을 함께 비교하고, 상품별 동일 사진이 확인된 경우 각 행에서 바로 보여줍니다.</div>
         </div>
       </div>
       <div id="souvenir-grid" class="grid"></div>
@@ -599,6 +621,7 @@
                 <table class="shop-table">
                   <thead>
                     <tr>
+                      <th>사진</th>
                       <th>상품</th>
                       <th>가격</th>
                       <th>추천 대상</th>
@@ -608,6 +631,12 @@
                   <tbody>
                     ${(shop.featuredProducts || []).map(product => `
                       <tr>
+                        <td>
+                          ${product.imageType === "real" && product.imageMatchLevel === "exact-product" && product.imageUrl
+                            ? `<img class="product-thumb" src="${product.imageUrl}" alt="${escapeHtml(product.name)}" />`
+                            : `<div class="thumb-empty">사진 없음</div>`
+                          }
+                        </td>
                         <td>${escapeHtml(product.name)}</td>
                         <td>${escapeHtml(product.price)}</td>
                         <td>${escapeHtml((product.forWhom || []).join(" / ") || "공용")}</td>
