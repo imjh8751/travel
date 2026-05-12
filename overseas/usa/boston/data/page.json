@@ -7,8 +7,8 @@
   "tags": ["Back Bay", "MBTA", "Foodie"],
   "routeUrlByTheme": {
     "all": "https://www.google.com/maps/dir/Boston+Public+Garden/Union+Oyster+House+Boston/Boston+Common/Quincy+Market+Boston/Harvard+Square/Fenway+Park/Boston+Logan+International+Airport",
-    "essential": "https://www.google.com/maps/dir/Boston+Public+Garden/Boston+Common/Quincy+Market+Boston/Harvard+Square/Fenway+Park/Boston+Logan+International+Airport",
-    "relaxed": "https://www.google.com/maps/dir/Boston+Public+Garden/Newbury+Street+Boston/Long+Wharf+Boston/Harvard+Square/Seaport+District+Boston",
-    "foodie": "https://www.google.com/maps/dir/Union+Oyster+House+Boston/Mike%27s+Pastry+Boston/Neptune+Oyster+Boston/Quincy+Market+Boston"
+    "essential": "https://www.google.com/maps/dir/Boston+Public+Garden/Freedom+Trail+Boston/Quincy+Market+Boston/Harvard+Square/Fenway+Park/Boston+Logan+International+Airport",
+    "relaxed": "https://www.google.com/maps/dir/Back+Bay+Boston/Boston+Public+Garden/Newbury+Street+Boston/Long+Wharf+Boston/Harvard+Square/Seaport+District+Boston",
+    "foodie": "https://www.google.com/maps/dir/Union+Oyster+House+Boston/Mike%27s+Pastry+Boston/Neptune+Oyster+Boston/Giacomo%27s+Ristorante+Boston/Quincy+Market+Boston"
   }
 }
