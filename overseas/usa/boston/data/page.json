@@ -6,9 +6,9 @@
   "summary": "필수/여유/맛집 테마를 한 화면에서 바로 비교하는 보스턴 실전 일정표",
   "tags": ["Back Bay", "MBTA", "Foodie"],
   "routeUrlByTheme": {
-    "all": "https://www.google.com/maps/dir/?api=1&origin=Boston+Public+Garden+Boston+MA&destination=Boston+Logan+International+Airport&travelmode=transit&waypoints=Union+Oyster+House+Boston+MA|Boston+Common+Boston+MA|Quincy+Market+Boston+MA|Harvard+Square+Cambridge+MA|Fenway+Park+Boston+MA",
-    "essential": "https://www.google.com/maps/dir/?api=1&origin=Boston+Public+Garden+Boston+MA&destination=Boston+Logan+International+Airport&travelmode=transit&waypoints=Freedom+Trail+Boston+MA|Quincy+Market+Boston+MA|Harvard+Square+Cambridge+MA|Fenway+Park+Boston+MA",
-    "relaxed": "https://www.google.com/maps/dir/?api=1&origin=Back+Bay+Boston+MA&destination=Seaport+District+Boston+MA&travelmode=transit&waypoints=Boston+Public+Garden+Boston+MA|Newbury+Street+Boston+MA|Long+Wharf+Boston+MA|Harvard+Square+Cambridge+MA",
-    "foodie": "https://www.google.com/maps/dir/?api=1&origin=Union+Oyster+House+Boston+MA&destination=Quincy+Market+Boston+MA&travelmode=walking&waypoints=Mike%27s+Pastry+Boston+MA|Neptune+Oyster+Boston+MA|Giacomo%27s+Ristorante+Boston+MA"
+    "all": "https://www.google.com/maps/dir/?api=1&origin=Boston%20Public%20Garden%2C%20Boston%2C%20MA&destination=Fenway%20Park%2C%20Boston%2C%20MA&travelmode=transit&waypoints=Union%20Oyster%20House%2C%20Boston%2C%20MA%7CBoston%20Common%2C%20Boston%2C%20MA%7CQuincy%20Market%2C%20Boston%2C%20MA%7CHarvard%20Square%2C%20Cambridge%2C%20MA",
+    "essential": "https://www.google.com/maps/dir/?api=1&origin=Boston%20Public%20Garden%2C%20Boston%2C%20MA&destination=Fenway%20Park%2C%20Boston%2C%20MA&travelmode=transit&waypoints=Freedom%20Trail%2C%20Boston%2C%20MA%7CQuincy%20Market%2C%20Boston%2C%20MA%7CHarvard%20Square%2C%20Cambridge%2C%20MA",
+    "relaxed": "https://www.google.com/maps/dir/?api=1&origin=Back%20Bay%2C%20Boston%2C%20MA&destination=Seaport%20District%2C%20Boston%2C%20MA&travelmode=transit&waypoints=Boston%20Public%20Garden%2C%20Boston%2C%20MA%7CNewbury%20Street%2C%20Boston%2C%20MA%7CLong%20Wharf%2C%20Boston%2C%20MA",
+    "foodie": "https://www.google.com/maps/dir/?api=1&origin=Union%20Oyster%20House%2C%20Boston%2C%20MA&destination=Quincy%20Market%2C%20Boston%2C%20MA&travelmode=walking&waypoints=Mike%27s%20Pastry%2C%20Boston%2C%20MA%7CNeptune%20Oyster%2C%20Boston%2C%20MA%7CGiacomo%27s%20Ristorante%2C%20Boston%2C%20MA"
   }
 }

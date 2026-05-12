@@ -21,10 +21,9 @@ body{font-family:Arial,sans-serif;margin:0;background:#f6f8fb;color:#1c2430} .wr
   </div>
 
   <div class="card">
-    <button class="btn on" onclick="setTheme('all',this)">전체</button>
-    <button class="btn" onclick="setTheme('essential',this)">필수</button>
-    <button class="btn" onclick="setTheme('relaxed',this)">여유</button>
-    <button class="btn" onclick="setTheme('foodie',this)">맛집</button>
+    <button class="btn on" onclick="setTheme('essential',this)">필수 동선</button>
+    <button class="btn" onclick="setTheme('relaxed',this)">여유 동선</button>
+    <button class="btn" onclick="setTheme('foodie',this)">맛집 동선</button>
   </div>
 
   <div class="card">
@@ -42,7 +41,7 @@ body{font-family:Arial,sans-serif;margin:0;background:#f6f8fb;color:#1c2430} .wr
   <div class="card small">최신 확인일: <span id="updated"></span> · 출처: <span id="sources"></span></div>
 </div>
 <script>
-let page,itinerary,foods,souvenirs,gifts,transport,sources,current='all';
+let page,itinerary,foods,souvenirs,gifts,transport,sources,current='essential';
 const q=s=>document.querySelector(s);
 async function load(){
  [page,itinerary,foods,souvenirs,gifts,transport,sources]=await Promise.all([
