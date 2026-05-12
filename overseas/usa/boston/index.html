@@ -97,25 +97,12 @@
 
 <section id="transport" class="section card">
   <h2>🚇 교통 · 이동 전략</h2>
-  <div class="grid">
-    <div class="span6">
-      <h3>MBTA 핵심</h3>
-      <ul>
-        <li><b>공항 ↔ 도심:</b> Silver Line SL1 + Red Line 조합이 가장 보편적</li>
-        <li><b>결제:</b> Tap to Ride(컨택리스 카드/모바일) 우선</li>
-        <li><b>관광 중심:</b> Green/Red Line으로 Back Bay·Downtown·Cambridge 연결</li>
-      </ul>
-    </div>
-    <div class="span6">
-      <h3>일정 운영 팁</h3>
-      <ul>
-        <li>출근 시간(07:30~09:00)에는 열차/도로 혼잡 여유 20~30분 추가</li>
-        <li>Freedom Trail 구간은 도보 비중 높아 편한 신발 필수</li>
-        <li>귀국일은 Logan 공항 보안 검색 포함 최소 3시간 전 출발 권장</li>
-      </ul>
-    </div>
-  </div>
-  <p class="route-note">최신 확인일: 2026-05-12 · 공식 교통 안내: <a href="https://www.mbta.com/" target="_blank">MBTA</a></p>
+  <div id="transport-grid" class="grid"></div>
+  <p id="transport-note" class="route-note"></p>
+  <details class="compact-toggle">
+    <summary>출처 보기</summary>
+    <ul id="source-list" class="mini" style="margin-top:8px;"></ul>
+  </details>
 </section>
 </main>
 
@@ -128,21 +115,27 @@
   let foodsData = [];
   let hotelsData = [];
   let souvenirsData = [];
+  let transportData = {};
+  let sourcesData = [];
 
   async function loadGuideData() {
     try {
-      const [pageRes, itineraryRes, foodsRes, hotelsRes, souvenirsRes] = await Promise.all([
+      const [pageRes, itineraryRes, foodsRes, hotelsRes, souvenirsRes, transportRes, sourcesRes] = await Promise.all([
         fetch('./data/page.json'),
         fetch('./data/itinerary.json'),
         fetch('./data/foods.json'),
         fetch('./data/hotels.json'),
-        fetch('./data/souvenirs.json')
+        fetch('./data/souvenirs.json'),
+        fetch('./data/transport.json'),
+        fetch('./data/sources.json')
       ]);
       pageData = await pageRes.json();
       itineraryData = await itineraryRes.json();
       foodsData = (await foodsRes.json()).foods || [];
       hotelsData = (await hotelsRes.json()).districts || [];
       souvenirsData = (await souvenirsRes.json()).souvenirs || [];
+      transportData = await transportRes.json();
+      sourcesData = (await sourcesRes.json()).sources || [];
     } catch (e) {
       console.error('guide data 로드 실패', e);
       pageData = {};
@@ -150,6 +143,8 @@
       foodsData = [];
       hotelsData = [];
       souvenirsData = [];
+      transportData = {};
+      sourcesData = [];
     }
   }
 
@@ -209,6 +204,21 @@
         <p class="mini">구매 팁: ${s.carryTip || '-'} · 최신 확인일 ${s.checkedAt || '-'}</p>
       </div>
     `).join('');
+  }
+
+  function renderTransport() {
+    const grid = document.getElementById('transport-grid');
+    const note = document.getElementById('transport-note');
+    const sourceList = document.getElementById('source-list');
+    grid.innerHTML = `
+      <div class="span6"><h3>MBTA 핵심</h3><ul>
+        <li><b>공항 ↔ 도심:</b> ${transportData.airportToCity || '-'}</li>
+        <li><b>결제:</b> ${transportData.payment || '-'}</li>
+        <li><b>관광 중심:</b> ${(transportData.coreLines || []).join(' / ')}</li>
+      </ul></div>
+      <div class="span6"><h3>운영 팁</h3><ul>${(transportData.tips || []).map(t => `<li>${t}</li>`).join('')}</ul></div>`;
+    note.innerHTML = `최신 확인일: ${transportData.updatedAt || '-'} · 공식 교통 안내: <a href="${transportData.officialUrl || '#'}" target="_blank">MBTA</a>`;
+    sourceList.innerHTML = sourcesData.map(s => `<li><a href="${s.url}" target="_blank">${s.name}</a></li>`).join('');
   }
 
   function initMap() {
@@ -284,6 +294,7 @@
     await loadGuideData();
     applyPageMeta();
     renderSouvenirs();
+    renderTransport();
     bindImageFallback();
     initMap();
   };
