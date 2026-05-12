@@ -1,747 +1,118 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>보스턴 3박 4일 여행 가이드</title>
-  <meta
-    name="description"
-    content="보스턴 3박 4일 일정, 구역별 숙소, 메뉴/가격 포함 맛집 비교, 동일상품 검증 기념품 가이드"
-  />
-  <style>
-    :root {
-      --bg: #f4f7fb;
-      --paper: #ffffff;
-      --ink: #172033;
-      --muted: #647086;
-      --line: #dbe4f0;
-      --brand: #0b5cab;
-      --accent: #d95b43;
-      --soft: #edf4ff;
-      --ok: #e7f7ef;
-      --ok-ink: #1c6f4a;
-      --warn: #fff4e6;
-      --warn-ink: #9a5b00;
-      --shadow: 0 14px 40px rgba(23, 32, 51, 0.08);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
-      background: linear-gradient(180deg, #eef4fb 0, #f9fbfd 240px);
-      color: var(--ink);
-      line-height: 1.6;
-    }
-    a { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 20px 16px 40px; }
-    .hero {
-      background: linear-gradient(135deg, rgba(11, 92, 171, 0.96), rgba(217, 91, 67, 0.92));
-      color: #fff;
-      border-radius: 24px;
-      padding: 28px 22px;
-      box-shadow: var(--shadow);
-    }
-    .hero-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: flex-start;
-    }
-    .eyebrow {
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      opacity: 0.9;
-    }
-    h1 {
-      margin: 8px 0 10px;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.08;
-    }
-    .hero p {
-      margin: 0;
-      max-width: 760px;
-      font-size: 15px;
-      opacity: 0.96;
-    }
-    .chip-row, .theme-row, .tab-row {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .chip, .route-btn, .theme-btn, .tab-btn {
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-size: 13px;
-      font-weight: 700;
-      border: 1px solid transparent;
-    }
-    .chip {
-      background: rgba(255, 255, 255, 0.16);
-      border-color: rgba(255, 255, 255, 0.24);
-    }
-    .route-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      color: var(--brand);
-      margin-top: 18px;
-    }
-    .route-btn.secondary {
-      background: rgba(255, 255, 255, 0.18);
-      color: #fff;
-      border-color: rgba(255, 255, 255, 0.3);
-      margin-left: 8px;
-    }
-    .print-btn {
-      background: rgba(255, 255, 255, 0.16);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-radius: 999px;
-      padding: 8px 12px;
-      cursor: pointer;
-      font-weight: 700;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(10px);
-      background: rgba(249, 251, 253, 0.92);
-      border-bottom: 1px solid var(--line);
-      margin-top: 16px;
-    }
-    nav .wrap {
-      display: flex;
-      gap: 14px;
-      overflow: auto;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      white-space: nowrap;
-    }
-    nav a {
-      color: var(--ink);
-      font-size: 14px;
-      font-weight: 800;
-    }
-    .section {
-      margin-top: 16px;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-      padding: 18px;
-    }
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: end;
-      margin-bottom: 12px;
-    }
-    .section h2 {
-      margin: 0;
-      font-size: 1.2rem;
-    }
-    .muted {
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 14px;
-    }
-    .span4 { grid-column: span 4; }
-    .span6 { grid-column: span 6; }
-    .span12 { grid-column: span 12; }
-    .theme-btn, .tab-btn {
-      background: #fff;
-      color: var(--ink);
-      border-color: var(--line);
-      cursor: pointer;
-    }
-    .theme-btn.is-active, .tab-btn.is-active {
-      background: var(--brand);
-      border-color: var(--brand);
-      color: #fff;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-    th, td {
-      padding: 10px 8px;
-      border-bottom: 1px solid #e8eef6;
-      vertical-align: top;
-      text-align: left;
-    }
-    th {
-      background: #f3f7fc;
-      font-size: 13px;
-    }
-    .card {
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 14px;
-      background: #fff;
-    }
-    .food-card, .souvenir-card {
-      display: grid;
-      grid-template-columns: 128px 1fr;
-      gap: 12px;
-      align-items: start;
-    }
-    .food-card img, .souvenir-card img {
-      width: 100%;
-      height: 118px;
-      object-fit: cover;
-      border-radius: 14px;
-      background: #eef2f7;
-      border: 1px solid #e1e8f2;
-    }
-    .food-meta, .souvenir-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 8px 0;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      border-radius: 999px;
-      padding: 4px 8px;
-      font-size: 12px;
-      font-weight: 700;
-      background: var(--soft);
-      color: var(--brand);
-    }
-    .badge.ok { background: var(--ok); color: var(--ok-ink); }
-    .badge.warn { background: var(--warn); color: var(--warn-ink); }
-    .menu-list, .shop-list, .gift-list, .tip-list {
-      margin: 8px 0 0;
-      padding-left: 18px;
-    }
-    .menu-list li, .shop-list li, .gift-list li, .tip-list li {
-      margin-bottom: 6px;
-    }
-    .shop-table {
-      width: 100%;
-      margin-top: 10px;
-      font-size: 13px;
-    }
-    .shop-table th, .shop-table td {
-      padding: 8px 6px;
-    }
-    .product-thumb {
-      width: 48px;
-      height: 48px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 1px solid #dfe7f2;
-      background: #f4f7fb;
-      display: block;
-    }
-    .thumb-empty {
-      width: 48px;
-      height: 48px;
-      border-radius: 10px;
-      border: 1px dashed #cbd6e6;
-      background: #f7f9fc;
-      color: var(--muted);
-      font-size: 11px;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      line-height: 1.2;
-    }
-    .recipient-panel {
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 14px;
-      background: #fcfdff;
-    }
-    .small {
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 14px;
-      margin-top: 10px;
-      font-size: 13px;
-    }
-    .empty-photo {
-      display: grid;
-      place-items: center;
-      height: 118px;
-      border-radius: 14px;
-      border: 1px dashed #c9d5e6;
-      background: #f7f9fc;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 700;
-    }
-    @media (max-width: 860px) {
-      .span4, .span6 { grid-column: span 12; }
-      .food-card, .souvenir-card { grid-template-columns: 1fr; }
-      .hero-top, .section-head { display: block; }
-      .print-btn { margin-top: 10px; }
-    }
-    @media print {
-      nav, .print-btn, .theme-row, .tab-row { display: none !important; }
-      body { background: #fff; }
-      .section, .hero { box-shadow: none; }
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>보스턴 3박 4일 근거형 여행 가이드</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--line:#dce4ef;--ink:#172033;--muted:#647086;--brand:#0b5cab}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1100px;margin:auto;padding:16px}
+.hero,.section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}.hero{background:linear-gradient(135deg,#0b5cab,#d95b43);color:#fff}.chips,.themes,.grid2{display:flex;gap:8px;flex-wrap:wrap}.chip,.btn{padding:8px 11px;border-radius:999px;font-size:13px;font-weight:700}.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.25)}
+.btn{border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}.btn.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px}.span6{grid-column:span 6}.span12{grid-column:span 12}
+.card{border:1px solid var(--line);border-radius:14px;padding:12px}.small{font-size:12px;color:var(--muted)} h1,h2,h3{margin:0 0 8px} table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px;border-bottom:1px solid #e8edf5;vertical-align:top;text-align:left}th{background:#f3f7fc} ul{margin:8px 0 0;padding-left:18px}
+@media(max-width:860px){.span6{grid-column:span 12}}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header class="hero">
-      <div class="hero-top">
-        <div>
-          <div id="hero-eyebrow" class="eyebrow">Boston · 3박 4일</div>
-          <h1 id="hero-title">보스턴 3박 4일 실전 여행 가이드</h1>
-          <p id="hero-summary"></p>
-          <div id="hero-tags" class="chip-row" style="margin-top: 18px;"></div>
-          <div>
-            <a id="route-link" class="route-btn" href="#" target="_blank" rel="noreferrer">🗺️ 선택 테마 동선 열기</a>
-            <a href="#recipient-gifts" class="route-btn secondary">🎁 대상별 선물 바로가기</a>
-          </div>
-        </div>
-        <button class="print-btn" onclick="window.print()">PDF 저장</button>
-      </div>
-    </header>
-  </div>
-
-  <nav>
-    <div class="wrap">
-      <a href="#theme-control">테마 선택</a>
-      <a href="#itinerary">일정표</a>
-      <a href="#foods">맛집 비교</a>
-      <a href="#hotels">숙소 구역</a>
-      <a href="#souvenirs">기념품 비교</a>
-      <a href="#recipient-gifts">대상별 선물</a>
-      <a href="#transport">교통</a>
-      <a href="#sources">출처</a>
+<div class="wrap">
+  <section class="hero">
+    <div class="small" id="eyebrow">Boston</div>
+    <h1 id="title">보스턴 3박 4일 근거형 여행 가이드</h1>
+    <p id="summary" style="margin:0 0 12px"></p>
+    <div id="tags" class="chips"></div>
+    <div style="margin-top:14px" class="themes">
+      <button class="btn on" data-theme="essential">필수 동선</button>
+      <button class="btn" data-theme="relaxed">여유 동선</button>
+      <button class="btn" data-theme="foodie">맛집 동선</button>
+      <a id="routeLink" class="btn" target="_blank">🗺️ 테마별 구글맵 동선</a>
     </div>
-  </nav>
+  </section>
 
-  <main class="wrap">
-    <section id="theme-control" class="section">
-      <div class="section-head">
-        <div>
-          <h2>테마 선택</h2>
-          <div class="muted">선택한 테마에 따라 일정표, 맛집, 숙소, 외부 동선 링크가 같이 바뀝니다.</div>
-        </div>
+  <section class="section">
+    <h2>📅 일정표</h2>
+    <div class="small">테마를 바꾸면 일정표와 동선 링크가 함께 바뀝니다.</div>
+    <table>
+      <thead><tr><th>일차</th><th>시간</th><th>장소</th><th>핵심 행동</th><th>이동/팁</th><th>지도</th></tr></thead>
+      <tbody id="itineraryRows"></tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      <div class="span6 card">
+        <h2>🍽️ 맛집 추천</h2>
+        <div id="foods"></div>
       </div>
-      <div id="theme-buttons" class="theme-row"></div>
-    </section>
-
-    <section id="itinerary" class="section">
-      <div class="section-head">
-        <div>
-          <h2>날짜별 상세 일정</h2>
-          <div class="muted">이동 메모와 현장 팁을 한 표에서 확인합니다.</div>
-        </div>
-        <div id="itinerary-count" class="small"></div>
+      <div class="span6 card">
+        <h2>🛍️ 기념품 추천</h2>
+        <div id="souvenirs"></div>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>일차</th>
-            <th>시간</th>
-            <th>장소</th>
-            <th>핵심 행동</th>
-            <th>이동 / 팁</th>
-            <th>지도</th>
-          </tr>
-        </thead>
-        <tbody id="itinerary-rows"></tbody>
-      </table>
-    </section>
-
-    <section id="foods" class="section">
-      <div class="section-head">
-        <div>
-          <h2>맛집 비교</h2>
-          <div class="muted">상점별 위치, 대표 메뉴, 메뉴별 가격, 사진을 함께 봅니다.</div>
-        </div>
+      <div class="span6 card">
+        <h2>🎁 대상별 선물</h2>
+        <div id="gifts"></div>
       </div>
-      <div id="food-grid" class="grid"></div>
-    </section>
-
-    <section id="hotels" class="section">
-      <div class="section-head">
-        <div>
-          <h2>구역별 숙소 추천</h2>
-          <div class="muted">호텔 이름보다 먼저 숙박 구역을 결정하기 쉽게 정리했습니다.</div>
-        </div>
+      <div class="span6 card">
+        <h2>🏨 숙소 구역</h2>
+        <div id="hotels"></div>
       </div>
-      <div id="hotel-grid" class="grid"></div>
-    </section>
-
-    <section id="souvenirs" class="section">
-      <div class="section-head">
-        <div>
-          <h2>기념품 상점 비교</h2>
-          <div class="muted">공식 굿즈 상점과 Trader Joe's 같은 실구매 상점을 함께 비교하고, 상품별 동일 사진이 확인된 경우 각 행에서 바로 보여줍니다.</div>
-        </div>
+      <div class="span6 card">
+        <h2>☔ 현지 날씨</h2>
+        <div id="weather"></div>
       </div>
-      <div id="souvenir-grid" class="grid"></div>
-    </section>
-
-    <section id="recipient-gifts" class="section">
-      <div class="section-head">
-        <div>
-          <h2>대상별 선물 추천</h2>
-          <div class="muted">사진 없이도 빠르게 비교할 수 있도록 텍스트형으로 구성했습니다.</div>
-        </div>
+      <div class="span6 card">
+        <h2>✅ 체크리스트</h2>
+        <div id="checklist"></div>
       </div>
-      <div id="recipient-tabs" class="tab-row" style="margin-bottom: 12px;"></div>
-      <div id="recipient-panel" class="recipient-panel"></div>
-    </section>
-
-    <section id="transport" class="section">
-      <div class="section-head">
-        <div>
-          <h2>교통 / 이동 전략</h2>
-          <div class="muted">공항 이동, 결제 방식, 시내 동선 팁을 한 번에 확인합니다.</div>
-        </div>
+      <div class="span12 card">
+        <h2>🚇 교통 / 준비 메모</h2>
+        <div id="transport"></div>
       </div>
-      <div id="transport-grid" class="grid"></div>
-    </section>
-
-    <section id="sources" class="section">
-      <div class="section-head">
-        <div>
-          <h2>출처 / 최신 확인</h2>
-          <div class="muted">가격과 운영 정보는 변동될 수 있으므로 출발 전 한 번 더 확인하세요.</div>
-        </div>
+      <div class="span12 card">
+        <h2>🔎 근거 링크</h2>
+        <div id="sources" class="themes"></div>
       </div>
-      <div class="small">페이지 최신 확인일: <span id="updated-at">-</span></div>
-      <div id="source-links" class="footer-links"></div>
-    </section>
-  </main>
-
-  <script>
-    const state = {
-      theme: "essential",
-      recipient: null,
-      page: null,
-      itinerary: [],
-      foods: [],
-      hotels: [],
-      souvenirs: [],
-      gifts: [],
-      transport: null,
-      sources: []
-    };
-
-    const themeLabels = {
-      all: "전체",
-      essential: "필수 코스",
-      relaxed: "여유로운 일정",
-      hard: "빡센 일정",
-      foodie: "맛집 투어"
-    };
-
-    function qs(selector) {
-      return document.querySelector(selector);
-    }
-
-    function formatBadge(text, type = "") {
-      return `<span class="badge ${type}">${text}</span>`;
-    }
-
-    function escapeHtml(value) {
-      return String(value ?? "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;");
-    }
-
-    async function loadData() {
-      const [page, itinerary, foods, hotels, souvenirs, gifts, transport, sources] = await Promise.all([
-        fetch("./data/page.json").then(r => r.json()),
-        fetch("./data/itinerary.json").then(r => r.json()),
-        fetch("./data/foods.json").then(r => r.json()),
-        fetch("./data/hotels.json").then(r => r.json()),
-        fetch("./data/souvenirs.json").then(r => r.json()),
-        fetch("./data/recipient-gifts.json").then(r => r.json()),
-        fetch("./data/transport.json").then(r => r.json()),
-        fetch("./data/sources.json").then(r => r.json())
-      ]);
-
-      state.page = page;
-      state.itinerary = itinerary;
-      state.foods = foods.foods || [];
-      state.hotels = hotels.districts || [];
-      state.souvenirs = souvenirs.souvenirs || [];
-      state.gifts = gifts.gifts || [];
-      state.transport = transport;
-      state.sources = sources.sources || [];
-      state.recipient = state.gifts[0]?.recipient || null;
-    }
-
-    function renderHero() {
-      qs("#hero-eyebrow").textContent = `${state.page.city} · ${state.page.tripLength} · updated ${state.page.updatedAt}`;
-      qs("#hero-summary").textContent = state.page.summary;
-      qs("#hero-tags").innerHTML = (state.page.tags || []).map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
-      qs("#updated-at").textContent = state.page.updatedAt || "-";
-      updateRouteLink();
-    }
-
-    function renderThemeButtons() {
-      const themes = ["essential", "relaxed", "hard", "foodie", "all"];
-      qs("#theme-buttons").innerHTML = themes
-        .map(theme => {
-          const active = state.theme === theme ? "is-active" : "";
-          return `<button class="theme-btn ${active}" data-theme="${theme}">${themeLabels[theme]}</button>`;
-        })
-        .join("");
-
-      qs("#theme-buttons").querySelectorAll("button").forEach(button => {
-        button.addEventListener("click", () => {
-          state.theme = button.dataset.theme;
-          renderThemeButtons();
-          updateRouteLink();
-          renderItinerary();
-          renderFoods();
-          renderHotels();
-        });
-      });
-    }
-
-    function updateRouteLink() {
-      const routeUrl = state.page.routeUrlByTheme?.[state.theme] || state.page.routeUrlByTheme?.all || "#";
-      qs("#route-link").href = routeUrl;
-    }
-
-    function matchesTheme(item) {
-      return state.theme === "all" || (item.themes || []).includes(state.theme);
-    }
-
-    function renderItinerary() {
-      const rows = state.itinerary.filter(matchesTheme);
-      qs("#itinerary-count").textContent = `${rows.length}개 일정`;
-      qs("#itinerary-rows").innerHTML = rows.map(item => `
-        <tr>
-          <td>${escapeHtml(item.day)}</td>
-          <td>${escapeHtml(item.time)}</td>
-          <td>${escapeHtml(item.title)}</td>
-          <td>${escapeHtml(item.action || item.desc || "-")}</td>
-          <td>
-            <div>${escapeHtml(item.moveNote || item.desc || "-")}</div>
-            <div class="small">${escapeHtml(item.tip || "-")}</div>
-          </td>
-          <td><a target="_blank" rel="noreferrer" href="${item.mapUrl}">구글맵</a></td>
-        </tr>
-      `).join("");
-    }
-
-    function renderFoods() {
-      const rows = state.foods.filter(matchesTheme);
-      qs("#food-grid").innerHTML = rows.map(food => `
-        <article class="card span6">
-          <div class="food-card">
-            <img src="${food.imageUrl}" alt="${escapeHtml(food.name)}" onerror="this.closest('.food-card').querySelector('[data-empty-photo]').style.display='grid'; this.style.display='none';" />
-            <div data-empty-photo class="empty-photo" style="display:none;">사진 없음</div>
-            <div>
-              <h3 style="margin:0;">${escapeHtml(food.name)}</h3>
-              <div class="food-meta">
-                ${formatBadge(food.placeType || "food-spot")}
-                ${formatBadge(food.area || "위치 정보 없음")}
-                ${formatBadge(food.price || "-", "warn")}
-                ${formatBadge(`확인일 ${food.checkedAt || "-"}`, "ok")}
-              </div>
-              <div class="small">${escapeHtml(food.note || food.desc || "")}</div>
-              <ul class="menu-list">
-                ${(food.menuItems || []).map(menu => `<li><b>${escapeHtml(menu.name)}</b> · ${escapeHtml(menu.price)}</li>`).join("")}
-              </ul>
-              <div class="small" style="margin-top:8px;">대기 메모: ${escapeHtml(food.waitNote || "-")}</div>
-              <div class="footer-links">
-                <a target="_blank" rel="noreferrer" href="${food.mapUrl}">지도</a>
-                <a target="_blank" rel="noreferrer" href="${food.reviewUrl}">리뷰</a>
-                <a target="_blank" rel="noreferrer" href="${food.sourceUrl}">가격 출처</a>
-              </div>
-            </div>
-          </div>
-        </article>
-      `).join("");
-    }
-
-    function renderHotels() {
-      const rows = state.hotels.filter(matchesTheme);
-      qs("#hotel-grid").innerHTML = rows.map(hotel => `
-        <article class="card span6">
-          <h3 style="margin:0;">${escapeHtml(hotel.name)} <span class="small">${escapeHtml(hotel.subtitle || "")}</span></h3>
-          <div class="food-meta">
-            ${formatBadge((hotel.recommendedFor || []).join(" / ") || "추천 대상")}
-          </div>
-          <div class="small">${escapeHtml(hotel.desc || "")}</div>
-          <ul class="tip-list">
-            <li><b>장점</b>: ${escapeHtml(hotel.pros || "-")}</li>
-            <li><b>단점</b>: ${escapeHtml(hotel.cons || "-")}</li>
-            <li><b>대표 호텔</b>: ${escapeHtml((hotel.recommended || []).join(", ") || "-")}</li>
-          </ul>
-          <a target="_blank" rel="noreferrer" href="${hotel.mapUrl}">구역 지도 보기</a>
-        </article>
-      `).join("");
-    }
-
-    function renderSouvenirs() {
-      qs("#souvenir-grid").innerHTML = state.souvenirs.map(shop => {
-        const hero = (shop.featuredProducts || []).find(product =>
-          product.imageType === "real" && product.imageMatchLevel === "exact-product" && product.imageUrl
-        );
-        const showImage = Boolean(hero?.imageUrl);
-        return `
-          <article class="card span6">
-            <div class="souvenir-card">
-              ${showImage
-                ? `<img src="${hero.imageUrl}" alt="${escapeHtml(hero.name || shop.shopName)}" onerror="this.closest('.souvenir-card').querySelector('[data-empty-photo]').style.display='grid'; this.style.display='none';" />`
-                : ""
-              }
-              <div data-empty-photo class="empty-photo" style="${showImage ? "display:none;" : "display:grid;"}">동일상품 사진 없음</div>
-              <div>
-                <h3 style="margin:0;">${escapeHtml(shop.shopName)}</h3>
-                <div class="small" style="margin-top:4px;">${escapeHtml(shop.area || "-")} · ${escapeHtml(shop.shopType || "-")}</div>
-                <div class="souvenir-meta">
-                  ${formatBadge(`예산 ${shop.priceBand || "-"}`, "warn")}
-                  ${formatBadge(`${shop.productCountKnown || 0}개 상품 확인`)}
-                  ${formatBadge(`확인일 ${shop.checkedAt || "-"}`, "ok")}
-                </div>
-                <div class="small">${escapeHtml(shop.visitTip || "")}</div>
-                <table class="shop-table">
-                  <thead>
-                    <tr>
-                      <th>사진</th>
-                      <th>상품</th>
-                      <th>가격</th>
-                      <th>추천 대상</th>
-                      <th>공식 링크</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${(shop.featuredProducts || []).map(product => `
-                      <tr>
-                        <td>
-                          ${product.imageType === "real" && product.imageMatchLevel === "exact-product" && product.imageUrl
-                            ? `<img class="product-thumb" src="${product.imageUrl}" alt="${escapeHtml(product.name)}" />`
-                            : `<div class="thumb-empty">사진 없음</div>`
-                          }
-                        </td>
-                        <td>${escapeHtml(product.name)}</td>
-                        <td>${escapeHtml(product.price)}</td>
-                        <td>${escapeHtml((product.forWhom || []).join(" / ") || "공용")}</td>
-                        <td><a target="_blank" rel="noreferrer" href="${product.productUrl}">상품 보기</a></td>
-                      </tr>
-                    `).join("")}
-                  </tbody>
-                </table>
-                <div class="small" style="margin-top:8px;">카탈로그 상태: ${escapeHtml(shop.catalogStatus || "-")}</div>
-                <div class="footer-links">
-                  <a target="_blank" rel="noreferrer" href="${shop.mapUrl}">지도</a>
-                  <a target="_blank" rel="noreferrer" href="${shop.shopUrl}">상점 공식 페이지</a>
-                  <span class="small">이미지 출처: ${escapeHtml(hero?.imageSource || "-")}</span>
-                </div>
-              </div>
-            </div>
-          </article>
-        `;
-      }).join("");
-    }
-
-    function renderRecipientTabs() {
-      qs("#recipient-tabs").innerHTML = state.gifts.map(group => {
-        const active = state.recipient === group.recipient ? "is-active" : "";
-        return `<button class="tab-btn ${active}" data-recipient="${escapeHtml(group.recipient)}">${escapeHtml(group.recipient)}</button>`;
-      }).join("");
-
-      qs("#recipient-tabs").querySelectorAll("button").forEach(button => {
-        button.addEventListener("click", () => {
-          state.recipient = button.dataset.recipient;
-          renderRecipientTabs();
-          renderRecipientPanel();
-        });
-      });
-    }
-
-    function renderRecipientPanel() {
-      const group = state.gifts.find(item => item.recipient === state.recipient) || state.gifts[0];
-      if (!group) {
-        qs("#recipient-panel").innerHTML = "추천 데이터가 없습니다.";
-        return;
-      }
-      qs("#recipient-panel").innerHTML = `
-        <h3 style="margin-top:0;">${escapeHtml(group.recipient)} 선물 추천</h3>
-        <ul class="gift-list">
-          ${(group.items || []).map(item => `
-            <li>
-              <b>${escapeHtml(item.name)}</b> · ${escapeHtml(item.price)}<br />
-              <span class="small">추천 이유: ${escapeHtml(item.reason)}</span><br />
-              <span class="small">구매처: ${escapeHtml(item.buyAt)} / ${escapeHtml(item.locationNote)}</span><br />
-              <span class="small">주의사항: ${escapeHtml(item.caution)}</span>
-            </li>
-          `).join("")}
-        </ul>
-      `;
-    }
-
-    function renderTransport() {
-      qs("#transport-grid").innerHTML = `
-        <article class="card span6">
-          <h3 style="margin-top:0;">핵심 이동</h3>
-          <ul class="tip-list">
-            <li><b>공항 ↔ 도심</b>: ${escapeHtml(state.transport.airportToCity || "-")}</li>
-            <li><b>결제</b>: ${escapeHtml(state.transport.payment || "-")}</li>
-            <li><b>핵심 노선</b>: ${escapeHtml((state.transport.coreLines || []).join(" / ") || "-")}</li>
-          </ul>
-        </article>
-        <article class="card span6">
-          <h3 style="margin-top:0;">현장 팁</h3>
-          <ul class="tip-list">
-            ${(state.transport.tips || []).map(tip => `<li>${escapeHtml(tip)}</li>`).join("")}
-          </ul>
-          <div class="small">확인일 ${escapeHtml(state.transport.updatedAt || "-")}</div>
-          <div class="footer-links">
-            <a target="_blank" rel="noreferrer" href="${state.transport.officialUrl}">공식 교통 안내</a>
-          </div>
-        </article>
-      `;
-    }
-
-    function renderSources() {
-      qs("#source-links").innerHTML = state.sources
-        .map(source => `<a target="_blank" rel="noreferrer" href="${source.url}">${escapeHtml(source.name)}</a>`)
-        .join("");
-    }
-
-    async function main() {
-      await loadData();
-      renderHero();
-      renderThemeButtons();
-      renderItinerary();
-      renderFoods();
-      renderHotels();
-      renderSouvenirs();
-      renderRecipientTabs();
-      renderRecipientPanel();
-      renderTransport();
-      renderSources();
-    }
-
-    main().catch(error => {
-      console.error(error);
-      document.body.innerHTML = "<div class='wrap'><div class='section'><h2>데이터를 불러오지 못했습니다.</h2><p class='muted'>JSON 파일 구조를 확인해주세요.</p></div></div>";
-    });
-  </script>
+    </div>
+  </section>
+</div>
+<script>
+let state={theme:'essential'};
+const $=s=>document.querySelector(s);
+async function load(){
+  const [page,itinerary,foods,souvenirs,gifts,hotels,transport,sources,weather,checklist]=await Promise.all([
+    fetch('./data/page.json').then(r=>r.json()),
+    fetch('./data/itinerary.json').then(r=>r.json()),
+    fetch('./data/foods.json').then(r=>r.json()),
+    fetch('./data/souvenirs.json').then(r=>r.json()),
+    fetch('./data/recipient-gifts.json').then(r=>r.json()),
+    fetch('./data/hotels.json').then(r=>r.json()),
+    fetch('./data/transport.json').then(r=>r.json()),
+    fetch('./data/sources.json').then(r=>r.json()),
+    fetch('./data/weather.json').then(r=>r.json()),
+    fetch('./data/checklist.json').then(r=>r.json())
+  ]);
+  Object.assign(state,{page,itinerary,foods:foods.foods||[],souvenirs:souvenirs.souvenirs||[],gifts:gifts.gifts||[],hotels:hotels.districts||[],transport,sources:sources.sources||[],weather,checklist:checklist.items||[]});
+  $('#eyebrow').textContent=`${page.city} · ${page.tripLength} · updated ${page.updatedAt}`;
+  $('#summary').textContent=page.summary;
+  $('#tags').innerHTML=(page.tags||[]).map(t=>`<span class="chip">${t}</span>`).join('');
+  document.querySelectorAll('[data-theme]').forEach(b=>b.onclick=()=>{state.theme=b.dataset.theme;document.querySelectorAll('[data-theme]').forEach(x=>x.classList.toggle('on',x===b));render();});
+  render();
+}
+function byTheme(x){return state.theme==='all'||(x.themes||[]).includes(state.theme)}
+function render(){
+  $('#routeLink').href=state.page.routeUrlByTheme[state.theme]||'#';
+  $('#itineraryRows').innerHTML=state.itinerary.filter(byTheme).map(x=>`<tr><td>${x.day}</td><td>${x.time}</td><td>${x.title}</td><td>${x.action}</td><td>${x.moveNote}<br><span class='small'>${x.tip}</span></td><td><a target='_blank' href='${x.mapUrl}'>지도</a></td></tr>`).join('');
+  $('#foods').innerHTML=state.foods.filter(byTheme).map(x=>`<div style='margin-bottom:12px'><b>${x.name}</b> · ${x.menu} · ${x.price}<br><span class='small'>${x.whyPopular||''}</span><br><a target='_blank' href='${x.mapUrl}'>지도</a> / <a target='_blank' href='${x.reviewUrl}'>리뷰</a> / <a target='_blank' href='${x.blogEvidenceLink}'>블로그 근거</a></div>`).join('');
+  $('#souvenirs').innerHTML=state.souvenirs.map(x=>`<div style='margin-bottom:12px'><b>${x.name}</b> · ${x.price}<br><span class='small'>${x.whyPopular||''}</span><br>${x.shopOptions.map(s=>`- <a target='_blank' href='${s.mapUrl}'>${s.shop}</a> (${s.price})`).join('<br>')}<br><a target='_blank' href='${x.blogEvidenceLink}'>블로그 근거</a></div>`).join('');
+  $('#gifts').innerHTML=state.gifts.map(x=>`<div style='margin-bottom:10px'><b>${x.recipient}</b> · ${x.budget}<br>${x.items.join(', ')}<br><span class='small'>${x.note}</span></div>`).join('');
+  $('#hotels').innerHTML=state.hotels.filter(byTheme).map(x=>`<div style='margin-bottom:10px'><b>${x.name}</b> · ${x.subtitle}<br><span class='small'>${x.desc}</span><br><a target='_blank' href='${x.mapUrl}'>지도</a></div>`).join('');
+  $('#weather').innerHTML=`현재 ${state.weather.current.tempC}°C / 체감 ${state.weather.current.feelsLikeC}°C / ${state.weather.current.condition}<br><span class='small'>${state.weather.summary}</span><ul>${state.weather.forecast.map(d=>`<li>${d.date}: ${d.minC}~${d.maxC}°C · ${d.condition} · 비확률 ${d.chanceOfRain}%</li>`).join('')}</ul><a target='_blank' href='https://wttr.in/Boston?format=j1'>날씨 근거</a>`;
+  $('#checklist').innerHTML=`<ul>${state.checklist.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+  $('#transport').innerHTML=`공항↔도심: ${state.transport.airportToCity}<br>결제: ${state.transport.payment}<ul>${(state.transport.tips||[]).map(x=>`<li>${x}</li>`).join('')}</ul><a target='_blank' href='${state.transport.officialUrl}'>공식 교통 링크</a>`;
+  $('#sources').innerHTML=state.sources.map(x=>`<a target='_blank' href='${x.url}'>${x.name}</a>`).join('');
+}
+load();
+</script>
 </body>
 </html>

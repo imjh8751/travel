@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-05-12",
+  "current": {"tempC": 3, "feelsLikeC": 0, "condition": "Partly cloudy"},
+  "forecast": [
+    {"date": "2026-05-12", "maxC": 18, "minC": 5, "condition": "Partly cloudy", "chanceOfRain": 0},
+    {"date": "2026-05-13", "maxC": 15, "minC": 8, "condition": "Patchy rain nearby", "chanceOfRain": 87},
+    {"date": "2026-05-14", "maxC": 15, "minC": 12, "condition": "Light rain", "chanceOfRain": 100}
+  ],
+  "summary": "오늘은 선선하지만 내일부터 비 가능성이 높아 우산/방수 신발 준비가 좋습니다.",
+  "source": "wttr.in/Boston"
+}

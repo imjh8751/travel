@@ -4,97 +4,176 @@
     {
       "name": "Harvard / MIT 로고 후드티 · 티셔츠",
       "price": "$25~80",
-      "forWhom": ["본인", "친구", "10대/20대 가족"],
+      "forWhom": [
+        "본인",
+        "친구",
+        "10대/20대 가족"
+      ],
       "whyPopular": "한국 여행자들이 '보스턴 다녀온 티'가 가장 확실하게 나는 기념품으로 많이 고릅니다.",
       "shopOptions": [
-        {"shop":"Harvard Coop","mapUrl":"https://www.google.com/maps/search/?api=1&query=Harvard+Coop+Cambridge+MA","price":"$25~80"},
-        {"shop":"The MIT Coop","mapUrl":"https://www.google.com/maps/search/?api=1&query=MIT+Coop+Cambridge+MA","price":"$25~75"}
+        {
+          "shop": "Harvard Coop",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harvard+Coop+Cambridge+MA",
+          "price": "$25~80"
+        },
+        {
+          "shop": "The MIT Coop",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=MIT+Coop+Cambridge+MA",
+          "price": "$25~75"
+        }
       ],
-      "imageType":"none",
-      "exactProductVerified":false,
-      "blogEvidence":"네이버 블로그 검색 결과에서 하버드 굿즈/의류 구매 후기가 반복 확인됨",
-      "checkedAt":"2026-05-12"
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "네이버 블로그 검색 결과에서 하버드 굿즈/의류 구매 후기가 반복 확인됨",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/rolo_ggo/223955603717"
     },
     {
       "name": "Red Sox 마그넷 · 키링 · 볼캡",
       "price": "$10~45",
-      "forWhom": ["회사 동료", "친구", "자녀", "본인"],
+      "forWhom": [
+        "회사 동료",
+        "친구",
+        "자녀",
+        "본인"
+      ],
       "whyPopular": "부피가 작고 '보스턴' 지역성이 강해서 선물용 만족도가 높습니다.",
       "shopOptions": [
-        {"shop":"Fenway Park Team Store","mapUrl":"https://www.google.com/maps/search/?api=1&query=Fenway+Park+Team+Store","price":"$10~45"}
+        {
+          "shop": "Fenway Park Team Store",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Fenway+Park+Team+Store",
+          "price": "$10~45"
+        }
       ],
-      "imageType":"none",
-      "exactProductVerified":false,
-      "blogEvidence":"레드삭스 기념품 후기에서 마그넷·열쇠고리·핀 언급 확인",
-      "checkedAt":"2026-05-12"
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "레드삭스 기념품 후기에서 마그넷·열쇠고리·핀 언급 확인",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/ddogtrip/224066596302"
     },
     {
       "name": "Boston 로고 머그컵 · 샷글라스",
       "price": "$8~22",
-      "forWhom": ["회사 동료", "친구", "부모님"],
+      "forWhom": [
+        "회사 동료",
+        "친구",
+        "부모님"
+      ],
       "whyPopular": "가벼운 도시 기념품으로 무난하고, 퀸시마켓에서 쉽게 고를 수 있습니다.",
       "shopOptions": [
-        {"shop":"Quincy Market Gift Shops","mapUrl":"https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston","price":"$8~22"},
-        {"shop":"Faneuil Hall Marketplace","mapUrl":"https://www.google.com/maps/search/?api=1&query=Faneuil+Hall+Marketplace","price":"$8~22"}
+        {
+          "shop": "Quincy Market Gift Shops",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston",
+          "price": "$8~22"
+        },
+        {
+          "shop": "Faneuil Hall Marketplace",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Faneuil+Hall+Marketplace",
+          "price": "$8~22"
+        }
       ],
-      "imageType":"none",
-      "exactProductVerified":false,
-      "blogEvidence":"퀸시마켓 후기에서 Boston 티셔츠/후드티/기프트류 반복 언급",
-      "checkedAt":"2026-05-12"
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "퀸시마켓 후기에서 Boston 티셔츠/후드티/기프트류 반복 언급",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
     },
     {
       "name": "랍스터 인형 · 보스턴 동물 모티프 봉제소품",
       "price": "$12~30",
-      "forWhom": ["자녀", "친구", "연인"],
+      "forWhom": [
+        "자녀",
+        "친구",
+        "연인"
+      ],
       "whyPopular": "사진처럼 관광객 매대에서 직관적으로 집기 좋은 '귀엽고 보스턴스러운' 품목입니다.",
       "shopOptions": [
-        {"shop":"Quincy Market Gift Shops","mapUrl":"https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston","price":"$12~30"}
+        {
+          "shop": "Quincy Market Gift Shops",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston",
+          "price": "$12~30"
+        }
       ],
-      "imageType":"none",
-      "exactProductVerified":false,
-      "blogEvidence":"퀸시마켓 후기에서 귀여운 랍스터 인형 언급 확인",
-      "checkedAt":"2026-05-12"
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "퀸시마켓 후기에서 귀여운 랍스터 인형 언급 확인",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
     },
     {
       "name": "L.A. Burdick 초콜릿",
       "price": "$18~45",
-      "forWhom": ["배우자", "연인", "부모님"],
+      "forWhom": [
+        "배우자",
+        "연인",
+        "부모님"
+      ],
       "whyPopular": "한국인 취향에도 잘 맞는 '실패 확률 낮은' 프리미엄 먹거리 선물입니다.",
       "shopOptions": [
-        {"shop":"L.A. Burdick Harvard Square","mapUrl":"https://www.google.com/maps/search/?api=1&query=L.A.+Burdick+Harvard+Square","price":"$18~45"}
+        {
+          "shop": "L.A. Burdick Harvard Square",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=L.A.+Burdick+Harvard+Square",
+          "price": "$18~45"
+        }
       ],
-      "imageType":"none",
-      "exactProductVerified":false,
-      "blogEvidence":"보스턴/캠브리지 디저트 후기에서 선물용 초콜릿 추천 빈도 높음",
-      "checkedAt":"2026-05-12"
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "보스턴/캠브리지 디저트 후기에서 선물용 초콜릿 추천 빈도 높음",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
     },
     {
       "name": "메이플 시럽 · 뉴잉글랜드 로컬 잼",
       "price": "$12~30",
-      "forWhom": ["부모님", "집들이 선물", "본인"],
+      "forWhom": [
+        "부모님",
+        "집들이 선물",
+        "본인"
+      ],
       "whyPopular": "미국 동북부 지역색이 확실하고 식재료 선물로 반응이 좋습니다.",
       "shopOptions": [
-        {"shop":"Boston Public Market","mapUrl":"https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+Boston+MA","price":"$12~25"},
-        {"shop":"Formaggio Kitchen","mapUrl":"https://www.google.com/maps/search/?api=1&query=Formaggio+Kitchen+Cambridge+MA","price":"$15~30"}
+        {
+          "shop": "Boston Public Market",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+Boston+MA",
+          "price": "$12~25"
+        },
+        {
+          "shop": "Formaggio Kitchen",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Formaggio+Kitchen+Cambridge+MA",
+          "price": "$15~30"
+        }
       ],
-      "imageType":"none",
-      "exactProductVerified":false,
-      "blogEvidence":"보스턴 먹거리/마켓 후기에 지역 특산 식재료 구매 동선 다수",
-      "checkedAt":"2026-05-12"
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "보스턴 먹거리/마켓 후기에 지역 특산 식재료 구매 동선 다수",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
     },
     {
       "name": "Boston Baked Beans / 개별포장 캔디",
       "price": "$6~15",
-      "forWhom": ["회사 동료", "학원/지인 나눔"],
+      "forWhom": [
+        "회사 동료",
+        "학원/지인 나눔"
+      ],
       "whyPopular": "여러 명에게 나눠주기 좋고 가격 부담이 적습니다.",
       "shopOptions": [
-        {"shop":"Faneuil Hall Marketplace","mapUrl":"https://www.google.com/maps/search/?api=1&query=Faneuil+Hall+Marketplace","price":"$6~15"},
-        {"shop":"Quincy Market","mapUrl":"https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston","price":"$6~15"}
+        {
+          "shop": "Faneuil Hall Marketplace",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Faneuil+Hall+Marketplace",
+          "price": "$6~15"
+        },
+        {
+          "shop": "Quincy Market",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston",
+          "price": "$6~15"
+        }
       ],
-      "imageType":"none",
-      "exactProductVerified":false,
-      "blogEvidence":"관광객 상점형 기념품/간식 구매 동선과 잘 맞음",
-      "checkedAt":"2026-05-12"
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "관광객 상점형 기념품/간식 구매 동선과 잘 맞음",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
     }
   ]
 }
