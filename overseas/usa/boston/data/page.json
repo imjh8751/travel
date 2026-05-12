@@ -6,9 +6,9 @@
   "summary": "필수/여유/맛집 테마를 한 화면에서 바로 비교하는 보스턴 실전 일정표",
   "tags": ["Back Bay", "MBTA", "Foodie"],
   "routeUrlByTheme": {
-    "all": "https://www.google.com/maps/dir/Boston+Public+Garden/Union+Oyster+House+Boston/Boston+Common/Quincy+Market+Boston/Harvard+Square/Fenway+Park/Boston+Logan+International+Airport",
-    "essential": "https://www.google.com/maps/dir/Boston+Public+Garden/Freedom+Trail+Boston/Quincy+Market+Boston/Harvard+Square/Fenway+Park/Boston+Logan+International+Airport",
-    "relaxed": "https://www.google.com/maps/dir/Back+Bay+Boston/Boston+Public+Garden/Newbury+Street+Boston/Long+Wharf+Boston/Harvard+Square/Seaport+District+Boston",
-    "foodie": "https://www.google.com/maps/dir/Union+Oyster+House+Boston/Mike%27s+Pastry+Boston/Neptune+Oyster+Boston/Giacomo%27s+Ristorante+Boston/Quincy+Market+Boston"
+    "all": "https://www.google.com/maps/dir/?api=1&origin=Boston+Public+Garden+Boston+MA&destination=Boston+Logan+International+Airport&travelmode=transit&waypoints=Union+Oyster+House+Boston+MA|Boston+Common+Boston+MA|Quincy+Market+Boston+MA|Harvard+Square+Cambridge+MA|Fenway+Park+Boston+MA",
+    "essential": "https://www.google.com/maps/dir/?api=1&origin=Boston+Public+Garden+Boston+MA&destination=Boston+Logan+International+Airport&travelmode=transit&waypoints=Freedom+Trail+Boston+MA|Quincy+Market+Boston+MA|Harvard+Square+Cambridge+MA|Fenway+Park+Boston+MA",
+    "relaxed": "https://www.google.com/maps/dir/?api=1&origin=Back+Bay+Boston+MA&destination=Seaport+District+Boston+MA&travelmode=transit&waypoints=Boston+Public+Garden+Boston+MA|Newbury+Street+Boston+MA|Long+Wharf+Boston+MA|Harvard+Square+Cambridge+MA",
+    "foodie": "https://www.google.com/maps/dir/?api=1&origin=Union+Oyster+House+Boston+MA&destination=Quincy+Market+Boston+MA&travelmode=walking&waypoints=Mike%27s+Pastry+Boston+MA|Neptune+Oyster+Boston+MA|Giacomo%27s+Ristorante+Boston+MA"
   }
 }
