@@ -1,0 +1,9 @@
+{
+  "updatedAt": "2026-05-12",
+  "sources": [
+    {"type":"transport","name":"MBTA Official","url":"https://www.mbta.com/"},
+    {"type":"reviews","name":"Tripadvisor Boston","url":"https://www.tripadvisor.com/Tourism-g60745-Boston_Massachusetts-Vacations.html"},
+    {"type":"images","name":"Wikimedia Commons","url":"https://commons.wikimedia.org/wiki/Main_Page"},
+    {"type":"images","name":"Unsplash","url":"https://unsplash.com/"}
+  ]
+}

@@ -30,10 +30,10 @@
 <header>
   <div class="wrap hero">
     <button class="print" onclick="window.print()">PDF 저장</button>
-    <div class="eyebrow">Boston · 3 nights 4 days · updated 2026-05-12</div>
-    <h1>보스턴 3박 4일<br/>구역별 완벽 가이드</h1>
-    <p>테마별 일정, 식사·휴식 포함 현실 동선, 구역별 숙소 추천, 기념품 리스트까지 보스턴 핵심 여행 정보를 한 번에 담았습니다. 선택한 테마에 따라 지도/일정/구글맵 동선 링크가 즉시 동기화됩니다.</p>
-    <div class="chips"><span class="chip">중심가: Back Bay / Downtown</span><span class="chip">교통: MBTA Tap to Ride</span></div>
+    <div id="hero-eyebrow" class="eyebrow">Boston · 3 nights 4 days · updated 2026-05-12</div>
+    <h1 id="hero-title">보스턴 3박 4일<br/>구역별 완벽 가이드</h1>
+    <p id="hero-summary">테마별 일정, 식사·휴식 포함 현실 동선, 구역별 숙소 추천, 기념품 리스트까지 보스턴 핵심 여행 정보를 한 번에 담았습니다. 선택한 테마에 따라 지도/일정/구글맵 동선 링크가 즉시 동기화됩니다.</p>
+    <div id="hero-tags" class="chips"><span class="chip">중심가: Back Bay / Downtown</span><span class="chip">교통: MBTA Tap to Ride</span></div>
     <div style="margin-top:20px;"><a id="google-maps-btn" href="#" target="_blank" class="chip" style="background:var(--brand2); border:none; cursor:pointer;">🗺️ 구글맵 테마별 동선 보기</a></div>
   </div>
 </header>
@@ -67,118 +67,12 @@
 
 <section id="hotel" class="section card">
   <h2>🏨 구역별 숙소 추천 (District Guide)</h2>
-  <div class="grid">
-    <div class="span6">
-      <h3>1. Back Bay (가장 추천)</h3>
-      <p class="mini muted">쇼핑, 맛집, 치안이 모두 훌륭한 최고의 구역입니다.</p>
-      <ul>
-        <li><b>추천:</b> Fairmont Copley Plaza, Westin Copley</li>
-        <li><b>장점:</b> Prudential Center, Newbury St 도보 가능</li>
-        <li><b>단점:</b> 가격대가 가장 높음</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=Back+Bay+Boston+MA" target="_blank">구글맵으로 구역 보기</a></li>
-      </ul>
-    </div>
-    <div class="span6">
-      <h3>2. Downtown / Financial</h3>
-      <p class="mini muted">역사적 중심지이며 주요 관광지 접근성이 좋습니다.</p>
-      <ul>
-        <li><b>추천:</b> Omni Parker House, InterContinental Boston</li>
-        <li><b>장점:</b> Freedom Trail 시작점, 수변 공원 근접</li>
-        <li><b>단점:</b> 밤에는 사무지구라 조금 조용함</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=Downtown+Boston+MA" target="_blank">구글맵으로 구역 보기</a></li>
-      </ul>
-    </div>
-    <div class="span6">
-      <h3>3. Seaport District</h3>
-      <p class="mini muted">가장 현대적이고 힙한 분위기의 신도심입니다.</p>
-      <ul>
-        <li><b>추천:</b> Envoy Hotel, YOTEL Boston</li>
-        <li><b>장점:</b> 신축 호텔 많음, 탁 트인 바다 전망</li>
-        <li><b>단점:</b> 지하철(Silver Line) 이용이 약간 불편함</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=Seaport+District+Boston+MA" target="_blank">구글맵으로 구역 보기</a></li>
-      </ul>
-    </div>
-    <div class="span6">
-      <h3>4. Cambridge / Harvard</h3>
-      <p class="mini muted">대학가의 지적이고 여유로운 분위기를 선호한다면 추천합니다.</p>
-      <ul>
-        <li><b>추천:</b> The Charles Hotel, Sheraton Commander</li>
-        <li><b>장점:</b> 하버드/MIT 산책 용이, 로컬 카페 많음</li>
-        <li><b>단점:</b> 도심으로 나갈 때 Red Line 20~30분 소요</li>
-        <li><a href="https://www.google.com/maps/search/?api=1&query=Harvard+Square+Cambridge+MA" target="_blank">구글맵으로 구역 보기</a></li>
-      </ul>
-    </div>
-  </div>
+  <div id="hotel-grid" class="grid"></div>
 </section>
 
 <section id="souvenir" class="section card">
   <h2>🎁 보스턴 기념품 대백과 (Souvenirs)</h2>
-  <div class="souvenir-grid">
-    <div class="card souvenir-card">
-      <img src="https://images.unsplash.com/photo-1580632054554-8defef884db0?auto=format&fit=crop&w=1200&q=80" alt="Maple syrup bottle">
-      <h3>로컬 메이플 시럽</h3>
-      <p class="mini muted">뉴잉글랜드 대표 식재료, 액체류 반입 규정 확인 필수</p>
-      <div class="meta"><span>추천 대상: 부모님</span><span>예산: $12~25</span><span>사진: 실사진</span></div>
-      <p class="mini">📍 <a href="https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+100+Hanover+St+Boston+MA" target="_blank">Boston Public Market</a></p>
-      <p class="mini">구매 팁: 유리병은 위탁수하물 권장 · 최신 확인일 2026-05-12</p>
-    </div>
-    <div class="card souvenir-card">
-      <img src="https://images.unsplash.com/photo-1523246191915-45d45bfae44b?auto=format&fit=crop&w=1200&q=80" alt="University hoodie">
-      <h3>하버드/MIT 대학 굿즈</h3>
-      <p class="mini muted">공식 스토어 정품 후드/머그/노트</p>
-      <div class="meta"><span>추천 대상: 회사 동료 / 본인</span><span>예산: $8~70</span><span>사진: 실사진</span></div>
-      <p class="mini">📍 <a href="https://www.google.com/maps/search/?api=1&query=Harvard+Coop+1400+Massachusetts+Ave+Cambridge+MA" target="_blank">The Harvard Coop</a></p>
-      <p class="mini">구매 팁: 펜·마그넷은 대량 선물용, 후드티는 부피 큼</p>
-    </div>
-    <div class="card souvenir-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Fenway_Park_-_inside.jpg" alt="Fenway Park">
-      <h3>레드삭스 스포츠 굿즈</h3>
-      <p class="mini muted">모자/유니폼/볼캡이 선물용으로 인기</p>
-      <div class="meta"><span>추천 대상: 본인 / 친구</span><span>예산: $20~120</span><span>사진: 실사진</span></div>
-      <p class="mini">📍 <a href="https://www.google.com/maps/search/?api=1&query=Fenway+Park+4+Jersey+St+Boston+MA" target="_blank">Fenway Park Team Store</a></p>
-      <p class="mini">구매 팁: 경기일에는 혼잡, 출국일 오전 방문이 비교적 편함</p>
-    </div>
-    <div class="card souvenir-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Boston_Tea_Party_Ships_and_Museum_-_Tea_Chest.jpg" alt="Tea chest">
-      <h3>보스턴 티 파티 티 세트</h3>
-      <p class="mini muted">역사 테마 패키지 차 세트</p>
-      <div class="meta"><span>추천 대상: 부모님 / 역사 취향 친구</span><span>예산: $15~35</span><span>사진: 실사진</span></div>
-      <p class="mini">📍 <a href="https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Ships+%26+Museum+306+Congress+St+Boston+MA" target="_blank">Boston Tea Party Museum Shop</a></p>
-      <p class="mini">구매 팁: 박스 포장이 좋아 선물용으로 깔끔함</p>
-    </div>
-    <div class="card souvenir-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Salt_Water_Taffy_Assorted.jpg/800px-Salt_Water_Taffy_Assorted.jpg" alt="Salt water taffy">
-      <h3>솔트 워터 태피</h3>
-      <p class="mini muted">가벼운 대량 선물용 캔디</p>
-      <div class="meta"><span>추천 대상: 회사 동료</span><span>예산: $6~18</span><span>사진: 실사진</span></div>
-      <p class="mini">📍 <a href="https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston+MA" target="_blank">Quincy Market</a></p>
-      <p class="mini">구매 팁: 개별 포장 제품 위주로 고르면 나눠주기 편함</p>
-    </div>
-    <div class="card souvenir-card">
-      <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=1200&q=80" alt="Chocolate gift box">
-      <h3>수제 초콜릿 박스</h3>
-      <p class="mini muted">유통기한 짧은 제품은 귀국 일정에 맞춰 구매</p>
-      <div class="meta"><span>추천 대상: 배우자 / 연인</span><span>예산: $18~40</span><span>사진: 실사진</span></div>
-      <p class="mini">📍 <a href="https://www.google.com/maps/search/?api=1&query=Beacon+Hill+Boston+MA+chocolate+shop" target="_blank">Beacon Hill / Back Bay Chocolate Shops</a></p>
-      <p class="mini">구매 팁: 여름철엔 보냉 포장 가능 여부 확인</p>
-    </div>
-    <div class="card souvenir-card">
-      <img src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&fit=crop&w=1200&q=80" alt="Roasted peanuts candy">
-      <h3>Boston Baked Beans 캔디</h3>
-      <p class="mini muted">보스턴 별칭에서 유래한 클래식 캔디</p>
-      <div class="meta"><span>추천 대상: 친구 / 회사 동료</span><span>예산: $5~12</span><span>사진: 실사진</span></div>
-      <p class="mini">📍 <a href="https://www.google.com/maps/search/?api=1&query=Faneuil+Hall+Marketplace+Boston+MA" target="_blank">Faneuil Hall Marketplace</a></p>
-      <p class="mini">구매 팁: 가볍고 저렴하지만 단맛이 강해 호불호 있음</p>
-    </div>
-    <div class="card souvenir-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/MBTA_Red_Line_train_at_Kendall%2FMIT%2C_2019.jpg/1280px-MBTA_Red_Line_train_at_Kendall%2FMIT%2C_2019.jpg" alt="MBTA train">
-      <h3>MBTA 교통 굿즈</h3>
-      <p class="mini muted">노선도 포스터/키링/빈티지 티켓 디자인</p>
-      <div class="meta"><span>추천 대상: 본인 / 교통덕후 친구</span><span>예산: $10~35</span><span>사진: 실사진</span></div>
-      <p class="mini">📍 <a href="https://www.google.com/maps/search/?api=1&query=MBTA+Store+Boston+MA" target="_blank">MBTA Store / Museum Shops</a></p>
-      <p class="mini">구매 팁: 포스터는 말아서 가져가거나 튜브 포장 확인</p>
-    </div>
-  </div>
+  <div id="souvenir-grid" class="souvenir-grid"></div>
 </section>
 
 <section id="detail-guide" class="section card">
@@ -221,12 +115,7 @@
 
 <section id="food" class="section card">
   <h2>🍽️ 추천 맛집 (Featured)</h2>
-  <div class="grid">
-    <div class="card span6 place-card" data-theme="essential foodie"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Union_Oyster_House%2C_Boston.jpg" alt="Union Oyster"><div><h3>Union Oyster House</h3><p>미국에서 가장 오래된 식당. 클램차우더·랍스터롤 추천.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+Boston" target="_blank">구글맵</a> · <a class="review-link" href="https://www.tripadvisor.com/Restaurant_Review-g60745-d321264-Reviews-Union_Oyster_House-Boston_Massachusetts.html" target="_blank">리뷰</a></p></div></div>
-    <div class="card span6 place-card" data-theme="foodie essential"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mike%27s_Pastry%2C_North_End%2C_Boston.jpg/800px-Mike%27s_Pastry%2C_North_End%2C_Boston.jpg" alt="Pastry"><div><h3>Mike's Pastry</h3><p>노스 엔드의 카놀리 대표 매장. 피크타임 대기 길음.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Mike+s+Pastry+Boston" target="_blank">구글맵</a> · <a class="review-link" href="https://www.tripadvisor.com/Restaurant_Review-g60745-d321908-Reviews-Mike_s_Pastry-Boston_Massachusetts.html" target="_blank">리뷰</a></p></div></div>
-    <div class="card span6 place-card" data-theme="foodie relaxed"><img src="https://images.unsplash.com/photo-1541544181074-e48a7e2f3c8f?auto=format&fit=crop&w=1200&q=80" alt="Oyster platter"><div><h3>Neptune Oyster</h3><p>신선한 굴과 버터리한 랍스터롤로 유명.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Neptune+Oyster+Boston" target="_blank">구글맵</a> · <a class="review-link" href="https://www.tripadvisor.com/Restaurant_Review-g60745-d675436-Reviews-Neptune_Oyster-Boston_Massachusetts.html" target="_blank">리뷰</a></p></div></div>
-    <div class="card span6 place-card" data-theme="foodie hard"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Market food hall"><div><h3>Quincy Market Food Colonnade</h3><p>여러 메뉴를 빠르게 먹기 좋은 푸드홀.</p><p class="mini"><a href="https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston" target="_blank">구글맵</a> · <a class="review-link" href="https://www.tripadvisor.com/Attraction_Review-g60745-d105250-Reviews-Quincy_Market-Boston_Massachusetts.html" target="_blank">리뷰</a></p></div></div>
-  </div>
+  <div id="food-grid" class="grid"></div>
 </section>
 
 <section id="transport" class="section card">
@@ -257,16 +146,92 @@
   let map, polyline;
   let markers = [];
 
+  let pageData = {};
   let itineraryData = [];
+  let foodsData = [];
+  let hotelsData = [];
+  let souvenirsData = [];
 
-  async function loadItineraryData() {
+  async function loadGuideData() {
     try {
-      const res = await fetch('./data/itinerary.json');
-      itineraryData = await res.json();
+      const [pageRes, itineraryRes, foodsRes, hotelsRes, souvenirsRes] = await Promise.all([
+        fetch('./data/page.json'),
+        fetch('./data/itinerary.json'),
+        fetch('./data/foods.json'),
+        fetch('./data/hotels.json'),
+        fetch('./data/souvenirs.json')
+      ]);
+      pageData = await pageRes.json();
+      itineraryData = await itineraryRes.json();
+      foodsData = (await foodsRes.json()).foods || [];
+      hotelsData = (await hotelsRes.json()).districts || [];
+      souvenirsData = (await souvenirsRes.json()).souvenirs || [];
     } catch (e) {
-      console.error('itinerary.json 로드 실패', e);
+      console.error('guide data 로드 실패', e);
+      pageData = {};
       itineraryData = [];
+      foodsData = [];
+      hotelsData = [];
+      souvenirsData = [];
     }
+  }
+
+  function applyPageMeta() {
+    if (!pageData || !pageData.city) return;
+    const eyebrow = document.getElementById('hero-eyebrow');
+    const summary = document.getElementById('hero-summary');
+    const tags = document.getElementById('hero-tags');
+    eyebrow.textContent = `${pageData.city} · ${pageData.tripLength || '3박 4일'} · updated ${pageData.updatedAt || ''}`;
+    if (summary && pageData.summary) summary.textContent = pageData.summary;
+    if (tags && Array.isArray(pageData.tags)) {
+      tags.innerHTML = pageData.tags.map(t => `<span class="chip">${t}</span>`).join('');
+    }
+  }
+
+  function renderHotels(theme = 'all') {
+    const el = document.getElementById('hotel-grid');
+    const rows = hotelsData.filter(h => theme === 'all' || (h.themes || []).includes(theme));
+    el.innerHTML = rows.map((h, idx) => `
+      <div class="span6">
+        <h3>${idx + 1}. ${h.name} (${h.subtitle || ''})</h3>
+        <p class="mini muted">${h.desc || ''}</p>
+        <ul>
+          <li><b>추천:</b> ${(h.recommended || []).join(', ')}</li>
+          <li><b>장점:</b> ${h.pros || '-'}</li>
+          <li><b>단점:</b> ${h.cons || '-'}</li>
+          <li><a href="${h.mapUrl}" target="_blank">구글맵으로 구역 보기</a></li>
+        </ul>
+      </div>
+    `).join('');
+  }
+
+  function renderFoods(theme = 'all') {
+    const el = document.getElementById('food-grid');
+    const rows = foodsData.filter(f => theme === 'all' || (f.themes || []).includes(theme));
+    el.innerHTML = rows.map(f => `
+      <div class="card span6 place-card" data-theme="${(f.themes || []).join(' ')}">
+        <img src="${f.imageUrl}" alt="${f.name}">
+        <div>
+          <h3>${f.name}</h3>
+          <p>${f.desc || ''}</p>
+          <p class="mini"><a href="${f.mapUrl}" target="_blank">구글맵</a> · <a class="review-link" href="${f.reviewUrl}" target="_blank">리뷰</a></p>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function renderSouvenirs() {
+    const el = document.getElementById('souvenir-grid');
+    el.innerHTML = souvenirsData.map(s => `
+      <div class="card souvenir-card">
+        <img src="${s.imageUrl}" alt="${s.name}">
+        <h3>${s.name}</h3>
+        <p class="mini muted">${s.category || ''}</p>
+        <div class="meta"><span>추천 대상: ${(s.forWhom || []).join(' / ')}</span><span>예산: ${s.price || '-'}</span><span>사진: ${s.imageType === 'real' ? '실사진' : '생성 이미지'}</span></div>
+        <p class="mini">📍 <a href="${s.mapUrl}" target="_blank">${s.buyAt || '구매처'}</a></p>
+        <p class="mini">구매 팁: ${s.carryTip || '-'} · 최신 확인일 ${s.checkedAt || '-'}</p>
+      </div>
+    `).join('');
   }
 
   function initMap() {
@@ -329,19 +294,20 @@
       });
       map.fitBounds(polyline.getBounds(), {padding: [40, 40]});
       
-      const mapsUrl = "https://www.google.com/maps/dir/" + filtered.map(i => encodeURIComponent(i.mapName)).join('/');
+      const mapsUrl = pageData?.routeUrlByTheme?.[theme] || ("https://www.google.com/maps/dir/" + filtered.map(i => encodeURIComponent(i.mapName)).join('/'));
       document.getElementById('google-maps-btn').href = mapsUrl;
     }
 
-    // Cards
-    document.querySelectorAll('.place-card').forEach(c => {
-      c.style.display = (theme === 'all' || c.getAttribute('data-theme').includes(theme)) ? 'grid' : 'none';
-    });
+    renderFoods(theme);
+    renderHotels(theme);
+    bindImageFallback();
   }
 
   window.onload = async () => {
+    await loadGuideData();
+    applyPageMeta();
+    renderSouvenirs();
     bindImageFallback();
-    await loadItineraryData();
     initMap();
   };
 </script>
