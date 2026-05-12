@@ -2,7 +2,105 @@
   "updatedAt": "2026-05-12",
   "region": "overseas/usa/boston",
   "assets": [
-    {"type":"hero","url":"https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1600&q=80","imageType":"real","source":"Unsplash"},
-    {"type":"food","url":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80","imageType":"real","source":"Unsplash"}
+    {
+      "id": "hero-boston-main",
+      "type": "hero",
+      "path": "external",
+      "url": "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1600&q=80",
+      "imageType": "real",
+      "source": "Unsplash",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["page.hero"]
+    },
+    {
+      "id": "union-oyster-house-main",
+      "type": "food",
+      "path": "external",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Union_Oyster_House%2C_Boston.jpg/1280px-Union_Oyster_House%2C_Boston.jpg",
+      "imageType": "real",
+      "source": "Wikimedia Commons",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["foods.union-oyster-house"]
+    },
+    {
+      "id": "mikes-pastry-main",
+      "type": "food",
+      "path": "external",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mike%27s_Pastry%2C_Boston.jpg/1280px-Mike%27s_Pastry%2C_Boston.jpg",
+      "imageType": "real",
+      "source": "Wikimedia Commons",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["foods.mikes-pastry"]
+    },
+    {
+      "id": "lukes-lobster-back-bay-main",
+      "type": "food",
+      "path": "external",
+      "url": "https://cdn.arenacommerce.com/lukes-lobster-shop/Lobster%20Rolls%20on%20table%20(1).jpg",
+      "imageType": "real",
+      "source": "Luke's Lobster official page",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["foods.lukes-lobster-back-bay"]
+    },
+    {
+      "id": "harvard-h-shield-mug",
+      "type": "souvenir",
+      "path": "external",
+      "url": "https://www.theharvardshop.com/cdn/shop/files/H-Shield-Mug-Quality-200020277.jpg?v=1720624738",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "H Shield Mug",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["souvenirs.harvard-h-shield-mug"]
+    },
+    {
+      "id": "harvard-hooded-crest-sweatshirt",
+      "type": "souvenir",
+      "path": "external",
+      "url": "https://www.theharvardshop.com/cdn/shop/files/Harvard-Hooded-Crest-Sweatshirt-Quality-199987681.jpg?v=1720623777",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "Harvard Hooded Crest Sweatshirt",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["souvenirs.harvard-hoodie"]
+    },
+    {
+      "id": "mit-hooded-sweatshirt",
+      "type": "souvenir",
+      "path": "external",
+      "url": "https://www.theharvardshop.com/cdn/shop/files/MIT-Hooded-Sweatshirt-Freedom-199934524.jpg?v=1720622145",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "MIT Hooded Sweatshirt",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["souvenirs.mit-hoodie"]
+    },
+    {
+      "id": "abigails-blend-tea",
+      "type": "souvenir",
+      "path": "external",
+      "url": "https://shop.bostonteapartyship.com/cdn/shop/products/boston-tea-party-abigails-tea_8a83082d-4091-4266-9dac-080a36a74572_1024x1024.jpg?v=1500411951",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "Abigail's Blend - Elmwood Inn Fine Teas",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["souvenirs.abigails-blend-tea"]
+    },
+    {
+      "id": "robinson-tea-chest-mug",
+      "type": "souvenir",
+      "path": "external",
+      "url": "https://shop.bostonteapartyship.com/cdn/shop/products/robinson_mug_with_handle_writing_1024x1024.jpg?v=1579372773",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "Robinson Tea Chest Mug",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": ["souvenirs.robinson-tea-chest-mug"]
+    }
   ]
 }

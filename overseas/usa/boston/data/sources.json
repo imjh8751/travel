@@ -1,7 +1,40 @@
 {
   "updatedAt": "2026-05-12",
   "sources": [
-    {"name":"MBTA Official","url":"https://www.mbta.com/"},
-    {"name":"Tripadvisor Boston","url":"https://www.tripadvisor.com/Tourism-g60745-Boston_Massachusetts-Vacations.html"}
+    {
+      "type": "transport",
+      "name": "MBTA Official",
+      "url": "https://www.mbta.com/"
+    },
+    {
+      "type": "food",
+      "name": "Union Oyster House Menu",
+      "url": "https://www.allmenus.com/ma/boston/433-union-oyster-house/menu/"
+    },
+    {
+      "type": "food",
+      "name": "Mike's Pastry Menu",
+      "url": "https://www.allmenus.com/ma/boston/445276-mikes-pastry/menu/"
+    },
+    {
+      "type": "food",
+      "name": "Luke's Lobster Back Bay",
+      "url": "https://lukeslobster.com/pages/back-bay"
+    },
+    {
+      "type": "souvenir",
+      "name": "The Harvard Shop",
+      "url": "https://www.theharvardshop.com/"
+    },
+    {
+      "type": "souvenir",
+      "name": "Boston Tea Party Gift Shop",
+      "url": "https://shop.bostonteapartyship.com/"
+    },
+    {
+      "type": "images",
+      "name": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Main_Page"
+    }
   ]
 }

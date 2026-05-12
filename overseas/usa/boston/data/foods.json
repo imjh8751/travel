@@ -1,13 +1,65 @@
 {
   "updatedAt": "2026-05-12",
   "foods": [
-    {"name":"Union Oyster House","menu":"Clam Chowder / Lobster Roll","price":"$25~45","themes":["essential","foodie"],"imageUrl":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80","imageType":"real","imageSource":"Unsplash","mapUrl":"https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+Boston","reviewUrl":"https://www.tripadvisor.com/Restaurant_Review-g60745-d321264-Reviews-Union_Oyster_House-Boston_Massachusetts.html","checkedAt":"2026-05-12"},
-    {"name":"Neptune Oyster","menu":"Oyster Platter / Lobster Roll","price":"$30~60","themes":["foodie","relaxed"],"imageUrl":"https://images.unsplash.com/photo-1477763858572-cda7deaa9bc5?auto=format&fit=crop&w=1200&q=80","imageType":"real","imageSource":"Unsplash","mapUrl":"https://www.google.com/maps/search/?api=1&query=Neptune+Oyster+Boston","reviewUrl":"https://www.tripadvisor.com/Restaurant_Review-g60745-d675436-Reviews-Neptune_Oyster-Boston_Massachusetts.html","checkedAt":"2026-05-12"},
-    {"name":"Mike's Pastry","menu":"Cannoli","price":"$6~10","themes":["foodie","essential"],"imageUrl":"https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1200&q=80","imageType":"real","imageSource":"Unsplash","mapUrl":"https://www.google.com/maps/search/?api=1&query=Mike%27s+Pastry+Boston","reviewUrl":"https://www.tripadvisor.com/Restaurant_Review-g60745-d321908-Reviews-Mike_s_Pastry-Boston_Massachusetts.html","checkedAt":"2026-05-12"},
-    {"name":"Quincy Market Food Colonnade","menu":"Chowder / Lobster Mac / Sandwich","price":"$15~35","themes":["foodie","essential","hard"],"imageUrl":"https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80","imageType":"real","imageSource":"Unsplash","mapUrl":"https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston","reviewUrl":"https://www.tripadvisor.com/Attraction_Review-g60745-d105250-Reviews-Quincy_Market-Boston_Massachusetts.html","checkedAt":"2026-05-12"},
-    {"name":"Giacomo's Ristorante","menu":"Seafood Pasta","price":"$28~55","themes":["foodie"],"imageUrl":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80","imageType":"real","imageSource":"Unsplash","mapUrl":"https://www.google.com/maps/search/?api=1&query=Giacomo%27s+Ristorante+Boston","reviewUrl":"https://www.tripadvisor.com/Restaurant_Review-g60745-d799698-Reviews-Giacomo_s_Ristorante-Boston_Massachusetts.html","checkedAt":"2026-05-12"},
-    {"name":"Tatte Bakery & Cafe","menu":"Brunch / Bakery","price":"$12~25","themes":["relaxed","foodie"],"imageUrl":"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80","imageType":"real","imageSource":"Unsplash","mapUrl":"https://www.google.com/maps/search/?api=1&query=Tatte+Bakery+Boston","reviewUrl":"https://www.tripadvisor.com/Restaurant_Review-g60745-d12100172-Reviews-Tatte_Bakery_Cafe-Boston_Massachusetts.html","checkedAt":"2026-05-12"},
-    {"name":"Saltie Girl","menu":"Raw Bar / Seafood Tower","price":"$35~80","themes":["foodie","relaxed"],"imageUrl":"https://images.unsplash.com/photo-1541544181074-e48a7e2f3c8f?auto=format&fit=crop&w=1200&q=80","imageType":"real","imageSource":"Unsplash","mapUrl":"https://www.google.com/maps/search/?api=1&query=Saltie+Girl+Boston","reviewUrl":"https://www.tripadvisor.com/Restaurant_Review-g60745-d8687695-Reviews-Saltie_Girl-Boston_Massachusetts.html","checkedAt":"2026-05-12"},
-    {"name":"Regina Pizzeria","menu":"Brick Oven Pizza","price":"$18~35","themes":["essential","foodie"],"imageUrl":"https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80","imageType":"real","imageSource":"Unsplash","mapUrl":"https://www.google.com/maps/search/?api=1&query=Regina+Pizzeria+Boston","reviewUrl":"https://www.tripadvisor.com/Restaurant_Review-g60745-d321976-Reviews-Regina_Pizzeria-Boston_Massachusetts.html","checkedAt":"2026-05-12"}
+    {
+      "name": "Union Oyster House",
+      "area": "Downtown / Faneuil Hall",
+      "themes": ["essential", "foodie"],
+      "price": "$$~$$$",
+      "waitNote": "18:00 이후 대기 발생 가능",
+      "note": "보스턴 첫날 저녁이나 역사 코스 날 점심/저녁으로 붙이기 좋습니다.",
+      "menuItems": [
+        { "name": "Oyster House Clam Chowder", "price": "$7.50+" },
+        { "name": "Lobster Roll", "price": "$27.95" },
+        { "name": "Ye Olde Fish & Chips", "price": "$17.95" }
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Union_Oyster_House%2C_Boston.jpg/1280px-Union_Oyster_House%2C_Boston.jpg",
+      "imageType": "real",
+      "imageSource": "Wikimedia Commons",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+41+Union+St+Boston+MA",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d321264-Reviews-Union_Oyster_House-Boston_Massachusetts.html",
+      "sourceUrl": "https://www.allmenus.com/ma/boston/433-union-oyster-house/menu/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Mike's Pastry",
+      "area": "North End",
+      "themes": ["essential", "foodie"],
+      "price": "$",
+      "waitNote": "오후 피크타임 대기 길음",
+      "note": "디저트 단독 방문이 가장 효율적이고, North End 산책과 붙이기 좋습니다.",
+      "menuItems": [
+        { "name": "Plain Cannoli", "price": "$7.00" },
+        { "name": "Pistachio Cannoli", "price": "$7.00" },
+        { "name": "Lobster Tail Pastry", "price": "$7.00" }
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mike%27s_Pastry%2C_Boston.jpg/1280px-Mike%27s_Pastry%2C_Boston.jpg",
+      "imageType": "real",
+      "imageSource": "Wikimedia Commons",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mike%27s+Pastry+300+Hanover+St+Boston+MA",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d321908-Reviews-Mike_s_Pastry-Boston_Massachusetts.html",
+      "sourceUrl": "https://www.allmenus.com/ma/boston/445276-mikes-pastry/menu/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Luke's Lobster Back Bay",
+      "area": "Back Bay",
+      "themes": ["foodie", "relaxed"],
+      "price": "$$",
+      "waitNote": "매장 규모가 크지 않아 점심 피크는 대기 가능",
+      "note": "강한 일정보다 여유로운 일정이나 쇼핑 동선과 붙이기 좋습니다.",
+      "menuItems": [
+        { "name": "Lobster Roll", "price": "시장가 / 현장 메뉴판 확인" },
+        { "name": "Clam Chowder", "price": "현장 메뉴판 확인" },
+        { "name": "Shrimp Roll", "price": "현장 메뉴판 확인" }
+      ],
+      "imageUrl": "https://cdn.arenacommerce.com/lukes-lobster-shop/Lobster%20Rolls%20on%20table%20(1).jpg",
+      "imageType": "real",
+      "imageSource": "Luke's Lobster official page",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luke%27s+Lobster+Back+Bay+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d11952956-Reviews-Luke_s_Lobster_Back_Bay-Boston_Massachusetts.html",
+      "sourceUrl": "https://lukeslobster.com/pages/back-bay",
+      "checkedAt": "2026-05-12"
+    }
   ]
 }

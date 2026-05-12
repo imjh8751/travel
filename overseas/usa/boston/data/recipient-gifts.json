@@ -1,9 +1,89 @@
 {
   "updatedAt": "2026-05-12",
   "gifts": [
-    {"recipient":"부모님","items":["메이플 시럽","티 세트"],"budget":"$15~40","note":"유리병은 수하물 포장"},
-    {"recipient":"회사 동료","items":["Harvard 펜/마그넷"],"budget":"$8~20","note":"가벼운 소형 위주"},
-    {"recipient":"배우자","items":["수제 초콜릿"],"budget":"$20~45","note":"귀국 직전 구매"},
-    {"recipient":"자녀","items":["팀 마스코트 인형"],"budget":"$15~35","note":"부피 확인"}
+    {
+      "recipient": "부모님",
+      "items": [
+        {
+          "name": "Abigail's Blend - Elmwood Inn Fine Teas",
+          "price": "$17.99",
+          "reason": "역사성이 분명하고 무게가 가벼워 선물 난도가 낮음",
+          "buyAt": "Boston Tea Party Ships & Museum Gift Shop",
+          "locationNote": "Congress St / Seaport edge",
+          "caution": "유통기한과 향 취향 확인"
+        },
+        {
+          "name": "H Shield Mug",
+          "price": "$19.99",
+          "reason": "실용성과 지역성이 동시에 살아 있음",
+          "buyAt": "The Harvard Shop",
+          "locationNote": "Harvard Square, Cambridge",
+          "caution": "파손 방지 포장 필요"
+        }
+      ]
+    },
+    {
+      "recipient": "배우자",
+      "items": [
+        {
+          "name": "Harvard Hooded Crest Sweatshirt",
+          "price": "$48.00",
+          "reason": "기념성, 착용성, 사진 남기기 모두 좋음",
+          "buyAt": "The Harvard Shop",
+          "locationNote": "Harvard Square, Cambridge",
+          "caution": "사이즈 재고 확인 필요"
+        },
+        {
+          "name": "Robinson Tea Chest Mug",
+          "price": "$15.99",
+          "reason": "보스턴 역사 감성이 드러나는 소형 선물",
+          "buyAt": "Boston Tea Party Ships & Museum Gift Shop",
+          "locationNote": "Congress St / Seaport edge",
+          "caution": "머그라서 파손 보호 필요"
+        }
+      ]
+    },
+    {
+      "recipient": "회사 동료",
+      "items": [
+        {
+          "name": "Abigail's Blend - Elmwood Inn Fine Teas",
+          "price": "$17.99",
+          "reason": "가볍고 포장 상태가 깔끔해 회사 선물로 무난함",
+          "buyAt": "Boston Tea Party Ships & Museum Gift Shop",
+          "locationNote": "Congress St / Seaport edge",
+          "caution": "대량 구매 전 재고 확인 필요"
+        },
+        {
+          "name": "H Shield Mug",
+          "price": "$19.99",
+          "reason": "학구적 이미지와 도시 인지도가 높아 설명이 쉬움",
+          "buyAt": "The Harvard Shop",
+          "locationNote": "Harvard Square, Cambridge",
+          "caution": "무게와 파손 위험이 있어 여러 개는 비효율적일 수 있음"
+        }
+      ]
+    },
+    {
+      "recipient": "자녀",
+      "items": [
+        {
+          "name": "MIT Hooded Sweatshirt",
+          "price": "$44.00",
+          "reason": "실착 가능하고 브랜드 인지가 쉬움",
+          "buyAt": "The Harvard Shop",
+          "locationNote": "Harvard Square, Cambridge",
+          "caution": "사이즈와 색상 재고 확인 필요"
+        },
+        {
+          "name": "Harvard Hooded Crest Sweatshirt",
+          "price": "$48.00",
+          "reason": "캠퍼스 굿즈 느낌이 강해 여행 기념성이 높음",
+          "buyAt": "The Harvard Shop",
+          "locationNote": "Harvard Square, Cambridge",
+          "caution": "의류 부피 확인 필요"
+        }
+      ]
+    }
   ]
 }

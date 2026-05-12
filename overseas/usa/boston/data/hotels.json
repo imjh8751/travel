@@ -1,7 +1,49 @@
 {
   "updatedAt": "2026-05-12",
   "districts": [
-    {"name":"Back Bay","recommendedFor":"첫 방문/쇼핑","priceBand":"$260~450","mapUrl":"https://www.google.com/maps/search/?api=1&query=Back+Bay+Boston+MA"},
-    {"name":"Downtown","recommendedFor":"관광 동선","priceBand":"$220~390","mapUrl":"https://www.google.com/maps/search/?api=1&query=Downtown+Boston+MA"}
+    {
+      "name": "Back Bay",
+      "subtitle": "첫 방문 / 쇼핑 / 커플",
+      "desc": "보스턴 첫 방문자에게 가장 안정적인 선택지입니다. 쇼핑, 식당, 지하철 접근성이 균형이 좋습니다.",
+      "themes": ["essential", "relaxed", "foodie"],
+      "recommendedFor": ["첫 방문", "커플", "부모님 동반"],
+      "recommended": ["Fairmont Copley Plaza", "The Westin Copley Place"],
+      "pros": "Newbury Street, Copley, Green Line 접근이 쉬움",
+      "cons": "숙박비가 상대적으로 높음",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Back+Bay+Boston+MA"
+    },
+    {
+      "name": "Downtown / Financial District",
+      "subtitle": "역사 코스 / 도보 이동",
+      "desc": "Freedom Trail, Quincy Market, 수변 동선을 짧게 묶고 싶을 때 효율적입니다.",
+      "themes": ["essential", "hard"],
+      "recommendedFor": ["역사 중심", "도보 선호", "짧은 일정"],
+      "recommended": ["Omni Parker House", "The Dagny Boston"],
+      "pros": "주요 관광지가 가까워 도보 비중을 높이기 좋음",
+      "cons": "야간 분위기는 Back Bay보다 조용할 수 있음",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Downtown+Boston+MA"
+    },
+    {
+      "name": "Seaport District",
+      "subtitle": "야경 / 신축 호텔 / 박물관",
+      "desc": "현대적인 호텔 선호, 박물관과 수변 산책, 마지막날 기념품 쇼핑을 한 번에 묶고 싶을 때 좋습니다.",
+      "themes": ["relaxed", "foodie"],
+      "recommendedFor": ["배우자", "여유로운 일정", "신축 호텔 선호"],
+      "recommended": ["The Envoy Hotel", "YOTEL Boston"],
+      "pros": "수변 풍경이 좋고 공간이 비교적 넓게 느껴짐",
+      "cons": "구도심보다는 대중교통 연결 확인이 필요함",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Seaport+District+Boston+MA"
+    },
+    {
+      "name": "Cambridge / Harvard Square",
+      "subtitle": "대학가 분위기 / 로컬 감성",
+      "desc": "하버드와 MIT 일정을 길게 쓰고 싶거나 대도시보다 차분한 분위기를 선호할 때 잘 맞습니다.",
+      "themes": ["relaxed", "essential"],
+      "recommendedFor": ["로컬 분위기", "대학가 산책", "장기 체류"],
+      "recommended": ["The Charles Hotel", "Sheraton Commander"],
+      "pros": "하버드 쇼핑과 산책 동선을 편하게 짤 수 있음",
+      "cons": "도심 복귀 시 Red Line 이동 시간을 감안해야 함",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harvard+Square+Cambridge+MA"
+    }
   ]
 }

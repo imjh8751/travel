@@ -2,6 +2,11 @@
   "updatedAt": "2026-05-12",
   "airportToCity": "SL1 + Red Line 또는 택시",
   "payment": "Tap to Ride",
-  "tips": ["출근시간 20~30분 추가", "귀국일 3시간 전 공항 도착"],
+  "coreLines": ["Red Line", "Green Line", "Silver Line SL1"],
+  "tips": [
+    "출근시간 20~30분 추가",
+    "귀국일 3시간 전 공항 도착",
+    "도보 비중이 큰 날은 Park Street 환승 시간을 넉넉히 잡는 편이 편함"
+  ],
   "officialUrl": "https://www.mbta.com/"
 }

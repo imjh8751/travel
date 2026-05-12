@@ -1,13 +1,126 @@
 {
   "updatedAt": "2026-05-12",
+  "region": "Boston, USA",
   "souvenirs": [
-    {"name":"메이플 시럽","price":"$12~25","forWhom":["부모님","본인"],"shopOptions":[{"shop":"Boston Public Market","mapUrl":"https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+Boston+MA","price":"$12~25"},{"shop":"Formaggio Kitchen","mapUrl":"https://www.google.com/maps/search/?api=1&query=Formaggio+Kitchen+Cambridge+MA","price":"$15~30"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"},
-    {"name":"Harvard 굿즈(후디/머그/펜)","price":"$8~70","forWhom":["동료","친구","본인"],"shopOptions":[{"shop":"Harvard Coop","mapUrl":"https://www.google.com/maps/search/?api=1&query=Harvard+Coop+Cambridge+MA","price":"$8~70"},{"shop":"The MIT Coop","mapUrl":"https://www.google.com/maps/search/?api=1&query=MIT+Coop+Cambridge+MA","price":"$10~65"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"},
-    {"name":"Red Sox 캡/저지","price":"$25~140","forWhom":["친구","본인","자녀"],"shopOptions":[{"shop":"Fenway Park Team Store","mapUrl":"https://www.google.com/maps/search/?api=1&query=Fenway+Park+Team+Store","price":"$25~140"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"},
-    {"name":"Boston Tea Party 티 세트","price":"$15~35","forWhom":["부모님","친구"],"shopOptions":[{"shop":"Boston Tea Party Museum Shop","mapUrl":"https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Museum+Shop","price":"$15~35"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"},
-    {"name":"L.A. Burdick 초콜릿","price":"$18~45","forWhom":["배우자","연인"],"shopOptions":[{"shop":"L.A. Burdick Harvard Sq","mapUrl":"https://www.google.com/maps/search/?api=1&query=L.A.+Burdick+Harvard+Square","price":"$18~45"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"},
-    {"name":"Boston Baked Beans 캔디","price":"$6~15","forWhom":["회사 동료","친구"],"shopOptions":[{"shop":"Faneuil Hall Marketplace","mapUrl":"https://www.google.com/maps/search/?api=1&query=Faneuil+Hall+Marketplace","price":"$6~15"},{"shop":"Quincy Market","mapUrl":"https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston","price":"$6~15"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"},
-    {"name":"로컬 커피 원두","price":"$14~28","forWhom":["동료","본인"],"shopOptions":[{"shop":"George Howell Coffee","mapUrl":"https://www.google.com/maps/search/?api=1&query=George+Howell+Coffee+Boston","price":"$14~28"},{"shop":"Thinking Cup","mapUrl":"https://www.google.com/maps/search/?api=1&query=Thinking+Cup+Boston","price":"$13~26"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"},
-    {"name":"Newbury Street 디자이너 소품","price":"$20~120","forWhom":["배우자","친구"],"shopOptions":[{"shop":"Newbury Street Boutiques","mapUrl":"https://www.google.com/maps/search/?api=1&query=Newbury+Street+Boston","price":"$20~120"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"}
+    {
+      "name": "하버드 실드 머그",
+      "productName": "H Shield Mug",
+      "forWhom": ["부모님", "회사 동료", "본인"],
+      "category": "mug",
+      "price": "$19.99",
+      "imageUrl": "https://www.theharvardshop.com/cdn/shop/files/H-Shield-Mug-Quality-200020277.jpg?v=1720624738",
+      "imageType": "real",
+      "imageSource": "official-store-listing",
+      "imageMatchLevel": "exact-product",
+      "imageVerifiedBy": "official-store-listing",
+      "productUrl": "https://www.theharvardshop.com/products/hshieldmug",
+      "shopOptions": [
+        {
+          "shopName": "The Harvard Shop",
+          "area": "Harvard Square, Cambridge",
+          "price": "$19.99",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Harvard+Shop+Cambridge+MA",
+          "note": "하버드 공식 스토어 상품 기준"
+        }
+      ],
+      "carryTip": "머그는 깨지기 쉬워 의류 사이에 넣어 수하물 권장",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "하버드 후디",
+      "productName": "Harvard Hooded Crest Sweatshirt",
+      "forWhom": ["배우자", "자녀", "본인"],
+      "category": "apparel",
+      "price": "$48.00",
+      "imageUrl": "https://www.theharvardshop.com/cdn/shop/files/Harvard-Hooded-Crest-Sweatshirt-Quality-199987681.jpg?v=1720623777",
+      "imageType": "real",
+      "imageSource": "official-store-listing",
+      "imageMatchLevel": "exact-product",
+      "imageVerifiedBy": "official-store-listing",
+      "productUrl": "https://www.theharvardshop.com/products/harvard-hooded-crest-sweatshirt",
+      "shopOptions": [
+        {
+          "shopName": "The Harvard Shop",
+          "area": "Harvard Square, Cambridge",
+          "price": "$48.00",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Harvard+Shop+Cambridge+MA",
+          "note": "사이즈 품절 가능성 있어 오전 방문이 유리"
+        }
+      ],
+      "carryTip": "부피가 있어 귀국 전날 짐 공간 확인 필요",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "MIT 후디",
+      "productName": "MIT Hooded Sweatshirt",
+      "forWhom": ["자녀", "친구", "본인"],
+      "category": "apparel",
+      "price": "$44.00",
+      "imageUrl": "https://www.theharvardshop.com/cdn/shop/files/MIT-Hooded-Sweatshirt-Freedom-199934524.jpg?v=1720622145",
+      "imageType": "real",
+      "imageSource": "official-store-listing",
+      "imageMatchLevel": "exact-product",
+      "imageVerifiedBy": "official-store-listing",
+      "productUrl": "https://www.theharvardshop.com/products/mithoodedsweatshirt",
+      "shopOptions": [
+        {
+          "shopName": "The Harvard Shop",
+          "area": "Harvard Square, Cambridge",
+          "price": "$44.00",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Harvard+Shop+Cambridge+MA",
+          "note": "MIT 라인도 함께 취급하는 공식 스토어 상품 기준"
+        }
+      ],
+      "carryTip": "의류라 파손 위험은 적지만 부피는 있음",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Boston Tea Party 차 선물",
+      "productName": "Abigail's Blend - Elmwood Inn Fine Teas",
+      "forWhom": ["부모님", "배우자", "회사 동료"],
+      "category": "tea",
+      "price": "$17.99",
+      "imageUrl": "https://shop.bostonteapartyship.com/cdn/shop/products/boston-tea-party-abigails-tea_8a83082d-4091-4266-9dac-080a36a74572_1024x1024.jpg?v=1500411951",
+      "imageType": "real",
+      "imageSource": "official-store-listing",
+      "imageMatchLevel": "exact-product",
+      "imageVerifiedBy": "official-store-listing",
+      "productUrl": "https://shop.bostonteapartyship.com/products/boston-tea-party-abigails-tea",
+      "shopOptions": [
+        {
+          "shopName": "Boston Tea Party Ships & Museum Gift Shop",
+          "area": "Congress St / Seaport edge",
+          "price": "$17.99",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Ships+%26+Museum+306+Congress+St+Boston+MA",
+          "note": "역사 테마가 분명해 부모님/직장 선물로 무난"
+        }
+      ],
+      "carryTip": "차류는 비교적 가볍지만 파우치 형태와 유통기한 확인 필요",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Boston Tea Party 머그",
+      "productName": "Robinson Tea Chest Mug",
+      "forWhom": ["부모님", "친구", "본인"],
+      "category": "mug",
+      "price": "$15.99",
+      "imageUrl": "https://shop.bostonteapartyship.com/cdn/shop/products/robinson_mug_with_handle_writing_1024x1024.jpg?v=1579372773",
+      "imageType": "real",
+      "imageSource": "official-store-listing",
+      "imageMatchLevel": "exact-product",
+      "imageVerifiedBy": "official-store-listing",
+      "productUrl": "https://shop.bostonteapartyship.com/products/robinson-tea-chest-mug",
+      "shopOptions": [
+        {
+          "shopName": "Boston Tea Party Ships & Museum Gift Shop",
+          "area": "Congress St / Seaport edge",
+          "price": "$15.99",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Ships+%26+Museum+306+Congress+St+Boston+MA",
+          "note": "머그류라 파손 보호 포장 권장"
+        }
+      ],
+      "carryTip": "깨지기 쉬워 의류/수건으로 감싼 뒤 수하물 권장",
+      "checkedAt": "2026-05-12"
+    }
   ]
 }
