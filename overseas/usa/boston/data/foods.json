@@ -3,6 +3,7 @@
   "foods": [
     {
       "name": "Union Oyster House",
+      "placeType": "restaurant",
       "area": "Downtown / Faneuil Hall",
       "themes": ["essential", "foodie"],
       "price": "$$~$$$",
@@ -23,6 +24,7 @@
     },
     {
       "name": "Mike's Pastry",
+      "placeType": "bakery",
       "area": "North End",
       "themes": ["essential", "foodie"],
       "price": "$",
@@ -43,6 +45,7 @@
     },
     {
       "name": "Luke's Lobster Back Bay",
+      "placeType": "seafood-shack",
       "area": "Back Bay",
       "themes": ["foodie", "relaxed"],
       "price": "$$",
@@ -63,6 +66,7 @@
     },
     {
       "name": "Neptune Oyster",
+      "placeType": "restaurant",
       "area": "North End",
       "themes": ["foodie", "hard"],
       "price": "$$$",
@@ -83,6 +87,7 @@
     },
     {
       "name": "Regina Pizzeria North End",
+      "placeType": "restaurant",
       "area": "North End",
       "themes": ["essential", "foodie", "hard"],
       "price": "$$",
@@ -103,6 +108,7 @@
     },
     {
       "name": "Legal Harborside",
+      "placeType": "restaurant",
       "area": "Seaport",
       "themes": ["essential", "relaxed", "foodie"],
       "price": "$$$",
@@ -123,6 +129,7 @@
     },
     {
       "name": "Atlantic Fish Company",
+      "placeType": "restaurant",
       "area": "Back Bay",
       "themes": ["essential", "foodie"],
       "price": "$$$",
@@ -143,6 +150,7 @@
     },
     {
       "name": "Flour Bakery + Cafe",
+      "placeType": "cafe",
       "area": "Fort Point / Seaport edge",
       "themes": ["relaxed", "foodie"],
       "price": "$~$$",
@@ -163,6 +171,7 @@
     },
     {
       "name": "Boston Sail Loft",
+      "placeType": "restaurant",
       "area": "Waterfront / Long Wharf",
       "themes": ["relaxed", "foodie"],
       "price": "$$",
@@ -183,6 +192,7 @@
     },
     {
       "name": "Bova's Bakery",
+      "placeType": "bakery",
       "area": "North End",
       "themes": ["relaxed", "foodie"],
       "price": "$",
@@ -199,6 +209,69 @@
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bova%27s+Bakery+134+Salem+St+Boston+MA",
       "reviewUrl": "https://www.google.com/search?q=Bova%27s+Bakery+Boston+reviews",
       "sourceUrl": "https://www.allmenus.com/ma/boston/223-bovas-bakery/menu/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Quincy Market Food Colonnade",
+      "placeType": "market-hall",
+      "area": "Faneuil Hall",
+      "themes": ["essential", "foodie", "hard"],
+      "price": "$~$$",
+      "waitNote": "점심 피크에는 좌석 확보가 어렵고 대기가 몰립니다.",
+      "note": "한 장소에서 보스턴식 클램차우더, 랍스터롤, 빠른 한 끼를 비교하기 좋은 대표 관광형 푸드홀입니다.",
+      "menuItems": [
+        { "name": "Boston Chowda Clam Chowder", "price": "현장 메뉴판 확인" },
+        { "name": "Boston & Maine Fish Co. Lobster Roll", "price": "현장 메뉴판 확인" },
+        { "name": "빠른 테이크아웃형 샌드위치 / 스낵", "price": "현장 메뉴판 확인" }
+      ],
+      "imageUrl": "https://img.ctykit.com/cdn/ma-faneuil-hall/images/fhm-cover-1800x900.jpg",
+      "imageType": "real",
+      "imageSource": "Faneuil Hall official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=Quincy+Market+Food+Colonnade+reviews",
+      "sourceUrl": "https://faneuilhallmarketplace.com/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Boston Public Market",
+      "placeType": "market-hall",
+      "area": "Haymarket / North End edge",
+      "themes": ["essential", "relaxed", "foodie"],
+      "price": "$~$$",
+      "waitNote": "주말 점심 시간에는 실내 좌석이 빠르게 찹니다.",
+      "note": "로컬 푸드 중심이라 보스턴식 먹거리와 가벼운 장보기, 간식 탐색을 같이 하기 좋습니다.",
+      "menuItems": [
+        { "name": "로컬 도넛 / 베이커리류", "price": "현장 메뉴판 확인" },
+        { "name": "뉴잉글랜드 해산물 스낵 / 롤", "price": "현장 메뉴판 확인" },
+        { "name": "로컬 커피 / 차", "price": "현장 메뉴판 확인" }
+      ],
+      "imageUrl": "https://bostonpublicmarket.org/wp-content/uploads/2026/04/Spring-Produce-New-England-Boston-Public-Market-Web-Homepage-Image-copy.avif",
+      "imageType": "real",
+      "imageSource": "Boston Public Market official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=Boston+Public+Market+reviews",
+      "sourceUrl": "https://bostonpublicmarket.org/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "The Sausage Guy at Fenway",
+      "placeType": "street-food",
+      "area": "Fenway / Lansdowne",
+      "themes": ["essential", "foodie", "hard"],
+      "price": "$",
+      "waitNote": "경기 전후와 이벤트 시간에는 줄이 길어질 수 있습니다.",
+      "note": "Fenway 주변의 상징적인 길거리 음식 후보로, 빠르게 보스턴 경기장 분위기를 느끼기 좋습니다.",
+      "menuItems": [
+        { "name": "Italian Sausage with Peppers and Onions", "price": "현장 메뉴판 확인" },
+        { "name": "Hot Sausage Sandwich", "price": "현장 메뉴판 확인" },
+        { "name": "Street Cart Drinks / Sides", "price": "현장 메뉴판 확인" }
+      ],
+      "imageUrl": "https://thesausageguy.com/cdn/shop/files/The_Sausage_Guy_Logo.webp?v=1721940146&width=600",
+      "imageType": "real",
+      "imageSource": "The Sausage Guy official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Sausage+Guy+Fenway+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=The+Sausage+Guy+Fenway+reviews",
+      "sourceUrl": "https://www.thesausageguy.com/",
       "checkedAt": "2026-05-12"
     }
   ]

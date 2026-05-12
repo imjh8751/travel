@@ -135,6 +135,42 @@
       ]
     },
     {
+      "id": "food-quincy-market-food-colonnade",
+      "type": "food",
+      "path": "external",
+      "url": "https://img.ctykit.com/cdn/ma-faneuil-hall/images/fhm-cover-1800x900.jpg",
+      "imageType": "real",
+      "source": "Faneuil Hall official site",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "foods.quincy-market-food-colonnade"
+      ]
+    },
+    {
+      "id": "food-boston-public-market",
+      "type": "food",
+      "path": "external",
+      "url": "https://bostonpublicmarket.org/wp-content/uploads/2026/04/Spring-Produce-New-England-Boston-Public-Market-Web-Homepage-Image-copy.avif",
+      "imageType": "real",
+      "source": "Boston Public Market official site",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "foods.boston-public-market"
+      ]
+    },
+    {
+      "id": "food-the-sausage-guy-at-fenway",
+      "type": "food",
+      "path": "external",
+      "url": "https://thesausageguy.com/cdn/shop/files/The_Sausage_Guy_Logo.webp?v=1721940146&width=600",
+      "imageType": "real",
+      "source": "The Sausage Guy official site",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "foods.the-sausage-guy-at-fenway"
+      ]
+    },
+    {
       "id": "souvenir-the-harvard-shop",
       "type": "souvenir-shop-hero",
       "path": "external",

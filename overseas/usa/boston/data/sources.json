@@ -57,6 +57,21 @@
       "url": "https://www.allmenus.com/ma/boston/223-bovas-bakery/menu/"
     },
     {
+      "type": "food",
+      "name": "Faneuil Hall Marketplace",
+      "url": "https://faneuilhallmarketplace.com/"
+    },
+    {
+      "type": "food",
+      "name": "Boston Public Market",
+      "url": "https://bostonpublicmarket.org/"
+    },
+    {
+      "type": "food",
+      "name": "The Sausage Guy",
+      "url": "https://www.thesausageguy.com/"
+    },
+    {
       "type": "souvenir",
       "name": "The Harvard Shop",
       "url": "https://www.theharvardshop.com/"

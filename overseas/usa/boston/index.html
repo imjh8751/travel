@@ -556,6 +556,7 @@
             <div>
               <h3 style="margin:0;">${escapeHtml(food.name)}</h3>
               <div class="food-meta">
+                ${formatBadge(food.placeType || "food-spot")}
                 ${formatBadge(food.area || "위치 정보 없음")}
                 ${formatBadge(food.price || "-", "warn")}
                 ${formatBadge(`확인일 ${food.checkedAt || "-"}`, "ok")}
