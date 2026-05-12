@@ -27,6 +27,7 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}.wra
       <button class="btn" data-theme="relaxed">여유 동선</button>
       <button class="btn" data-theme="foodie">맛집 동선</button>
       <a id="routeLink" class="btn" target="_blank">🗺️ 테마별 구글맵 동선</a>
+      <button class="btn" id="pdfBtn" type="button">🧾 현재 테마 PDF 저장</button>
     </div>
   </section>
 
@@ -97,11 +98,13 @@ async function load(){
   $('#summary').textContent=page.summary;
   $('#tags').innerHTML=(page.tags||[]).map(t=>`<span class="chip">${t}</span>`).join('');
   document.querySelectorAll('[data-theme]').forEach(b=>b.onclick=()=>{state.theme=b.dataset.theme;document.querySelectorAll('[data-theme]').forEach(x=>x.classList.toggle('on',x===b));render();});
+  $('#pdfBtn').onclick=()=>printThemePdf();
   render();
 }
 function byTheme(x){return state.theme==='all'||(x.themes||[]).includes(state.theme)}
 function render(){
   $('#routeLink').href=state.page.routeUrlByTheme[state.theme]||'#';
+  $('#routeLink').textContent=`🗺️ ${document.querySelector('[data-theme].on').textContent} 구글맵 동선`; 
   $('#itineraryRows').innerHTML=state.itinerary.filter(byTheme).map(x=>`<tr><td>${x.day}</td><td>${x.time}</td><td>${x.title}</td><td>${x.action}</td><td>${x.moveNote}<br><span class='small'>${x.tip}</span></td><td><a target='_blank' href='${x.mapUrl}'>지도</a></td></tr>`).join('');
   $('#foods').innerHTML=state.foods.filter(byTheme).map(x=>`<div style='margin-bottom:12px'><b>${x.name}</b> · ${x.menu} · ${x.price}<br><span class='small'>${x.whyPopular||''}</span><br><a target='_blank' href='${x.mapUrl}'>지도</a> / <a target='_blank' href='${x.reviewUrl}'>리뷰</a> / <a target='_blank' href='${x.blogEvidenceLink}'>블로그 근거</a></div>`).join('');
   $('#souvenirs').innerHTML=state.souvenirs.map(x=>`<div style='margin-bottom:12px'><b>${x.name}</b> · ${x.price}<br><span class='small'>${x.whyPopular||''}</span><br>${x.shopOptions.map(s=>`- <a target='_blank' href='${s.mapUrl}'>${s.shop}</a> (${s.price})`).join('<br>')}<br><a target='_blank' href='${x.blogEvidenceLink}'>블로그 근거</a></div>`).join('');
@@ -111,6 +114,13 @@ function render(){
   $('#checklist').innerHTML=`<ul>${state.checklist.map(x=>`<li>${x}</li>`).join('')}</ul>`;
   $('#transport').innerHTML=`공항↔도심: ${state.transport.airportToCity}<br>결제: ${state.transport.payment}<ul>${(state.transport.tips||[]).map(x=>`<li>${x}</li>`).join('')}</ul><a target='_blank' href='${state.transport.officialUrl}'>공식 교통 링크</a>`;
   $('#sources').innerHTML=state.sources.map(x=>`<a target='_blank' href='${x.url}'>${x.name}</a>`).join('');
+}
+function printThemePdf(){
+  const oldTitle=document.title;
+  const label=document.querySelector('[data-theme].on')?.textContent||state.theme;
+  document.title=`보스턴-${label}-가이드`;
+  window.print();
+  setTimeout(()=>{document.title=oldTitle;},300);
 }
 load();
 </script>
