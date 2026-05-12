@@ -1,12 +1,7 @@
 {
   "updatedAt": "2026-05-12",
-  "airportToCity": "SL1 + Red Line 조합 권장",
-  "payment": "Tap to Ride(컨택리스 카드/모바일)",
-  "coreLines": ["Green Line", "Red Line", "Silver Line"],
-  "tips": [
-    "출근 시간(07:30~09:00) 혼잡 여유 20~30분 추가",
-    "Freedom Trail은 도보 비중 높아 편한 신발 필수",
-    "귀국일은 보안검색 포함 최소 3시간 전 공항 도착"
-  ],
+  "airportToCity": "SL1 + Red Line 또는 택시",
+  "payment": "Tap to Ride",
+  "tips": ["출근시간 20~30분 추가", "귀국일 3시간 전 공항 도착"],
   "officialUrl": "https://www.mbta.com/"
 }

@@ -1,303 +1,71 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>보스턴 3박 4일 여행 가이드 | Boston 4D3N</title>
-  <meta name="description" content="보스턴 3박 4일 최신 동선 여행 일정, 맛집, 숙소 구역별 추천, 교통, 기념품 가이드" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <style>
-    :root{--bg:#f6f7fb;--paper:#fff;--ink:#172033;--muted:#647086;--line:#dfe4ee;--brand:#0b5cab;--brand2:#e64b3c;--soft:#edf5ff;--ok:#13795b;--warn:#9a5b00;--shadow:0 12px 30px rgba(23,32,51,.10);}
-    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65} a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
-    header{background:linear-gradient(135deg,rgba(11,92,171,.96),rgba(230,75,60,.90)),url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1600&q=80') center/cover;color:#fff;padding:56px 20px 38px} .wrap{max-width:1120px;margin:auto}.eyebrow{letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;opacity:.9}.hero h1{font-size:clamp(2rem,5vw,4rem);line-height:1.1;margin:.25em 0}.hero p{max-width:780px;font-size:1.08rem}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-weight:700}
-    nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)} nav .wrap{display:flex;gap:14px;overflow:auto;padding:10px 20px} nav a{white-space:nowrap;color:var(--ink);font-weight:800;font-size:.92rem}
-    main{padding:20px 16px 44px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow)}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.section{margin-top:16px}h2{font-size:1.28rem;margin:0 0 10px}h3{margin:0 0 6px;font-size:1.02rem}.muted{color:var(--muted)}.tag{display:inline-block;background:var(--soft);color:#094b88;padding:4px 9px;border-radius:999px;font-weight:800;font-size:.78rem;margin:2px}.warn{background:#fff6e5;color:var(--warn)}.ok{background:#e9f8f2;color:var(--ok)}
-    table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:.92rem}th,td{border-bottom:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}th{background:#f0f4fa}.day{border-left:4px solid var(--brand);background:#fcfdff;width:72px;text-align:center}.time{font-weight:900;color:var(--brand);white-space:nowrap;width:84px}.place-card{display:grid;grid-template-columns:132px 1fr;gap:10px}.place-card img{width:100%;height:96px;object-fit:cover;border-radius:10px;background:#eee}.mini{font-size:.81rem}.footer{font-size:.88rem;color:var(--muted);margin-top:30px}.print{float:right;background:#fff;color:var(--brand);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:8px 12px;font-weight:900}
-    .theme-btn{padding:10px 16px; border-radius:12px; border:1px solid var(--line); background:#fff; cursor:pointer; font-weight:700; transition:0.2s;}
-    .theme-btn.active{background:var(--brand); color:#fff; border-color:var(--brand);}
-    #map{height:300px; border-radius:14px; margin-bottom:8px; border:1px solid var(--line);}
-    .souvenir-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:18px;}
-    .souvenir-card img{width:100%; height:120px; object-fit:cover; border-radius:10px;}
-    .souvenir-card .meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
-    .souvenir-card .meta span{background:#f3f6fb;border-radius:999px;padding:4px 8px;font-size:.76rem;font-weight:700;color:#35506f}
-    .review-link{font-size:0.85rem; color:var(--brand2); font-weight:700; text-decoration:underline;}
-    .route-note{margin-top:10px;font-size:.92rem;color:var(--muted);}
-    .compact-toggle{margin-top:10px}
-    .compact-toggle summary{cursor:pointer;font-weight:800;color:var(--brand)}
-    @media(max-width:860px){.span4,.span6,.span8{grid-column:span 12}.place-card{grid-template-columns:1fr}.place-card img{height:150px}header{padding-top:38px}table{font-size:.88rem}.time{white-space:normal}nav .wrap{padding-left:14px}}
-  </style>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>보스턴 3박4일 일정표</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f6f8fb;color:#1c2430} .wrap{max-width:1100px;margin:auto;padding:16px}
+.card{background:#fff;border:1px solid #dde3ee;border-radius:14px;padding:14px;margin-top:12px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
+.span6{grid-column:span 6}.span12{grid-column:span 12} table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px;border-bottom:1px solid #e6ebf3;text-align:left}
+.btn{border:1px solid #c7d3e7;background:#fff;padding:8px 10px;border-radius:10px;cursor:pointer} .btn.on{background:#1459b8;color:#fff}
+.small{font-size:12px;color:#667892} @media(max-width:860px){.span6{grid-column:span 12}}
+</style>
 </head>
 <body>
-<header>
-  <div class="wrap hero">
-    <button class="print" onclick="window.print()">PDF 저장</button>
-    <div id="hero-eyebrow" class="eyebrow">Boston · 3 nights 4 days · updated 2026-05-12</div>
-    <h1 id="hero-title">보스턴 3박 4일<br/>구역별 완벽 가이드</h1>
-    <p id="hero-summary">테마별 일정, 식사·휴식 포함 현실 동선, 구역별 숙소 추천, 기념품 리스트까지 보스턴 핵심 여행 정보를 한 번에 담았습니다. 선택한 테마에 따라 지도/일정/구글맵 동선 링크가 즉시 동기화됩니다.</p>
-    <div id="hero-tags" class="chips"><span class="chip">중심가: Back Bay / Downtown</span><span class="chip">교통: MBTA Tap to Ride</span></div>
-    <div style="margin-top:20px;"><a id="google-maps-btn" href="#" target="_blank" class="chip" style="background:var(--brand2); border:none; cursor:pointer;">🗺️ 구글맵 테마별 동선 보기</a></div>
+<div class="wrap">
+  <div class="card">
+    <h1 id="title" style="margin:0 0 8px"></h1>
+    <div id="summary" class="small"></div>
+    <div id="tags" style="margin-top:8px"></div>
+    <a id="route" target="_blank">🗺️ 전체 동선</a>
   </div>
-</header>
-<nav><div class="wrap"><a href="#itinerary">일정/지도</a><a href="#hotel">구역별 숙소</a><a href="#souvenir">기념품</a><a href="#food">맛집</a><a href="#transport">교통</a></div></nav>
-<main class="wrap">
-<section id="summary" class="grid section">
-  <div class="card span12">
-    <h2>여행 테마 선택 (일정·지도·외부링크 동시 동기화)</h2>
-    <div style="display:flex; gap:10px; margin-bottom:10px; flex-wrap:wrap;">
-      <button class="theme-btn active" onclick="filterTheme('all')">전체</button>
-      <button class="theme-btn" onclick="filterTheme('essential')">필수 코스</button>
-      <button class="theme-btn" onclick="filterTheme('relaxed')">여유로운 일정</button>
-      <button class="theme-btn" onclick="filterTheme('hard')">빡센 일정</button>
-      <button class="theme-btn" onclick="filterTheme('foodie')">맛집 투어</button>
-    </div>
-    <p class="muted">- 테마를 누르면 일정이 필터링되고, 지도의 경로와 구글맵 외부 링크가 자동으로 업데이트됩니다.</p>
+
+  <div class="card">
+    <button class="btn on" onclick="setTheme('all',this)">전체</button>
+    <button class="btn" onclick="setTheme('essential',this)">필수</button>
+    <button class="btn" onclick="setTheme('relaxed',this)">여유</button>
+    <button class="btn" onclick="setTheme('foodie',this)">맛집</button>
   </div>
-  <div class="card span12">
-    <h2>🗺️ 동선 지도 (Routing)</h2>
-    <div id="map"></div>
+
+  <div class="card">
+    <h2 style="margin:0 0 8px">📅 일정표</h2>
+    <table><thead><tr><th>일차</th><th>시간</th><th>일정</th><th>이동/팁</th><th>지도</th></tr></thead><tbody id="rows"></tbody></table>
   </div>
-</section>
 
-<section id="itinerary" class="section card">
-  <h2>날짜별 상세 일정</h2>
-  <table>
-    <thead><tr><th>일차</th><th>시간</th><th>일정</th><th>팁/정보</th></tr></thead>
-    <tbody id="itinerary-body"></tbody>
-  </table>
-</section>
+  <div class="grid">
+    <div class="card span6"><h2 style="margin:0 0 8px">🍽️ 맛집 비교</h2><div id="foods"></div></div>
+    <div class="card span6"><h2 style="margin:0 0 8px">🎁 대상별 선물(텍스트형)</h2><div id="gifts"></div></div>
+    <div class="card span6"><h2 style="margin:0 0 8px">🛍️ 기념품 상점 비교</h2><div id="souvenirs"></div></div>
+    <div class="card span6"><h2 style="margin:0 0 8px">🚇 교통</h2><div id="transport"></div></div>
+  </div>
 
-<section id="hotel" class="section card">
-  <h2>🏨 구역별 숙소 추천 (District Guide)</h2>
-  <div id="hotel-grid" class="grid"></div>
-</section>
-
-<section id="souvenir" class="section card">
-  <h2>🎁 보스턴 기념품 대백과 (Souvenirs)</h2>
-  <div id="souvenir-grid" class="souvenir-grid"></div>
-</section>
-
-<section id="detail-guide" class="section card">
-  <h2>🧭 상세 여행 가이드 메모</h2>
-  <details class="compact-toggle">
-    <summary>펼쳐서 보기 (현장 운영 팁)</summary>
-    <div class="grid" style="margin-top:10px;">
-      <div class="span6"><h3>1일차</h3><ul><li>체크인 후 가벼운 산책</li><li>저녁 식사는 피크타임 전 도착</li></ul></div>
-      <div class="span6"><h3>2일차</h3><ul><li>Freedom Trail은 편한 신발 필수</li><li>우천 시 실내 비중 확대</li></ul></div>
-      <div class="span6"><h3>3일차</h3><ul><li>기념품은 용도별 분리 구매</li><li>부피 큰 물건은 마지막날</li></ul></div>
-      <div class="span6"><h3>4일차</h3><ul><li>공항 이동 35~50분 + 추가 여유</li><li>액체/파손품 수하물 재확인</li></ul></div>
-    </div>
-  </details>
-</section>
-
-<section id="food" class="section card">
-  <h2>🍽️ 추천 맛집 (Featured)</h2>
-  <div id="food-grid" class="grid"></div>
-</section>
-
-<section id="transport" class="section card">
-  <h2>🚇 교통 · 이동 전략</h2>
-  <div id="transport-grid" class="grid"></div>
-  <p id="transport-note" class="route-note"></p>
-  <details class="compact-toggle">
-    <summary>출처 보기</summary>
-    <ul id="source-list" class="mini" style="margin-top:8px;"></ul>
-  </details>
-</section>
-</main>
-
+  <div class="card small">최신 확인일: <span id="updated"></span> · 출처: <span id="sources"></span></div>
+</div>
 <script>
-  let map, polyline;
-  let markers = [];
-
-  let pageData = {};
-  let itineraryData = [];
-  let foodsData = [];
-  let hotelsData = [];
-  let souvenirsData = [];
-  let transportData = {};
-  let sourcesData = [];
-
-  async function loadGuideData() {
-    try {
-      const [pageRes, itineraryRes, foodsRes, hotelsRes, souvenirsRes, transportRes, sourcesRes] = await Promise.all([
-        fetch('./data/page.json'),
-        fetch('./data/itinerary.json'),
-        fetch('./data/foods.json'),
-        fetch('./data/hotels.json'),
-        fetch('./data/souvenirs.json'),
-        fetch('./data/transport.json'),
-        fetch('./data/sources.json')
-      ]);
-      pageData = await pageRes.json();
-      itineraryData = await itineraryRes.json();
-      foodsData = (await foodsRes.json()).foods || [];
-      hotelsData = (await hotelsRes.json()).districts || [];
-      souvenirsData = (await souvenirsRes.json()).souvenirs || [];
-      transportData = await transportRes.json();
-      sourcesData = (await sourcesRes.json()).sources || [];
-    } catch (e) {
-      console.error('guide data 로드 실패', e);
-      pageData = {};
-      itineraryData = [];
-      foodsData = [];
-      hotelsData = [];
-      souvenirsData = [];
-      transportData = {};
-      sourcesData = [];
-    }
-  }
-
-  function applyPageMeta() {
-    if (!pageData || !pageData.city) return;
-    const eyebrow = document.getElementById('hero-eyebrow');
-    const summary = document.getElementById('hero-summary');
-    const tags = document.getElementById('hero-tags');
-    eyebrow.textContent = `${pageData.city} · ${pageData.tripLength || '3박 4일'} · updated ${pageData.updatedAt || ''}`;
-    if (summary && pageData.summary) summary.textContent = pageData.summary;
-    if (tags && Array.isArray(pageData.tags)) {
-      tags.innerHTML = pageData.tags.map(t => `<span class="chip">${t}</span>`).join('');
-    }
-  }
-
-  function renderHotels(theme = 'all') {
-    const el = document.getElementById('hotel-grid');
-    const rows = hotelsData.filter(h => theme === 'all' || (h.themes || []).includes(theme));
-    el.innerHTML = rows.map((h, idx) => `
-      <div class="span6">
-        <h3>${idx + 1}. ${h.name} (${h.subtitle || ''})</h3>
-        <p class="mini muted">${h.desc || ''}</p>
-        <ul>
-          <li><b>추천:</b> ${(h.recommended || []).join(', ')}</li>
-          <li><b>장점:</b> ${h.pros || '-'}</li>
-          <li><b>단점:</b> ${h.cons || '-'}</li>
-          <li><a href="${h.mapUrl}" target="_blank">구글맵으로 구역 보기</a></li>
-        </ul>
-      </div>
-    `).join('');
-  }
-
-  function renderFoods(theme = 'all') {
-    const el = document.getElementById('food-grid');
-    const rows = foodsData.filter(f => theme === 'all' || (f.themes || []).includes(theme));
-    el.innerHTML = rows.map(f => `
-      <div class="card span6 place-card" data-theme="${(f.themes || []).join(' ')}">
-        <img src="${f.imageUrl}" alt="${f.name}">
-        <div>
-          <h3>${f.name}</h3>
-          <p>${f.desc || ''}</p>
-          <p class="mini"><a href="${f.mapUrl}" target="_blank">구글맵</a> · <a class="review-link" href="${f.reviewUrl}" target="_blank">리뷰</a></p>
-        </div>
-      </div>
-    `).join('');
-  }
-
-  function renderSouvenirs() {
-    const el = document.getElementById('souvenir-grid');
-    el.innerHTML = souvenirsData.map(s => `
-      <div class="card souvenir-card">
-        <img src="${s.imageUrl}" alt="${s.name}">
-        <h3>${s.name}</h3>
-        <p class="mini muted">${s.category || ''}</p>
-        <div class="meta"><span>추천 대상: ${(s.forWhom || []).join(' / ')}</span><span>예산: ${s.price || '-'}</span><span>사진: ${s.imageType === 'real' ? '실사진' : '생성 이미지'}</span></div>
-        <p class="mini">📍 <a href="${s.mapUrl}" target="_blank">${s.buyAt || '구매처'}</a></p>
-        <p class="mini">구매 팁: ${s.carryTip || '-'} · 최신 확인일 ${s.checkedAt || '-'}</p>
-      </div>
-    `).join('');
-  }
-
-  function renderTransport() {
-    const grid = document.getElementById('transport-grid');
-    const note = document.getElementById('transport-note');
-    const sourceList = document.getElementById('source-list');
-    grid.innerHTML = `
-      <div class="span6"><h3>MBTA 핵심</h3><ul>
-        <li><b>공항 ↔ 도심:</b> ${transportData.airportToCity || '-'}</li>
-        <li><b>결제:</b> ${transportData.payment || '-'}</li>
-        <li><b>관광 중심:</b> ${(transportData.coreLines || []).join(' / ')}</li>
-      </ul></div>
-      <div class="span6"><h3>운영 팁</h3><ul>${(transportData.tips || []).map(t => `<li>${t}</li>`).join('')}</ul></div>`;
-    note.innerHTML = `최신 확인일: ${transportData.updatedAt || '-'} · 공식 교통 안내: <a href="${transportData.officialUrl || '#'}" target="_blank">MBTA</a>`;
-    sourceList.innerHTML = sourcesData.map(s => `<li><a href="${s.url}" target="_blank">${s.name}</a></li>`).join('');
-  }
-
-  function initMap() {
-    map = L.map('map').setView([42.3551, -71.0656], 13);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-    filterTheme('all');
-  }
-
-  function bindImageFallback() {
-    const fallback = 'https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1200&q=80';
-    document.querySelectorAll('img').forEach((img) => {
-      img.addEventListener('error', () => {
-        if (!img.dataset.fallbackApplied) {
-          img.dataset.fallbackApplied = '1';
-          img.src = fallback;
-        }
-      });
-    });
-  }
-
-  function filterTheme(theme) {
-    document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
-    if (window.event && window.event.target && window.event.target.tagName === 'BUTTON') {
-      window.event.target.classList.add('active');
-    } else {
-      document.querySelector(`.theme-btn[onclick*="${theme}"]`)?.classList.add('active');
-    }
-
-    const filtered = itineraryData.filter(i => theme === 'all' || (i.themes || []).includes(theme));
-    
-    // Table
-    const tbody = document.getElementById('itinerary-body');
-    tbody.innerHTML = '';
-    let lastDay = '';
-    filtered.forEach(item => {
-      const tr = document.createElement('tr');
-      const dayTd = document.createElement('td');
-      dayTd.className = 'day';
-      if (lastDay !== item.day) {
-        dayTd.innerHTML = `<b>${item.day}</b>`;
-        lastDay = item.day;
-      } else {
-        dayTd.textContent = '·';
-      }
-      tr.appendChild(dayTd);
-      tr.innerHTML += `<td class="time">${item.time}</td><td>${item.title}</td><td>${item.desc}</td>`;
-      tbody.appendChild(tr);
-    });
-
-    // Map
-    if (polyline) map.removeLayer(polyline);
-    markers.forEach(m => map.removeLayer(m));
-    markers = [];
-    if (filtered.length > 0) {
-      const latlngs = filtered.map(i => i.coord);
-      polyline = L.polyline(latlngs, {color: 'var(--brand2)', weight: 4, opacity: 0.8, dashArray: '10, 10'}).addTo(map);
-      filtered.forEach(i => {
-        const m = L.marker(i.coord).addTo(map).bindPopup(i.title);
-        markers.push(m);
-      });
-      map.fitBounds(polyline.getBounds(), {padding: [40, 40]});
-      
-      const mapsUrl = pageData?.routeUrlByTheme?.[theme] || ("https://www.google.com/maps/dir/" + filtered.map(i => encodeURIComponent(i.mapName)).join('/'));
-      document.getElementById('google-maps-btn').href = mapsUrl;
-    }
-
-    renderFoods(theme);
-    renderHotels(theme);
-    bindImageFallback();
-  }
-
-  window.onload = async () => {
-    await loadGuideData();
-    applyPageMeta();
-    renderSouvenirs();
-    renderTransport();
-    bindImageFallback();
-    initMap();
-  };
+let page,itinerary,foods,souvenirs,gifts,transport,sources,current='all';
+const q=s=>document.querySelector(s);
+async function load(){
+ [page,itinerary,foods,souvenirs,gifts,transport,sources]=await Promise.all([
+  fetch('./data/page.json').then(r=>r.json()),fetch('./data/itinerary.json').then(r=>r.json()),fetch('./data/foods.json').then(r=>r.json()),
+  fetch('./data/souvenirs.json').then(r=>r.json()),fetch('./data/recipient-gifts.json').then(r=>r.json()),fetch('./data/transport.json').then(r=>r.json()),fetch('./data/sources.json').then(r=>r.json())
+ ]);
+ q('#title').textContent=`${page.city} ${page.tripLength} 신규 일정표`;
+ q('#summary').textContent=page.summary;
+ q('#tags').textContent=(page.tags||[]).join(' · ');
+ q('#updated').textContent=page.updatedAt;
+ q('#sources').innerHTML=(sources.sources||[]).map(s=>`<a target="_blank" href="${s.url}">${s.name}</a>`).join(' / ');
+ render();
+}
+function setTheme(t,el){current=t;document.querySelectorAll('.btn').forEach(b=>b.classList.remove('on'));el.classList.add('on');render();}
+function render(){
+ q('#route').href=page.routeUrlByTheme[current]||page.routeUrlByTheme.all;
+ const list=itinerary.filter(x=>current==='all'||x.themes.includes(current));
+ q('#rows').innerHTML=list.map(x=>`<tr><td>${x.day}</td><td>${x.time}</td><td>${x.title}</td><td>${x.moveNote}<br><span class='small'>${x.tip}</span></td><td><a target='_blank' href='${x.mapUrl}'>지도</a></td></tr>`).join('');
+ q('#foods').innerHTML=(foods.foods||[]).filter(x=>current==='all'||x.themes.includes(current)).map(x=>`<div style='margin-bottom:8px'><b>${x.name}</b> · ${x.menu} · ${x.price}<br><a target='_blank' href='${x.mapUrl}'>지도</a> / <a target='_blank' href='${x.reviewUrl}'>리뷰</a></div>`).join('');
+ q('#souvenirs').innerHTML=(souvenirs.souvenirs||[]).map(s=>`<div style='margin-bottom:8px'><b>${s.name}</b> (${s.price})<br>${s.shopOptions.map(o=>`- <a target='_blank' href='${o.mapUrl}'>${o.shop}</a> (${o.price})`).join('<br>')}</div>`).join('');
+ q('#gifts').innerHTML=(gifts.gifts||[]).map(g=>`<div style='margin-bottom:8px'><b>${g.recipient}</b>: ${g.items.join(', ')} · ${g.budget}<br><span class='small'>${g.note}</span></div>`).join('');
+ q('#transport').innerHTML=`공항↔도심: ${transport.airportToCity}<br>결제: ${transport.payment}<ul>${(transport.tips||[]).map(t=>`<li>${t}</li>`).join('')}</ul><a target='_blank' href='${transport.officialUrl}'>공식 링크</a>`;
+}
+load();
 </script>
-</body>
-</html>
+</body></html>

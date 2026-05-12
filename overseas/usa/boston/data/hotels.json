@@ -1,45 +1,7 @@
 {
   "updatedAt": "2026-05-12",
   "districts": [
-    {
-      "name": "Back Bay",
-      "subtitle": "가장 추천",
-      "desc": "쇼핑, 맛집, 치안이 모두 훌륭한 최고의 구역입니다.",
-      "themes": ["essential", "relaxed", "foodie"],
-      "recommended": ["Fairmont Copley Plaza", "Westin Copley"],
-      "pros": "Prudential Center, Newbury St 도보 가능",
-      "cons": "가격대가 가장 높음",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Back+Bay+Boston+MA"
-    },
-    {
-      "name": "Downtown / Financial",
-      "subtitle": "역사 중심 접근성",
-      "desc": "역사적 중심지이며 주요 관광지 접근성이 좋습니다.",
-      "themes": ["essential", "hard"],
-      "recommended": ["Omni Parker House", "InterContinental Boston"],
-      "pros": "Freedom Trail 시작점, 수변 공원 근접",
-      "cons": "밤에는 사무지구라 조금 조용함",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Downtown+Boston+MA"
-    },
-    {
-      "name": "Seaport District",
-      "subtitle": "현대적/야경",
-      "desc": "가장 현대적이고 힙한 분위기의 신도심입니다.",
-      "themes": ["relaxed", "foodie"],
-      "recommended": ["Envoy Hotel", "YOTEL Boston"],
-      "pros": "신축 호텔 많음, 탁 트인 바다 전망",
-      "cons": "Silver Line 이용 동선 확인 필요",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Seaport+District+Boston+MA"
-    },
-    {
-      "name": "Cambridge / Harvard",
-      "subtitle": "대학가 분위기",
-      "desc": "대학가의 지적이고 여유로운 분위기를 선호한다면 추천합니다.",
-      "themes": ["relaxed", "essential"],
-      "recommended": ["The Charles Hotel", "Sheraton Commander"],
-      "pros": "하버드/MIT 산책 용이, 로컬 카페 많음",
-      "cons": "도심으로 나갈 때 Red Line 20~30분",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harvard+Square+Cambridge+MA"
-    }
+    {"name":"Back Bay","recommendedFor":"첫 방문/쇼핑","priceBand":"$260~450","mapUrl":"https://www.google.com/maps/search/?api=1&query=Back+Bay+Boston+MA"},
+    {"name":"Downtown","recommendedFor":"관광 동선","priceBand":"$220~390","mapUrl":"https://www.google.com/maps/search/?api=1&query=Downtown+Boston+MA"}
   ]
 }

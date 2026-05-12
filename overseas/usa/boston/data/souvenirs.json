@@ -1,66 +1,7 @@
 {
   "updatedAt": "2026-05-12",
-  "region": "Boston, USA",
   "souvenirs": [
-    {
-      "name": "로컬 메이플 시럽",
-      "forWhom": ["부모님", "본인"],
-      "category": "food",
-      "buyAt": "Boston Public Market",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+100+Hanover+St+Boston+MA",
-      "price": "$12-25",
-      "imageUrl": "https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=1200&q=80",
-      "imageType": "real",
-      "imageSource": "Unsplash",
-      "shelfLife": "제품별 상이",
-      "fragile": true,
-      "carryTip": "유리병은 위탁수하물 권장",
-      "checkedAt": "2026-05-12"
-    },
-    {
-      "name": "하버드 / MIT 대학 굿즈",
-      "forWhom": ["회사 동료", "친구", "본인"],
-      "category": "fashion",
-      "buyAt": "The Harvard Coop",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harvard+Coop+1400+Massachusetts+Ave+Cambridge+MA",
-      "price": "$8-70",
-      "imageUrl": "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?auto=format&fit=crop&w=1200&q=80",
-      "imageType": "real",
-      "imageSource": "Unsplash",
-      "shelfLife": null,
-      "fragile": false,
-      "carryTip": "펜, 마그넷은 대량 선물에 유리",
-      "checkedAt": "2026-05-12"
-    },
-    {
-      "name": "레드삭스 스포츠 굿즈",
-      "forWhom": ["친구", "본인"],
-      "category": "sports",
-      "buyAt": "Fenway Park Team Store",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Fenway+Park+4+Jersey+St+Boston+MA",
-      "price": "$20-120",
-      "imageUrl": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=1200&q=80",
-      "imageType": "real",
-      "imageSource": "Unsplash",
-      "shelfLife": null,
-      "fragile": false,
-      "carryTip": "경기일 혼잡, 출국일 오전 방문이 비교적 편함",
-      "checkedAt": "2026-05-12"
-    },
-    {
-      "name": "보스턴 티 파티 티 세트",
-      "forWhom": ["부모님", "친구"],
-      "category": "tea",
-      "buyAt": "Boston Tea Party Museum Shop",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Ships+%26+Museum+306+Congress+St+Boston+MA",
-      "price": "$15-35",
-      "imageUrl": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1200&q=80",
-      "imageType": "real",
-      "imageSource": "Unsplash",
-      "shelfLife": "제품별 상이",
-      "fragile": false,
-      "carryTip": "패키지 포장이 좋아 선물용으로 깔끔함",
-      "checkedAt": "2026-05-12"
-    }
+    {"name":"메이플 시럽","price":"$12~25","forWhom":["부모님","본인"],"shopOptions":[{"shop":"Boston Public Market","mapUrl":"https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+Boston+MA","price":"$12~25"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"},
+    {"name":"하버드 굿즈","price":"$8~70","forWhom":["동료","친구"],"shopOptions":[{"shop":"Harvard Coop","mapUrl":"https://www.google.com/maps/search/?api=1&query=Harvard+Coop+Cambridge+MA","price":"$8~70"}],"imageType":"none","exactProductVerified":false,"checkedAt":"2026-05-12"}
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "updatedAt": "2026-05-12",
+  "gifts": [
+    {"recipient":"부모님","items":["메이플 시럽","티 세트"],"budget":"$15~40","note":"유리병은 수하물 포장"},
+    {"recipient":"회사 동료","items":["Harvard 펜/마그넷"],"budget":"$8~20","note":"가벼운 소형 위주"},
+    {"recipient":"배우자","items":["수제 초콜릿"],"budget":"$20~45","note":"귀국 직전 구매"},
+    {"recipient":"자녀","items":["팀 마스코트 인형"],"budget":"$15~35","note":"부피 확인"}
+  ]
+}
