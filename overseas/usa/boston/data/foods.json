@@ -7,7 +7,7 @@
       "themes": ["essential", "foodie"],
       "price": "$$~$$$",
       "waitNote": "18:00 이후 대기 발생 가능",
-      "note": "보스턴 첫날 저녁이나 역사 코스 날 점심/저녁으로 붙이기 좋습니다.",
+      "note": "보스턴 역사 코스와 묶기 가장 쉬운 대표 해산물 식당입니다.",
       "menuItems": [
         { "name": "Oyster House Clam Chowder", "price": "$7.50+" },
         { "name": "Lobster Roll", "price": "$27.95" },
@@ -17,7 +17,7 @@
       "imageType": "real",
       "imageSource": "Wikimedia Commons",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+41+Union+St+Boston+MA",
-      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d321264-Reviews-Union_Oyster_House-Boston_Massachusetts.html",
+      "reviewUrl": "https://www.google.com/search?q=Union+Oyster+House+Boston+reviews",
       "sourceUrl": "https://www.allmenus.com/ma/boston/433-union-oyster-house/menu/",
       "checkedAt": "2026-05-12"
     },
@@ -27,7 +27,7 @@
       "themes": ["essential", "foodie"],
       "price": "$",
       "waitNote": "오후 피크타임 대기 길음",
-      "note": "디저트 단독 방문이 가장 효율적이고, North End 산책과 붙이기 좋습니다.",
+      "note": "North End 산책과 함께 붙이기 좋은 대표 디저트 스폿입니다.",
       "menuItems": [
         { "name": "Plain Cannoli", "price": "$7.00" },
         { "name": "Pistachio Cannoli", "price": "$7.00" },
@@ -37,7 +37,7 @@
       "imageType": "real",
       "imageSource": "Wikimedia Commons",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mike%27s+Pastry+300+Hanover+St+Boston+MA",
-      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d321908-Reviews-Mike_s_Pastry-Boston_Massachusetts.html",
+      "reviewUrl": "https://www.google.com/search?q=Mike%27s+Pastry+Boston+reviews",
       "sourceUrl": "https://www.allmenus.com/ma/boston/445276-mikes-pastry/menu/",
       "checkedAt": "2026-05-12"
     },
@@ -46,10 +46,10 @@
       "area": "Back Bay",
       "themes": ["foodie", "relaxed"],
       "price": "$$",
-      "waitNote": "매장 규모가 크지 않아 점심 피크는 대기 가능",
-      "note": "강한 일정보다 여유로운 일정이나 쇼핑 동선과 붙이기 좋습니다.",
+      "waitNote": "점심 피크는 대기 가능",
+      "note": "쇼핑 동선과 붙이기 좋은 랍스터롤 스톱입니다.",
       "menuItems": [
-        { "name": "Lobster Roll", "price": "시장가 / 현장 메뉴판 확인" },
+        { "name": "Lobster Roll", "price": "현장 메뉴판 확인" },
         { "name": "Clam Chowder", "price": "현장 메뉴판 확인" },
         { "name": "Shrimp Roll", "price": "현장 메뉴판 확인" }
       ],
@@ -57,8 +57,148 @@
       "imageType": "real",
       "imageSource": "Luke's Lobster official page",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luke%27s+Lobster+Back+Bay+Boston",
-      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d11952956-Reviews-Luke_s_Lobster_Back_Bay-Boston_Massachusetts.html",
+      "reviewUrl": "https://www.google.com/search?q=Luke%27s+Lobster+Back+Bay+reviews",
       "sourceUrl": "https://lukeslobster.com/pages/back-bay",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Neptune Oyster",
+      "area": "North End",
+      "themes": ["foodie", "hard"],
+      "price": "$$$",
+      "waitNote": "오픈 직후가 아니면 대기 길어질 수 있음",
+      "note": "생굴과 랍스터롤 중심의 대표 해산물 식당이라 맛집 테마 우선순위가 높습니다.",
+      "menuItems": [
+        { "name": "Wellfleet Clam Chowder", "price": "$15" },
+        { "name": "Neptune Burger", "price": "$24" },
+        { "name": "Maine Lobster Roll", "price": "MKT" }
+      ],
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/53e3f22fe4b0c6f75f6a869d/1407443630555-VN8XBVJ1ZAG8P5QFQ2XH/NO_Logo.png?format=1500w",
+      "imageType": "real",
+      "imageSource": "Neptune Oyster official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Neptune+Oyster+63+Salem+St+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=Neptune+Oyster+Boston+reviews",
+      "sourceUrl": "https://www.neptuneoyster.com/menu/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Regina Pizzeria North End",
+      "area": "North End",
+      "themes": ["essential", "foodie", "hard"],
+      "price": "$$",
+      "waitNote": "주말 저녁 대기 빈번",
+      "note": "보스턴 오리지널 피자 상징성이 커서 North End 식사 후보로 안정적입니다.",
+      "menuItems": [
+        { "name": "Cheese Pizza", "price": "10\" $12.50 / 16\" $17.50" },
+        { "name": "Margherita", "price": "10\" $17.00 / 16\" $27.00" },
+        { "name": "Chicken Parmesan Pizza", "price": "10\" $18.00 / 16\" $28.00" }
+      ],
+      "imageUrl": "https://www.pizzeriaregina.com/images/logo_header.png",
+      "imageType": "real",
+      "imageSource": "Regina Pizzeria official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Regina+Pizzeria+11.5+Thacher+St+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=Regina+Pizzeria+North+End+reviews",
+      "sourceUrl": "https://www.pizzeriaregina.com/assets/files/reg-northend-menu-425.pdf",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Legal Harborside",
+      "area": "Seaport",
+      "themes": ["essential", "relaxed", "foodie"],
+      "price": "$$$",
+      "waitNote": "일몰 시간대 예약 권장",
+      "note": "Seaport 야경과 같이 묶기 좋은 보스턴 대표 시푸드 체인 플래그십입니다.",
+      "menuItems": [
+        { "name": "Jumbo Shrimp Cocktail", "price": "$15.95" },
+        { "name": "New England Clam Chowder", "price": "$6.95" },
+        { "name": "Roasted Atlantic Cod", "price": "$32.00" }
+      ],
+      "imageUrl": "https://www.legalseafoods.com/wp-content/uploads/2024/09/legal-seafoods-logo.svg",
+      "imageType": "real",
+      "imageSource": "Legal Sea Foods official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Legal+Harborside+270+Northern+Ave+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=Legal+Harborside+Boston+reviews",
+      "sourceUrl": "https://www.allmenus.com/ma/boston/354733-legal-harborside/menu/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Atlantic Fish Company",
+      "area": "Back Bay",
+      "themes": ["essential", "foodie"],
+      "price": "$$$",
+      "waitNote": "Back Bay 저녁 시간대는 예약이 편함",
+      "note": "Back Bay 숙소와 매우 가깝게 붙일 수 있는 클래식 해산물 식당입니다.",
+      "menuItems": [
+        { "name": "New England Clam Chowder", "price": "$8.00" },
+        { "name": "Fish and Chips", "price": "$24.00" },
+        { "name": "Maine Lobster Roll", "price": "$24.00" }
+      ],
+      "imageUrl": "https://www.atlanticfishco.com/wp-content/uploads/2023/07/AFC-Logo-300x87.png",
+      "imageType": "real",
+      "imageSource": "Atlantic Fish Company official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Atlantic+Fish+Company+761+Boylston+St+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=Atlantic+Fish+Company+Boston+reviews",
+      "sourceUrl": "https://www.allmenus.com/ma/boston/78-atlantic-fish-company/menu/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Flour Bakery + Cafe",
+      "area": "Fort Point / Seaport edge",
+      "themes": ["relaxed", "foodie"],
+      "price": "$~$$",
+      "waitNote": "브런치 시간대 대기 가능",
+      "note": "가벼운 브런치나 이동 중 한 끼로 넣기 좋은 보스턴 인기 베이커리입니다.",
+      "menuItems": [
+        { "name": "Breakfast Sandwich", "price": "현장 메뉴판 확인" },
+        { "name": "Sticky Bun", "price": "현장 메뉴판 확인" },
+        { "name": "Roast Beef Sandwich", "price": "현장 메뉴판 확인" }
+      ],
+      "imageUrl": "https://images.ctfassets.net/38f3s2bw/production/30bf9e1fd81db268e383a7940398c3adf9d8cd1f-5472x3648.jpg?fm=webp&q=75&w=1200",
+      "imageType": "real",
+      "imageSource": "Flour Bakery official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Flour+Bakery+Boston+Fort+Point",
+      "reviewUrl": "https://www.google.com/search?q=Flour+Bakery+Boston+reviews",
+      "sourceUrl": "https://www.flourbakery.com/menu?menuid=34",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Boston Sail Loft",
+      "area": "Waterfront / Long Wharf",
+      "themes": ["relaxed", "foodie"],
+      "price": "$$",
+      "waitNote": "주말 점심 피크 대기 가능",
+      "note": "워터프런트 산책과 연결하기 좋고 클램차우더 평이 안정적입니다.",
+      "menuItems": [
+        { "name": "Cajun Popcorn Shrimp", "price": "$9.95" },
+        { "name": "Fresh Calamari Rings", "price": "$9.95" },
+        { "name": "Shrimp Cocktail", "price": "현장 메뉴판 확인" }
+      ],
+      "imageUrl": "https://www.bostonsailloft.com/wp-content/uploads/2024/03/BSL-Logo.png",
+      "imageType": "real",
+      "imageSource": "Boston Sail Loft official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Sail+Loft+80+Atlantic+Ave+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=Boston+Sail+Loft+reviews",
+      "sourceUrl": "https://www.allmenus.com/ma/boston/218-boston-sail-loft/menu/",
+      "checkedAt": "2026-05-12"
+    },
+    {
+      "name": "Bova's Bakery",
+      "area": "North End",
+      "themes": ["relaxed", "foodie"],
+      "price": "$",
+      "waitNote": "야간에도 비교적 빠르게 들를 수 있음",
+      "note": "Mike's와 다른 결의 North End 베이커리 후보로 넣기 좋습니다.",
+      "menuItems": [
+        { "name": "Cannoli", "price": "현장 메뉴판 확인" },
+        { "name": "Lobster Tail", "price": "현장 메뉴판 확인" },
+        { "name": "Arancini", "price": "현장 메뉴판 확인" }
+      ],
+      "imageUrl": "https://bovasbakeryboston.net/wp-content/uploads/2024/08/Bovas-Logo.png",
+      "imageType": "real",
+      "imageSource": "Bova's Bakery official site",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bova%27s+Bakery+134+Salem+St+Boston+MA",
+      "reviewUrl": "https://www.google.com/search?q=Bova%27s+Bakery+Boston+reviews",
+      "sourceUrl": "https://www.allmenus.com/ma/boston/223-bovas-bakery/menu/",
       "checkedAt": "2026-05-12"
     }
   ]

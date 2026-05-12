@@ -3,13 +3,13 @@
   "country": "USA",
   "tripLength": "3박 4일",
   "updatedAt": "2026-05-12",
-  "summary": "필수/여유/맛집 테마를 한 화면에서 바로 비교하고, 동일상품 검증 기념품과 대상별 선물 추천까지 함께 보는 보스턴 실전 일정표",
-  "tags": ["Back Bay", "MBTA Tap to Ride", "Food + Gift"],
+  "summary": "필수/여유/맛집 테마를 한 화면에서 비교하고, 10개 이상 맛집, 10개 공식 기념품 상점, 대상별 선물 추천까지 바로 확인하는 보스턴 실전 일정표",
+  "tags": ["10+ Food Spots", "10 Gift Shops", "Official Product Photos"],
   "routeUrlByTheme": {
     "all": "https://www.google.com/maps/dir/Back+Bay+Boston/Boston+Public+Garden/Union+Oyster+House+Boston/Boston+Common/Quincy+Market+Boston/Mike%27s+Pastry+Boston/Harvard+Square/Luke%27s+Lobster+Back+Bay/Boston+Tea+Party+Ships+%26+Museum/Boston+Logan+International+Airport",
     "essential": "https://www.google.com/maps/dir/Back+Bay+Boston/Boston+Public+Garden/Union+Oyster+House+Boston/Boston+Common/Quincy+Market+Boston/Mike%27s+Pastry+Boston/Harvard+Square/Boston+Tea+Party+Ships+%26+Museum/Boston+Logan+International+Airport",
     "relaxed": "https://www.google.com/maps/dir/Back+Bay+Boston/Boston+Public+Garden/Newbury+Street+Boston/Long+Wharf+Boston/Harvard+Square/Luke%27s+Lobster+Back+Bay/Isabella+Stewart+Gardner+Museum/Boston+Tea+Party+Ships+%26+Museum/Boston+Logan+International+Airport",
     "hard": "https://www.google.com/maps/dir/Back+Bay+Boston/Boston+Common/Old+State+House+Boston/Quincy+Market+Boston/Kendall+MIT/Fenway+Park/Boston+Logan+International+Airport",
-    "foodie": "https://www.google.com/maps/dir/Union+Oyster+House+Boston/Quincy+Market+Boston/Mike%27s+Pastry+Boston/Luke%27s+Lobster+Back+Bay/Boston+Tea+Party+Ships+%26+Museum"
+    "foodie": "https://www.google.com/maps/dir/Union+Oyster+House+Boston/Neptune+Oyster+Boston/Regina+Pizzeria+Boston/Mike%27s+Pastry+Boston/Atlantic+Fish+Company+Boston/Boston+Sail+Loft/Luke%27s+Lobster+Back+Bay"
   }
 }

@@ -10,97 +10,269 @@
       "imageType": "real",
       "source": "Unsplash",
       "checkedAt": "2026-05-12",
-      "usedBy": ["page.hero"]
+      "usedBy": [
+        "page.hero"
+      ]
     },
     {
-      "id": "union-oyster-house-main",
+      "id": "food-union-oyster-house",
       "type": "food",
       "path": "external",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Union_Oyster_House%2C_Boston.jpg/1280px-Union_Oyster_House%2C_Boston.jpg",
       "imageType": "real",
       "source": "Wikimedia Commons",
       "checkedAt": "2026-05-12",
-      "usedBy": ["foods.union-oyster-house"]
+      "usedBy": [
+        "foods.union-oyster-house"
+      ]
     },
     {
-      "id": "mikes-pastry-main",
+      "id": "food-mike-s-pastry",
       "type": "food",
       "path": "external",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mike%27s_Pastry%2C_Boston.jpg/1280px-Mike%27s_Pastry%2C_Boston.jpg",
       "imageType": "real",
       "source": "Wikimedia Commons",
       "checkedAt": "2026-05-12",
-      "usedBy": ["foods.mikes-pastry"]
+      "usedBy": [
+        "foods.mike-s-pastry"
+      ]
     },
     {
-      "id": "lukes-lobster-back-bay-main",
+      "id": "food-luke-s-lobster-back-bay",
       "type": "food",
       "path": "external",
       "url": "https://cdn.arenacommerce.com/lukes-lobster-shop/Lobster%20Rolls%20on%20table%20(1).jpg",
       "imageType": "real",
       "source": "Luke's Lobster official page",
       "checkedAt": "2026-05-12",
-      "usedBy": ["foods.lukes-lobster-back-bay"]
+      "usedBy": [
+        "foods.luke-s-lobster-back-bay"
+      ]
     },
     {
-      "id": "harvard-h-shield-mug",
-      "type": "souvenir",
+      "id": "food-neptune-oyster",
+      "type": "food",
       "path": "external",
-      "url": "https://www.theharvardshop.com/cdn/shop/files/H-Shield-Mug-Quality-200020277.jpg?v=1720624738",
+      "url": "https://images.squarespace-cdn.com/content/v1/53e3f22fe4b0c6f75f6a869d/1407443630555-VN8XBVJ1ZAG8P5QFQ2XH/NO_Logo.png?format=1500w",
       "imageType": "real",
-      "source": "official-store-listing",
-      "productName": "H Shield Mug",
-      "imageMatchLevel": "exact-product",
+      "source": "Neptune Oyster official site",
       "checkedAt": "2026-05-12",
-      "usedBy": ["souvenirs.harvard-h-shield-mug"]
+      "usedBy": [
+        "foods.neptune-oyster"
+      ]
     },
     {
-      "id": "harvard-hooded-crest-sweatshirt",
-      "type": "souvenir",
+      "id": "food-regina-pizzeria-north-end",
+      "type": "food",
       "path": "external",
-      "url": "https://www.theharvardshop.com/cdn/shop/files/Harvard-Hooded-Crest-Sweatshirt-Quality-199987681.jpg?v=1720623777",
+      "url": "https://www.pizzeriaregina.com/images/logo_header.png",
       "imageType": "real",
-      "source": "official-store-listing",
-      "productName": "Harvard Hooded Crest Sweatshirt",
-      "imageMatchLevel": "exact-product",
+      "source": "Regina Pizzeria official site",
       "checkedAt": "2026-05-12",
-      "usedBy": ["souvenirs.harvard-hoodie"]
+      "usedBy": [
+        "foods.regina-pizzeria-north-end"
+      ]
     },
     {
-      "id": "mit-hooded-sweatshirt",
-      "type": "souvenir",
+      "id": "food-legal-harborside",
+      "type": "food",
       "path": "external",
-      "url": "https://www.theharvardshop.com/cdn/shop/files/MIT-Hooded-Sweatshirt-Freedom-199934524.jpg?v=1720622145",
+      "url": "https://www.legalseafoods.com/wp-content/uploads/2024/09/legal-seafoods-logo.svg",
       "imageType": "real",
-      "source": "official-store-listing",
-      "productName": "MIT Hooded Sweatshirt",
-      "imageMatchLevel": "exact-product",
+      "source": "Legal Sea Foods official site",
       "checkedAt": "2026-05-12",
-      "usedBy": ["souvenirs.mit-hoodie"]
+      "usedBy": [
+        "foods.legal-harborside"
+      ]
     },
     {
-      "id": "abigails-blend-tea",
-      "type": "souvenir",
+      "id": "food-atlantic-fish-company",
+      "type": "food",
       "path": "external",
-      "url": "https://shop.bostonteapartyship.com/cdn/shop/products/boston-tea-party-abigails-tea_8a83082d-4091-4266-9dac-080a36a74572_1024x1024.jpg?v=1500411951",
+      "url": "https://www.atlanticfishco.com/wp-content/uploads/2023/07/AFC-Logo-300x87.png",
       "imageType": "real",
-      "source": "official-store-listing",
-      "productName": "Abigail's Blend - Elmwood Inn Fine Teas",
-      "imageMatchLevel": "exact-product",
+      "source": "Atlantic Fish Company official site",
       "checkedAt": "2026-05-12",
-      "usedBy": ["souvenirs.abigails-blend-tea"]
+      "usedBy": [
+        "foods.atlantic-fish-company"
+      ]
     },
     {
-      "id": "robinson-tea-chest-mug",
-      "type": "souvenir",
+      "id": "food-flour-bakery-cafe",
+      "type": "food",
       "path": "external",
-      "url": "https://shop.bostonteapartyship.com/cdn/shop/products/robinson_mug_with_handle_writing_1024x1024.jpg?v=1579372773",
+      "url": "https://images.ctfassets.net/38f3s2bw/production/30bf9e1fd81db268e383a7940398c3adf9d8cd1f-5472x3648.jpg?fm=webp&q=75&w=1200",
+      "imageType": "real",
+      "source": "Flour Bakery official site",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "foods.flour-bakery-cafe"
+      ]
+    },
+    {
+      "id": "food-boston-sail-loft",
+      "type": "food",
+      "path": "external",
+      "url": "https://www.bostonsailloft.com/wp-content/uploads/2024/03/BSL-Logo.png",
+      "imageType": "real",
+      "source": "Boston Sail Loft official site",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "foods.boston-sail-loft"
+      ]
+    },
+    {
+      "id": "food-bova-s-bakery",
+      "type": "food",
+      "path": "external",
+      "url": "https://bovasbakeryboston.net/wp-content/uploads/2024/08/Bovas-Logo.png",
+      "imageType": "real",
+      "source": "Bova's Bakery official site",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "foods.bova-s-bakery"
+      ]
+    },
+    {
+      "id": "souvenir-the-harvard-shop",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-04-22at4.05.05PM.png?v=1776888314",
       "imageType": "real",
       "source": "official-store-listing",
-      "productName": "Robinson Tea Chest Mug",
+      "productName": "Harvard Pin",
       "imageMatchLevel": "exact-product",
       "checkedAt": "2026-05-12",
-      "usedBy": ["souvenirs.robinson-tea-chest-mug"]
+      "usedBy": [
+        "souvenirs.the-harvard-shop.hero"
+      ]
+    },
+    {
+      "id": "souvenir-the-coop-harvard-square",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/10560_pink.jpg?v=1778514130",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "Harvard YETI 20 oz Rambler Tumbler",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.the-coop-harvard-square.hero"
+      ]
+    },
+    {
+      "id": "souvenir-the-coop-mit-kendall",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7604_-MIT_6.7_oz_Micro_Hydro_Mini_bottle-B_media_1.jpg?v=1770310452",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "MIT 6.7 oz Micro Hydro Mini bottle",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.the-coop-mit-kendall.hero"
+      ]
+    },
+    {
+      "id": "souvenir-boston-tea-party-ships-museum-gift-shop",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn.shopify.com/s/files/1/2009/9263/files/20250820_125802.jpg?v=1755713504",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "Boston Wanderer Tote Bag",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.boston-tea-party-ships-museum-gift-shop.hero"
+      ]
+    },
+    {
+      "id": "souvenir-museum-of-science-shop",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/404006212205.jpg?v=1772485361",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "Museum of Science Boston Science Flip Top Tumbler",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.museum-of-science-shop.hero"
+      ]
+    },
+    {
+      "id": "souvenir-mfa-boston-shop",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3661/images/10310/154364_MFA_Logo_Mug_1_1__30371__02296.1706732656.386.513.png?c=1",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "MFA Logo Mug",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.mfa-boston-shop.hero"
+      ]
+    },
+    {
+      "id": "souvenir-mfa-huntington-store",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3661/images/10310/154364_MFA_Logo_Mug_1_1__30371__02296.1706732656.386.513.png?c=1",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "MFA Logo Mug",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.mfa-huntington-store.hero"
+      ]
+    },
+    {
+      "id": "souvenir-linde-family-wing-bookstore-and-shop",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3661/images/10310/154364_MFA_Logo_Mug_1_1__30371__02296.1706732656.386.513.png?c=1",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "MFA Logo Mug",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.linde-family-wing-bookstore-and-shop.hero"
+      ]
+    },
+    {
+      "id": "souvenir-gift-at-the-gardner",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn.shopify.com/s/files/1/2654/4574/files/BlackSpoon.png?v=1778347512",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "Dessert Spoon",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.gift-at-the-gardner.hero"
+      ]
+    },
+    {
+      "id": "souvenir-jfk-library-museum-store",
+      "type": "souvenir-shop-hero",
+      "path": "external",
+      "url": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/YD151952_POLOADVICTURA_SM.jpg?v=1761254848",
+      "imageType": "real",
+      "source": "official-store-listing",
+      "productName": "VICTURA SKETCH ADULT POLO TEE",
+      "imageMatchLevel": "exact-product",
+      "checkedAt": "2026-05-12",
+      "usedBy": [
+        "souvenirs.jfk-library-museum-store.hero"
+      ]
     }
   ]
 }

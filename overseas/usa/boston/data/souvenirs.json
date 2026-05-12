@@ -3,124 +3,1598 @@
   "region": "Boston, USA",
   "souvenirs": [
     {
-      "name": "하버드 실드 머그",
-      "productName": "H Shield Mug",
-      "forWhom": ["부모님", "회사 동료", "본인"],
-      "category": "mug",
-      "price": "$19.99",
-      "imageUrl": "https://www.theharvardshop.com/cdn/shop/files/H-Shield-Mug-Quality-200020277.jpg?v=1720624738",
-      "imageType": "real",
-      "imageSource": "official-store-listing",
-      "imageMatchLevel": "exact-product",
-      "imageVerifiedBy": "official-store-listing",
-      "productUrl": "https://www.theharvardshop.com/products/hshieldmug",
-      "shopOptions": [
+      "shopName": "The Harvard Shop",
+      "shopType": "university-official",
+      "area": "Harvard Square, Cambridge",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Harvard+Shop+Cambridge+MA",
+      "shopUrl": "https://www.theharvardshop.com/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "must-visit",
+      "visitTip": "하버드 굿즈를 가장 안정적으로 확보하기 좋고 오전 시간대가 사이즈 선택 폭이 넓습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
         {
-          "shopName": "The Harvard Shop",
-          "area": "Harvard Square, Cambridge",
-          "price": "$19.99",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Harvard+Shop+Cambridge+MA",
-          "note": "하버드 공식 스토어 상품 기준"
+          "name": "Harvard Pin",
+          "price": "$6.99",
+          "productUrl": "https://www.theharvardshop.com/products/harvard-pin-copy",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-04-22at4.05.05PM.png?v=1776888314",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Harvard H Shield Pin",
+          "price": "$6.99",
+          "productUrl": "https://www.theharvardshop.com/products/harvard-h-shield-pin-new",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-04-21at4.17.37PM_a6946a4c-7c2e-4ec8-a3c2-5ba52db8ee94.png?v=1776802723",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Harvard Medical School Pin",
+          "price": "$6.99",
+          "productUrl": "https://www.theharvardshop.com/products/harvard-law-school-pin-copy",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-03-03at1.55.57PM.png?v=1772564174",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Harvard Law School Pin",
+          "price": "$6.99",
+          "productUrl": "https://www.theharvardshop.com/products/harvard-business-school-pin-new-copy",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-03-03at1.56.05PM.png?v=1772564188",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Harvard H Magnet Clip",
+          "price": "$6.99",
+          "productUrl": "https://www.theharvardshop.com/products/harvard-h-magnet-clip-new",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-04-21at4.26.13PM.png?v=1776803181",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard Pewter Magnet Clip",
+          "price": "$6.99",
+          "productUrl": "https://www.theharvardshop.com/products/harvard-pewter-magnet-clip-new",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-04-21at4.23.46PM.png?v=1776803060",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Pewter Keychain",
+          "price": "$8.00",
+          "productUrl": "https://www.theharvardshop.com/products/pewter-keychain-new",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot_2026-04-21_at_4.22.37_PM.png?v=1776802978",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Harvard Business School Pin",
+          "price": "$6.99",
+          "productUrl": "https://www.theharvardshop.com/products/harvard-business-school-pin-new",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-04-21at4.19.32PM.png?v=1776802800",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Harvard Premium Umbrella",
+          "price": "$25.99",
+          "productUrl": "https://www.theharvardshop.com/products/harvard-auto-open-umbrella",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot2026-04-18at4.34.36PM.png?v=1776544522",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Beacon Hill Postcard",
+          "price": "$5.99",
+          "productUrl": "https://www.theharvardshop.com/products/beacon-hill-postcard",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0084/9282/files/Screenshot_2026-01-07_at_2.23.51_PM.png?v=1767814166",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
         }
-      ],
-      "carryTip": "머그는 깨지기 쉬워 의류 사이에 넣어 수하물 권장",
-      "checkedAt": "2026-05-12"
+      ]
     },
     {
-      "name": "하버드 후디",
-      "productName": "Harvard Hooded Crest Sweatshirt",
-      "forWhom": ["배우자", "자녀", "본인"],
-      "category": "apparel",
-      "price": "$48.00",
-      "imageUrl": "https://www.theharvardshop.com/cdn/shop/files/Harvard-Hooded-Crest-Sweatshirt-Quality-199987681.jpg?v=1720623777",
-      "imageType": "real",
-      "imageSource": "official-store-listing",
-      "imageMatchLevel": "exact-product",
-      "imageVerifiedBy": "official-store-listing",
-      "productUrl": "https://www.theharvardshop.com/products/harvard-hooded-crest-sweatshirt",
-      "shopOptions": [
+      "shopName": "The COOP Harvard Square",
+      "shopType": "university-official",
+      "area": "Harvard Square, Cambridge",
+      "priceBand": "$~$$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+COOP+Harvard+Square+Cambridge+MA",
+      "shopUrl": "https://www.thecoop.com/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "must-visit",
+      "visitTip": "하버드 로고 의류와 텀블러, 선물용 액세서리 비중이 높습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
         {
-          "shopName": "The Harvard Shop",
-          "area": "Harvard Square, Cambridge",
-          "price": "$48.00",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Harvard+Shop+Cambridge+MA",
-          "note": "사이즈 품절 가능성 있어 오전 방문이 유리"
+          "name": "Harvard YETI 20 oz Rambler Tumbler",
+          "price": "$49.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-yeti-20-oz-rambler-tumbler",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/10560_pink.jpg?v=1778514130",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard Greyson Blackout Veritas Shield Sequoia Bomber Jacket",
+          "price": "$264.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-greyson-blackout-veritas-shield-sequoia-bomber-jacket",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7971_media.jpg?v=1778091969",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard Greyson Blackout Veritas Shield Sequoia Vest",
+          "price": "$224.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-greyson-blackout-veritas-shield-sequoia-vest",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7966_media.jpg?v=1778091483",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard 6.7 oz Micro Hydro Mini bottle",
+          "price": "$42.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-6-7-oz-micro-hydro-mini-bottle",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7603_-Harvard_6.7_oz_Micro_Hydro_Mini_bottle-B_media_1.jpg?v=1770310407",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard League Women's Victory Springs Pant",
+          "price": "$54.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-league-womens-victory-springs-pant",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/8015_media.jpg?v=1778181026",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard Greyson Blackout Veritas Shield Guide Sport Quarter Zip",
+          "price": "$164.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-greyson-blackout-veritas-shield-guide-sport-quarter-zip",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/CopyofProductResize1200x1200_1200x1200px_-2026-05-04T135525.817.jpg?v=1777917258",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard Greyson Blackout Veritas Shield Colorado Hoodie",
+          "price": "$209.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-greyson-blackout-veritas-shield-colorado-hoodie",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7974_media.jpg?v=1778167720",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard Greyson Blackout Veritas Shield Aspen Hoodie",
+          "price": "$234.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-greyson-blackout-veritas-shield-aspen-hoodie",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7975_media_232d1c01-fcbf-4999-8fbe-672e09a11d25.jpg?v=1778179211",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard Women's Greyson Blackout Veritas Shield Kristina Full Zip",
+          "price": "$224.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-womens-greyson-blackout-veritas-shield-kristina-full-zip",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7969_media.jpg?v=1778168413",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Harvard Silicone Card Wallet Holder",
+          "price": "$7.98",
+          "productUrl": "https://www.thecoop.com/products/harvard-silicone-card-wallet-holder",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/2459-Harvard_Silicone_Card_Wallet_Holder_media.jpg?v=1763671727",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
         }
-      ],
-      "carryTip": "부피가 있어 귀국 전날 짐 공간 확인 필요",
-      "checkedAt": "2026-05-12"
+      ]
     },
     {
-      "name": "MIT 후디",
-      "productName": "MIT Hooded Sweatshirt",
-      "forWhom": ["자녀", "친구", "본인"],
-      "category": "apparel",
-      "price": "$44.00",
-      "imageUrl": "https://www.theharvardshop.com/cdn/shop/files/MIT-Hooded-Sweatshirt-Freedom-199934524.jpg?v=1720622145",
-      "imageType": "real",
-      "imageSource": "official-store-listing",
-      "imageMatchLevel": "exact-product",
-      "imageVerifiedBy": "official-store-listing",
-      "productUrl": "https://www.theharvardshop.com/products/mithoodedsweatshirt",
-      "shopOptions": [
+      "shopName": "The COOP MIT Kendall",
+      "shopType": "university-official",
+      "area": "Kendall Square / MIT",
+      "priceBand": "$~$$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MIT+COOP+Cambridge+MA",
+      "shopUrl": "https://www.thecoop.com/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "must-visit",
+      "visitTip": "MIT 라인업이 많아 자녀·친구용 후디, 머그, 데스크 굿즈를 고르기 쉽습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
         {
-          "shopName": "The Harvard Shop",
-          "area": "Harvard Square, Cambridge",
-          "price": "$44.00",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Harvard+Shop+Cambridge+MA",
-          "note": "MIT 라인도 함께 취급하는 공식 스토어 상품 기준"
+          "name": "MIT 6.7 oz Micro Hydro Mini bottle",
+          "price": "$42.98",
+          "productUrl": "https://www.thecoop.com/products/mit-6-7-oz-micro-hydro-mini-bottle",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7604_-MIT_6.7_oz_Micro_Hydro_Mini_bottle-B_media_1.jpg?v=1770310452",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "MIT Standard Rec. Build. Break. Rebuild. Long Sleeve Slub Tee",
+          "price": "$54.98",
+          "productUrl": "https://www.thecoop.com/products/mit-standard-rec-build-break-rebuild-long-sleeve-slub-tee",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7279-MIT_Standard_Rec.jpg?v=1763672422",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "MIT Class of 2026 Hood",
+          "price": "$54.98",
+          "productUrl": "https://www.thecoop.com/products/mit-class-of-2026-hood",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7933-MITClassof2026Hood_media.jpg?v=1776877776",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "MIT League Youth Intramural Ringer With Seal Design",
+          "price": "$32.98",
+          "productUrl": "https://www.thecoop.com/products/mit-league-youth-intramural-ringer-with-seal-design",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/CopyofProductResize1200x1200_1200x1200px_-2026-05-04T155524.049.jpg?v=1777924449",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자"
+          ]
+        },
+        {
+          "name": "MIT Nike Brasilia Backpack",
+          "price": "$74.98",
+          "productUrl": "https://www.thecoop.com/products/mit-nike-brasilia-backpack",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/6186-MITNikeBrasiliaBackpack_media_01.jpg?v=1778177115",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "MIT League Micro Terry Lightweight All Day Hood",
+          "price": "$59.98",
+          "productUrl": "https://www.thecoop.com/products/mit-league-micro-terry-lightweight-all-day-hood",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/CopyofProductResize1200x1200_1200x1200px_-2026-04-30T165156.730.jpg?v=1777582256",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "MIT Crew Dog Embroidered Graduation TIM the Beaver Hoodie",
+          "price": "$129.98",
+          "productUrl": "https://www.thecoop.com/products/mit-crew-dog-embroidered-graduation-tim-the-beaver-hoodie",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7931-MITCrewDogEmbroideredGraduationTIMtheBeaverHoodie_media_73a520d1-b3a8-4c32-9340-5795182ee21a.jpg?v=1777399572",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "MIT Crew Dog Embroidered Graduation TIM the Beaver Tee",
+          "price": "$59.98",
+          "productUrl": "https://www.thecoop.com/products/mit-crew-dog-embroidered-graduation-tim-the-beaver-tee",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/7930-MITCrewDogEmbroideredGraduationTIMtheBeaverTee_media.jpg?v=1777399206",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "MIT League All American Tee With Left Chest Logo",
+          "price": "$34.98",
+          "productUrl": "https://www.thecoop.com/products/mit-league-all-american-tee-with-left-chest-logo",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/8012-MITLeagueAllAmericanTeeWithLeftChestLogo_green_media.jpg?v=1777296922",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "MIT Seal 14 oz Bistro Mug",
+          "price": "$15.98",
+          "productUrl": "https://www.thecoop.com/products/mit-seal-14-oz-bistro-mug",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0786/8101/4492/files/1239-MIT_Seal_14_oz_Bistro_Mug_Almond.jpg?v=1763671686",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
         }
-      ],
-      "carryTip": "의류라 파손 위험은 적지만 부피는 있음",
-      "checkedAt": "2026-05-12"
+      ]
     },
     {
-      "name": "Boston Tea Party 차 선물",
-      "productName": "Abigail's Blend - Elmwood Inn Fine Teas",
-      "forWhom": ["부모님", "배우자", "회사 동료"],
-      "category": "tea",
-      "price": "$17.99",
-      "imageUrl": "https://shop.bostonteapartyship.com/cdn/shop/products/boston-tea-party-abigails-tea_8a83082d-4091-4266-9dac-080a36a74572_1024x1024.jpg?v=1500411951",
-      "imageType": "real",
-      "imageSource": "official-store-listing",
-      "imageMatchLevel": "exact-product",
-      "imageVerifiedBy": "official-store-listing",
-      "productUrl": "https://shop.bostonteapartyship.com/products/boston-tea-party-abigails-tea",
-      "shopOptions": [
+      "shopName": "Boston Tea Party Ships & Museum Gift Shop",
+      "shopType": "museum-gift-shop",
+      "area": "Congress St / Waterfront",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Ships+%26+Museum+306+Congress+St+Boston+MA",
+      "shopUrl": "https://shop.bostonteapartyship.com/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "must-visit",
+      "visitTip": "역사 테마가 분명해 직장 선물이나 부모님 선물용으로 설명하기 쉽습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
         {
-          "shopName": "Boston Tea Party Ships & Museum Gift Shop",
-          "area": "Congress St / Seaport edge",
+          "name": "Boston Wanderer Tote Bag",
+          "price": "$18.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/boston-wanderer-tote-bag",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/20250820_125802.jpg?v=1755713504",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Destruction of the Tea Clear Shot Glass",
+          "price": "$7.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/destruction-of-the-tea-clear-shot-glass",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/dumpingoftheteasg.jpg?v=1686246140",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료"
+          ]
+        },
+        {
+          "name": "Boston Founded 1630",
+          "price": "$34.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/boston-founded-1776-blue",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/1000002872_1c7bbb5f-2604-4306-b25a-bcb49c24c6dc.jpg?v=1768592054",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Hyson Green Tea",
           "price": "$17.99",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Ships+%26+Museum+306+Congress+St+Boston+MA",
-          "note": "역사 테마가 분명해 부모님/직장 선물로 무난"
+          "productUrl": "https://shop.bostonteapartyship.com/products/hyson-tea",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/20260505_135752_dcb18387-6847-47ae-8cff-afec3a5d2293.jpg?v=1778004057",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Bohea Black Tea",
+          "price": "$17.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/bohea-black-tea",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/20260505_134619.jpg?v=1778003312",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Souchong Black Tea",
+          "price": "$17.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/souchong-black-tea",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/20260505_132611.jpg?v=1778002119",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Mini Boston Tea Party Museum Tea Set",
+          "price": "$39.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/mini-boston-tea-party-museum-tea-set",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/20260505_130414_61194434-d43d-4ec7-9198-ad7ca3a01ddc.jpg?v=1778001392",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료"
+          ]
+        },
+        {
+          "name": "Metal Teapot Infuser",
+          "price": "$15.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/metal-teapot-infuser",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/metaltpotinfuser.jpg?v=1688068673",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료"
+          ]
+        },
+        {
+          "name": "Japanese style Tea Set w/ Sakura Leaves",
+          "price": "$32.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/japanese-style-tea-set-w-sakura-leaves",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/20260501_132211_2.jpg?v=1777658016",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료"
+          ]
+        },
+        {
+          "name": "Cherry Blossom Japanese Style Tea Set w/ Bamboo handle",
+          "price": "$44.99",
+          "productUrl": "https://shop.bostonteapartyship.com/products/cherry-blossom-japanese-style-tea-set-w-bamboo-handle",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2009/9263/files/20260501_131750.jpg?v=1777656908",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료"
+          ]
         }
-      ],
-      "carryTip": "차류는 비교적 가볍지만 파우치 형태와 유통기한 확인 필요",
-      "checkedAt": "2026-05-12"
+      ]
     },
     {
-      "name": "Boston Tea Party 머그",
-      "productName": "Robinson Tea Chest Mug",
-      "forWhom": ["부모님", "친구", "본인"],
-      "category": "mug",
-      "price": "$15.99",
-      "imageUrl": "https://shop.bostonteapartyship.com/cdn/shop/products/robinson_mug_with_handle_writing_1024x1024.jpg?v=1579372773",
-      "imageType": "real",
-      "imageSource": "official-store-listing",
-      "imageMatchLevel": "exact-product",
-      "imageVerifiedBy": "official-store-listing",
-      "productUrl": "https://shop.bostonteapartyship.com/products/robinson-tea-chest-mug",
-      "shopOptions": [
+      "shopName": "Museum of Science Shop",
+      "shopType": "museum-gift-shop",
+      "area": "Science Park",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museum+of+Science+Boston+MA",
+      "shopUrl": "https://shop.mos.org/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "recommended",
+      "visitTip": "아이 선물과 과학 테마 생활소품을 한 번에 보기 좋습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
         {
-          "shopName": "Boston Tea Party Ships & Museum Gift Shop",
-          "area": "Congress St / Seaport edge",
-          "price": "$15.99",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Ships+%26+Museum+306+Congress+St+Boston+MA",
-          "note": "머그류라 파손 보호 포장 권장"
+          "name": "Museum of Science Boston Science Flip Top Tumbler",
+          "price": "$35.00",
+          "productUrl": "https://shop.mos.org/products/museum-of-science-boston-science-flip-top-tumbler",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/404006212205.jpg?v=1772485361",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Museum of Science Boston World Cup Scarf Keychain",
+          "price": "$14.00",
+          "productUrl": "https://shop.mos.org/products/museum-of-science-boston-world-cup-scarf-keychain",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/404006248532.jpg?v=1772485360",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Hello Kitty Axolotl Plush",
+          "price": "$26.00",
+          "productUrl": "https://shop.mos.org/products/hello-kitty-axolotl-plush",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/091671009362.jpg?v=1772485638",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "자녀"
+          ]
+        },
+        {
+          "name": "Hello Kitty Pilot Plush",
+          "price": "$26.00",
+          "productUrl": "https://shop.mos.org/products/hello-kitty-pilot-plush",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/091671010344.jpg?v=1772485361",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "자녀"
+          ]
+        },
+        {
+          "name": "Museum of Science Boston World Cup Scarf",
+          "price": "$35.00",
+          "productUrl": "https://shop.mos.org/products/museum-of-science-boston-world-cup-scarf",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/404006217743.jpg?v=1772485361",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Museum of Science Boston World Cup Scarf Magnet",
+          "price": "$12.00",
+          "productUrl": "https://shop.mos.org/products/museum-of-science-boston-world-cup-scarf-magnet",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/404006248525.jpg?v=1772485360",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Our Cosmos: The Complete Guide to Space for Kids",
+          "price": "$24.95",
+          "productUrl": "https://shop.mos.org/products/our-cosmos-the-complete-guide-to-space-for-kids",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/9781803381312.jpg?v=1772485361",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "James Webb Space Telescope Carina Nebula Tea Towel",
+          "price": "$36.00",
+          "productUrl": "https://shop.mos.org/products/james-webb-space-telescope-carina-nebula-tea-towel",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/404005485273_1.jpg?v=1759768996",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료"
+          ]
+        },
+        {
+          "name": "111 Places in Space That You Must Not Miss",
+          "price": "$23.95",
+          "productUrl": "https://shop.mos.org/products/111-places-in-space-that-you-must-not-miss",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/111PlacesinSpace.png?v=1772643094",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Let's Explore Dinosaurs Pop-up",
+          "price": "$29.95",
+          "productUrl": "https://shop.mos.org/products/lets-explore-dinosaurs-pop-up",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0637/0902/0258/files/9781588348180.jpg?v=1772485361",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
         }
-      ],
-      "carryTip": "깨지기 쉬워 의류/수건으로 감싼 뒤 수하물 권장",
-      "checkedAt": "2026-05-12"
+      ]
+    },
+    {
+      "shopName": "MFA Boston Shop",
+      "shopType": "museum-gift-shop",
+      "area": "Museum of Fine Arts, Fenway",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MFA+Boston+Shop",
+      "shopUrl": "https://mfashop.com/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "recommended",
+      "visitTip": "아트 프린트 머그와 보스턴 감성 생활소품 선택지가 넓습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
+        {
+          "name": "MFA Logo Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/mfa-logo-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3661/images/10310/154364_MFA_Logo_Mug_1_1__30371__02296.1706732656.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "MBTA Coasters",
+          "price": "$25.00",
+          "productUrl": "https://mfashop.com/mbta-coasters/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/2946/images/12122/Boston_Coasters__98845.1721764848.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Hopper, Lighthouse and Buildings Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/hopper-lighthouse-and-buildings-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/568/images/10379/542004_Hopper-Mug_Lighthouse__58942.1707343789.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Van Gogh Irises Grande Mug",
+          "price": "$47.00",
+          "productUrl": "https://mfashop.com/van-gogh-irises-grande-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/551/images/10320/540403_Van_Gogh_Irises_Grande_Mug__30390.1706733368.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Monet, Water Lilies Grande Mug",
+          "price": "$47.00",
+          "productUrl": "https://mfashop.com/monet-water-lilies-grande-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/553/images/10322/540407_Water_Lillies_Mug__13366.1706733470.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Camera Lens Mug",
+          "price": "$24.00",
+          "productUrl": "https://mfashop.com/camera-lens-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/548/images/10358/540305_Camera_Lens_Mug_2__80598.1706828793.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Grey Tabby Mug",
+          "price": "$22.00",
+          "productUrl": "https://mfashop.com/grey-tabby-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3232/images/10349/540441_Grey_Tabby_Mug__93560.1706827010.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Boston Tall Mug",
+          "price": "$28.00",
+          "productUrl": "https://mfashop.com/boston-tall-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3983/images/10347/527580_Boston_Tall_Mug__90166.1706826957.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Hassam, At Dusk (Boston Common at Twilight) Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/hassam-boston-common-at-twilight-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/566/images/10378/542002_Hassam_At_Dusk_Mug__22207.1707343750.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Museum Cats Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/museum-cats-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/5254/images/11706/a2701e0aCat%252520Mug%2525201__61762.1717688614.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        }
+      ]
+    },
+    {
+      "shopName": "MFA Huntington Store",
+      "shopType": "museum-gift-shop",
+      "area": "Huntington Ave entrance / Fenway",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MFA+Boston+465+Huntington+Ave+Boston+MA",
+      "shopUrl": "https://www.mfa.org/visit/shops",
+      "catalogStatus": "onsite-official-shop-plus-online-reference",
+      "productCountKnown": 10,
+      "priority": "recommended",
+      "visitTip": "전시 관람 직후 바로 구매하기 좋아 감상 기억과 연결되는 선물을 고르기 쉽습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
+        {
+          "name": "MFA Logo Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/mfa-logo-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3661/images/10310/154364_MFA_Logo_Mug_1_1__30371__02296.1706732656.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "MBTA Coasters",
+          "price": "$25.00",
+          "productUrl": "https://mfashop.com/mbta-coasters/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/2946/images/12122/Boston_Coasters__98845.1721764848.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Hopper, Lighthouse and Buildings Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/hopper-lighthouse-and-buildings-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/568/images/10379/542004_Hopper-Mug_Lighthouse__58942.1707343789.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Van Gogh Irises Grande Mug",
+          "price": "$47.00",
+          "productUrl": "https://mfashop.com/van-gogh-irises-grande-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/551/images/10320/540403_Van_Gogh_Irises_Grande_Mug__30390.1706733368.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Monet, Water Lilies Grande Mug",
+          "price": "$47.00",
+          "productUrl": "https://mfashop.com/monet-water-lilies-grande-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/553/images/10322/540407_Water_Lillies_Mug__13366.1706733470.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Camera Lens Mug",
+          "price": "$24.00",
+          "productUrl": "https://mfashop.com/camera-lens-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/548/images/10358/540305_Camera_Lens_Mug_2__80598.1706828793.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Grey Tabby Mug",
+          "price": "$22.00",
+          "productUrl": "https://mfashop.com/grey-tabby-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3232/images/10349/540441_Grey_Tabby_Mug__93560.1706827010.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Boston Tall Mug",
+          "price": "$28.00",
+          "productUrl": "https://mfashop.com/boston-tall-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3983/images/10347/527580_Boston_Tall_Mug__90166.1706826957.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Hassam, At Dusk (Boston Common at Twilight) Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/hassam-boston-common-at-twilight-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/566/images/10378/542002_Hassam_At_Dusk_Mug__22207.1707343750.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Museum Cats Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/museum-cats-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/5254/images/11706/a2701e0aCat%252520Mug%2525201__61762.1717688614.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        }
+      ]
+    },
+    {
+      "shopName": "Linde Family Wing Bookstore and Shop",
+      "shopType": "museum-bookstore",
+      "area": "MFA Art of the Americas Wing",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MFA+Boston+465+Huntington+Ave+Boston+MA",
+      "shopUrl": "https://www.mfa.org/visit/shops",
+      "catalogStatus": "onsite-official-shop-plus-online-reference",
+      "productCountKnown": 10,
+      "priority": "recommended",
+      "visitTip": "책·문구류와 가벼운 기념품 위주로 고르기 좋아 귀국 직전 마지막 쇼핑에 적합합니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
+        {
+          "name": "MFA Logo Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/mfa-logo-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3661/images/10310/154364_MFA_Logo_Mug_1_1__30371__02296.1706732656.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "MBTA Coasters",
+          "price": "$25.00",
+          "productUrl": "https://mfashop.com/mbta-coasters/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/2946/images/12122/Boston_Coasters__98845.1721764848.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Hopper, Lighthouse and Buildings Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/hopper-lighthouse-and-buildings-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/568/images/10379/542004_Hopper-Mug_Lighthouse__58942.1707343789.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Van Gogh Irises Grande Mug",
+          "price": "$47.00",
+          "productUrl": "https://mfashop.com/van-gogh-irises-grande-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/551/images/10320/540403_Van_Gogh_Irises_Grande_Mug__30390.1706733368.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Monet, Water Lilies Grande Mug",
+          "price": "$47.00",
+          "productUrl": "https://mfashop.com/monet-water-lilies-grande-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/553/images/10322/540407_Water_Lillies_Mug__13366.1706733470.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Camera Lens Mug",
+          "price": "$24.00",
+          "productUrl": "https://mfashop.com/camera-lens-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/548/images/10358/540305_Camera_Lens_Mug_2__80598.1706828793.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Grey Tabby Mug",
+          "price": "$22.00",
+          "productUrl": "https://mfashop.com/grey-tabby-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3232/images/10349/540441_Grey_Tabby_Mug__93560.1706827010.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Boston Tall Mug",
+          "price": "$28.00",
+          "productUrl": "https://mfashop.com/boston-tall-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/3983/images/10347/527580_Boston_Tall_Mug__90166.1706826957.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Hassam, At Dusk (Boston Common at Twilight) Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/hassam-boston-common-at-twilight-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/566/images/10378/542002_Hassam_At_Dusk_Mug__22207.1707343750.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Museum Cats Mug",
+          "price": "$16.00",
+          "productUrl": "https://mfashop.com/museum-cats-mug/",
+          "imageUrl": "https://cdn11.bigcommerce.com/s-g8qyo70dwl/products/5254/images/11706/a2701e0aCat%252520Mug%2525201__61762.1717688614.386.513.png?c=1",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        }
+      ]
+    },
+    {
+      "shopName": "Gift at the Gardner",
+      "shopType": "museum-gift-shop",
+      "area": "Isabella Stewart Gardner Museum / Fenway",
+      "priceBand": "$~$$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Isabella+Stewart+Gardner+Museum+Boston+MA",
+      "shopUrl": "https://gift.gardnermuseum.org/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "recommended",
+      "visitTip": "조금 더 감도 있는 액세서리와 장식품을 찾을 때 좋습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
+        {
+          "name": "Dessert Spoon",
+          "price": "$9.95",
+          "productUrl": "https://gift.gardnermuseum.org/products/black-dessert-spoon",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/files/BlackSpoon.png?v=1778347512",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "Calista Necklace",
+          "price": "$218.00",
+          "productUrl": "https://gift.gardnermuseum.org/products/calista-necklace",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/files/CalistaNeck1_1955f709-12fe-4499-988a-d4ea8352243a.png?v=1778344092",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자"
+          ]
+        },
+        {
+          "name": "Odelia Mini Hoop Earrings",
+          "price": "$92.00",
+          "productUrl": "https://gift.gardnermuseum.org/products/odelia-mini-hoop-earrings",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/files/OdeliaMiniHoopEarrings.png?v=1778343328",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자"
+          ]
+        },
+        {
+          "name": "Elvira Earrings",
+          "price": "$145.00",
+          "productUrl": "https://gift.gardnermuseum.org/products/elvira-earrings",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/files/ElviraEarrings.png?v=1778256822",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자"
+          ]
+        },
+        {
+          "name": "Bertha Earrings",
+          "price": "$195.00",
+          "productUrl": "https://gift.gardnermuseum.org/products/bertha-earrings",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/files/BerthaEarrings.png?v=1778256359",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자"
+          ]
+        },
+        {
+          "name": "Ex-Voto Blue Earrings",
+          "price": "$120.00",
+          "productUrl": "https://gift.gardnermuseum.org/products/ex-voto-aqua-earrings",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/files/Ex-VotoAquaEarrings_1.png?v=1778256184",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자"
+          ]
+        },
+        {
+          "name": "Ex-Voto Crystal Earrings",
+          "price": "$120.00",
+          "productUrl": "https://gift.gardnermuseum.org/products/ex-voto-crystal-earrings",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/files/Ex-VotoCrystalEarrings.png?v=1778255316",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자"
+          ]
+        },
+        {
+          "name": "Calista Tri-Stone Ring",
+          "price": "$185.00",
+          "productUrl": "https://gift.gardnermuseum.org/products/3-stone-calista-ring",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/files/3Stone_1.png?v=1778255057",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자"
+          ]
+        },
+        {
+          "name": "Golden Swan Ornament",
+          "price": "$16.95",
+          "productUrl": "https://gift.gardnermuseum.org/products/jewel-swan-ornament",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/products/100935.JPG?v=1778178397",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "Turquoise Satin Butterfly Ornament",
+          "price": "$18.95",
+          "productUrl": "https://gift.gardnermuseum.org/products/turquoise-satin-butterfly-orna",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/2654/4574/products/Y2045-KT00-0S-500x500.jpg?v=1743807913",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        }
+      ]
+    },
+    {
+      "shopName": "JFK Library Museum Store",
+      "shopType": "museum-gift-shop",
+      "area": "Columbia Point / Dorchester",
+      "priceBand": "$~$$",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=JFK+Library+Museum+Boston+MA",
+      "shopUrl": "https://store.jfklibrary.org/",
+      "catalogStatus": "official-online-catalog",
+      "productCountKnown": 10,
+      "priority": "optional",
+      "visitTip": "정치·역사 테마 굿즈와 문구류가 강점이라 차별화된 선물용으로 좋습니다.",
+      "checkedAt": "2026-05-12",
+      "featuredProducts": [
+        {
+          "name": "VICTURA SKETCH ADULT POLO TEE",
+          "price": "$59.99",
+          "productUrl": "https://store.jfklibrary.org/products/victura-sketch-adult-polo-tee",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/YD151952_POLOADVICTURA_SM.jpg?v=1761254848",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "VICTURA SKETCH LADIES POLO TEE",
+          "price": "$59.99",
+          "productUrl": "https://store.jfklibrary.org/products/victura-sketch-ladies-polo-tee",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/YD151959_POLOLADVICTURA_SM.jpg?v=1761254328",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        },
+        {
+          "name": "JFK Profiles in Courage Magnet",
+          "price": "$12.99",
+          "productUrl": "https://store.jfklibrary.org/products/jfk-profiles-in-courage-magnet",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/YD409225_MAGPROFILESINCOURAGE_JFK.jpg?v=1765565794",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "JFK Profiles in Courage Pin",
+          "price": "$9.99",
+          "productUrl": "https://store.jfklibrary.org/products/jfk-profiles-in-courage-pin",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/YD409229_PINPROFILESINCOURAGE_JFK.jpg?v=1765565626",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "JFK Profiles in Courage Keychain",
+          "price": "$9.99",
+          "productUrl": "https://store.jfklibrary.org/products/jfk-profiles-in-courage-keychain",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/YD409228_KCPROFILESINCOURAGE_JFK.jpg?v=1765565244",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "JFK Library Seal Collectible Coin",
+          "price": "$14.99",
+          "productUrl": "https://store.jfklibrary.org/products/jfk-library-seal-collectible-coin",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/YD407255_PRESIDENTIALSEALCOIN_JFK.png?v=1765389433",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "회사 동료",
+            "친구"
+          ]
+        },
+        {
+          "name": "LESSONS FROM BOBBY",
+          "price": "$26.00",
+          "productUrl": "https://store.jfklibrary.org/products/author-forum-pre-sale-lessons-from-bobby",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/lessons-from-bobby-9781668010938_lg.jpg?v=1762460495",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "친구",
+            "본인"
+          ]
+        },
+        {
+          "name": "JFK 35 SPORT WATER BOTTLE",
+          "price": "$29.99",
+          "productUrl": "https://store.jfklibrary.org/products/jfk-35-sport-water-bottle",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/98-0182_D3967I_23ozBottleHandleLid_JFK_JFK35Update_FIN_ECOMM.png?v=1757688257",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Presidential Seal Journal",
+          "price": "$21.99",
+          "productUrl": "https://store.jfklibrary.org/products/presidential-seal-journal",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/journalpresseal.png?v=1756480667",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "부모님",
+            "회사 동료",
+            "본인"
+          ]
+        },
+        {
+          "name": "Future President Youth Tee",
+          "price": "$24.99",
+          "productUrl": "https://store.jfklibrary.org/products/future-president-youth-tee",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0741/6070/1725/files/8002NVY_D4238B_Youth-Shirts_ArtProof_JFK_future_president_FINAL_ECOMM.png?v=1753711426",
+          "imageType": "real",
+          "imageSource": "official-store-listing",
+          "imageMatchLevel": "exact-product",
+          "imageVerifiedBy": "official-store-listing",
+          "forWhom": [
+            "배우자",
+            "자녀",
+            "본인"
+          ]
+        }
+      ]
     }
   ]
 }

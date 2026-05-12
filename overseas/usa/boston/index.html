@@ -368,7 +368,7 @@
       <div class="section-head">
         <div>
           <h2>기념품 상점 비교</h2>
-          <div class="muted">동일 상품 실사진 검증이 끝난 품목만 사진을 노출합니다.</div>
+          <div class="muted">공식 상점 10곳과 상점별 대표 상품 10개를 비교하고, 동일 상품 실사진 검증이 끝난 경우만 사진을 노출합니다.</div>
         </div>
       </div>
       <div id="souvenir-grid" class="grid"></div>
@@ -574,49 +574,53 @@
     }
 
     function renderSouvenirs() {
-      qs("#souvenir-grid").innerHTML = state.souvenirs.map(item => {
-        const showImage = item.imageType === "real" && item.imageMatchLevel === "exact-product" && item.imageUrl;
+      qs("#souvenir-grid").innerHTML = state.souvenirs.map(shop => {
+        const hero = (shop.featuredProducts || []).find(product =>
+          product.imageType === "real" && product.imageMatchLevel === "exact-product" && product.imageUrl
+        );
+        const showImage = Boolean(hero?.imageUrl);
         return `
           <article class="card span6">
             <div class="souvenir-card">
               ${showImage
-                ? `<img src="${item.imageUrl}" alt="${escapeHtml(item.productName || item.name)}" onerror="this.closest('.souvenir-card').querySelector('[data-empty-photo]').style.display='grid'; this.style.display='none';" />`
+                ? `<img src="${hero.imageUrl}" alt="${escapeHtml(hero.name || shop.shopName)}" onerror="this.closest('.souvenir-card').querySelector('[data-empty-photo]').style.display='grid'; this.style.display='none';" />`
                 : ""
               }
               <div data-empty-photo class="empty-photo" style="${showImage ? "display:none;" : "display:grid;"}">동일상품 사진 없음</div>
               <div>
-                <h3 style="margin:0;">${escapeHtml(item.name)}</h3>
-                <div class="small" style="margin-top:4px;">실제 상품명: ${escapeHtml(item.productName || "-")}</div>
+                <h3 style="margin:0;">${escapeHtml(shop.shopName)}</h3>
+                <div class="small" style="margin-top:4px;">${escapeHtml(shop.area || "-")} · ${escapeHtml(shop.shopType || "-")}</div>
                 <div class="souvenir-meta">
-                  ${formatBadge(`예산 ${item.price || "-"}`, "warn")}
-                  ${formatBadge((item.forWhom || []).join(" / ") || "추천 대상")}
-                  ${formatBadge("동일상품 검증", "ok")}
+                  ${formatBadge(`예산 ${shop.priceBand || "-"}`, "warn")}
+                  ${formatBadge(`${shop.productCountKnown || 0}개 상품 확인`)}
+                  ${formatBadge(`확인일 ${shop.checkedAt || "-"}`, "ok")}
                 </div>
-                <div class="small">검증 방식: ${escapeHtml(item.imageVerifiedBy || "-")} · 확인일 ${escapeHtml(item.checkedAt || "-")}</div>
+                <div class="small">${escapeHtml(shop.visitTip || "")}</div>
                 <table class="shop-table">
                   <thead>
                     <tr>
-                      <th>상점</th>
-                      <th>위치</th>
+                      <th>상품</th>
                       <th>가격</th>
-                      <th>지도</th>
+                      <th>추천 대상</th>
+                      <th>공식 링크</th>
                     </tr>
                   </thead>
                   <tbody>
-                    ${(item.shopOptions || []).map(shop => `
+                    ${(shop.featuredProducts || []).map(product => `
                       <tr>
-                        <td>${escapeHtml(shop.shopName)}</td>
-                        <td>${escapeHtml(shop.area)}</td>
-                        <td>${escapeHtml(shop.price)}</td>
-                        <td><a target="_blank" rel="noreferrer" href="${shop.mapUrl}">보기</a></td>
+                        <td>${escapeHtml(product.name)}</td>
+                        <td>${escapeHtml(product.price)}</td>
+                        <td>${escapeHtml((product.forWhom || []).join(" / ") || "공용")}</td>
+                        <td><a target="_blank" rel="noreferrer" href="${product.productUrl}">상품 보기</a></td>
                       </tr>
                     `).join("")}
                   </tbody>
                 </table>
-                <div class="small" style="margin-top:8px;">운반 메모: ${escapeHtml(item.carryTip || "-")}</div>
+                <div class="small" style="margin-top:8px;">카탈로그 상태: ${escapeHtml(shop.catalogStatus || "-")}</div>
                 <div class="footer-links">
-                  <a target="_blank" rel="noreferrer" href="${item.productUrl}">상품 페이지</a>
-                  <span class="small">이미지 출처: ${escapeHtml(item.imageSource || "-")}</span>
+                  <a target="_blank" rel="noreferrer" href="${shop.mapUrl}">지도</a>
+                  <a target="_blank" rel="noreferrer" href="${shop.shopUrl}">상점 공식 페이지</a>
+                  <span class="small">이미지 출처: ${escapeHtml(hero?.imageSource || "-")}</span>
                 </div>
               </div>
             </div>
