@@ -12,18 +12,20 @@
     *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65} a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
     header{background:linear-gradient(135deg,rgba(11,92,171,.96),rgba(230,75,60,.90)),url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1600&q=80') center/cover;color:#fff;padding:56px 20px 38px} .wrap{max-width:1120px;margin:auto}.eyebrow{letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;opacity:.9}.hero h1{font-size:clamp(2rem,5vw,4rem);line-height:1.1;margin:.25em 0}.hero p{max-width:780px;font-size:1.08rem}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-weight:700}
     nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)} nav .wrap{display:flex;gap:14px;overflow:auto;padding:10px 20px} nav a{white-space:nowrap;color:var(--ink);font-weight:800;font-size:.92rem}
-    main{padding:28px 20px 60px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.section{margin-top:26px}h2{font-size:1.75rem;margin:0 0 14px}h3{margin:0 0 8px;font-size:1.2rem}.muted{color:var(--muted)}.tag{display:inline-block;background:var(--soft);color:#094b88;padding:4px 9px;border-radius:999px;font-weight:800;font-size:.78rem;margin:2px}.warn{background:#fff6e5;color:var(--warn)}.ok{background:#e9f8f2;color:var(--ok)}
-    table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}th,td{border-bottom:1px solid var(--line);padding:12px;vertical-align:top;text-align:left}th{background:#f0f4fa}.day{border-left:6px solid var(--brand);background:#fcfdff;width:80px;text-align:center}.time{font-weight:900;color:var(--brand);white-space:nowrap;width:100px}.place-card{display:grid;grid-template-columns:180px 1fr;gap:16px}.place-card img{width:100%;height:135px;object-fit:cover;border-radius:16px;background:#eee}.mini{font-size:.85rem}.footer{font-size:.88rem;color:var(--muted);margin-top:30px}.print{float:right;background:#fff;color:var(--brand);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:8px 12px;font-weight:900}
+    main{padding:20px 16px 44px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow)}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.section{margin-top:16px}h2{font-size:1.28rem;margin:0 0 10px}h3{margin:0 0 6px;font-size:1.02rem}.muted{color:var(--muted)}.tag{display:inline-block;background:var(--soft);color:#094b88;padding:4px 9px;border-radius:999px;font-weight:800;font-size:.78rem;margin:2px}.warn{background:#fff6e5;color:var(--warn)}.ok{background:#e9f8f2;color:var(--ok)}
+    table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:.92rem}th,td{border-bottom:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}th{background:#f0f4fa}.day{border-left:4px solid var(--brand);background:#fcfdff;width:72px;text-align:center}.time{font-weight:900;color:var(--brand);white-space:nowrap;width:84px}.place-card{display:grid;grid-template-columns:132px 1fr;gap:10px}.place-card img{width:100%;height:96px;object-fit:cover;border-radius:10px;background:#eee}.mini{font-size:.81rem}.footer{font-size:.88rem;color:var(--muted);margin-top:30px}.print{float:right;background:#fff;color:var(--brand);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:8px 12px;font-weight:900}
     .theme-btn{padding:10px 16px; border-radius:12px; border:1px solid var(--line); background:#fff; cursor:pointer; font-weight:700; transition:0.2s;}
     .theme-btn.active{background:var(--brand); color:#fff; border-color:var(--brand);}
-    #map{height:450px; border-radius:22px; margin-bottom:26px; border:1px solid var(--line);}
+    #map{height:300px; border-radius:14px; margin-bottom:8px; border:1px solid var(--line);}
     .souvenir-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:18px;}
-    .souvenir-card img{width:100%; height:180px; object-fit:cover; border-radius:16px;}
+    .souvenir-card img{width:100%; height:120px; object-fit:cover; border-radius:10px;}
     .souvenir-card .meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
     .souvenir-card .meta span{background:#f3f6fb;border-radius:999px;padding:4px 8px;font-size:.76rem;font-weight:700;color:#35506f}
     .review-link{font-size:0.85rem; color:var(--brand2); font-weight:700; text-decoration:underline;}
     .route-note{margin-top:10px;font-size:.92rem;color:var(--muted);}
-    @media(max-width:860px){.span4,.span6,.span8{grid-column:span 12}.place-card{grid-template-columns:1fr}.place-card img{height:190px}header{padding-top:38px}table{font-size:.92rem}.time{white-space:normal}nav .wrap{padding-left:14px}}
+    .compact-toggle{margin-top:10px}
+    .compact-toggle summary{cursor:pointer;font-weight:800;color:var(--brand)}
+    @media(max-width:860px){.span4,.span6,.span8{grid-column:span 12}.place-card{grid-template-columns:1fr}.place-card img{height:150px}header{padding-top:38px}table{font-size:.88rem}.time{white-space:normal}nav .wrap{padding-left:14px}}
   </style>
 </head>
 <body>
@@ -77,40 +79,15 @@
 
 <section id="detail-guide" class="section card">
   <h2>🧭 상세 여행 가이드 메모</h2>
-  <div class="grid">
-    <div class="span6">
-      <h3>1일차 운영 포인트</h3>
-      <ul>
-        <li>Back Bay 체크인 후 Public Garden으로 시차 적응 산책</li>
-        <li>Newbury Street는 카페 휴식과 쇼핑을 섞기 좋음</li>
-        <li>Union Oyster House는 저녁 피크 전 도착이 대기 줄이기에 유리</li>
-      </ul>
+  <details class="compact-toggle">
+    <summary>펼쳐서 보기 (현장 운영 팁)</summary>
+    <div class="grid" style="margin-top:10px;">
+      <div class="span6"><h3>1일차</h3><ul><li>체크인 후 가벼운 산책</li><li>저녁 식사는 피크타임 전 도착</li></ul></div>
+      <div class="span6"><h3>2일차</h3><ul><li>Freedom Trail은 편한 신발 필수</li><li>우천 시 실내 비중 확대</li></ul></div>
+      <div class="span6"><h3>3일차</h3><ul><li>기념품은 용도별 분리 구매</li><li>부피 큰 물건은 마지막날</li></ul></div>
+      <div class="span6"><h3>4일차</h3><ul><li>공항 이동 35~50분 + 추가 여유</li><li>액체/파손품 수하물 재확인</li></ul></div>
     </div>
-    <div class="span6">
-      <h3>2일차 운영 포인트</h3>
-      <ul>
-        <li>Freedom Trail은 편한 신발 필수, 오전 출발이 체력 관리에 유리</li>
-        <li>Quincy Market 점심 후 North End 디저트로 동선이 자연스럽다</li>
-        <li>비 오면 일부 야외 구간을 줄이고 Faneuil Hall 실내 체류 시간을 늘린다</li>
-      </ul>
-    </div>
-    <div class="span6">
-      <h3>3일차 쇼핑 / 기념품 포인트</h3>
-      <ul>
-        <li>Harvard Coop에서 회사용 소형 선물, Fenway에서 본인용 굿즈 분리 구매</li>
-        <li>초콜릿과 차류는 귀국 1~2일 전에 사는 편이 신선도 관리에 좋음</li>
-        <li>부피 큰 후드티나 포스터는 마지막 날 구매가 수하물 관리에 편하다</li>
-      </ul>
-    </div>
-    <div class="span6">
-      <h3>4일차 출국 운영 포인트</h3>
-      <ul>
-        <li>Fenway 또는 Back Bay에서 마지막 쇼핑 후 공항 이동</li>
-        <li>공항 이동은 최소 35~50분, 출근 시간에는 추가 여유 필요</li>
-        <li>액체류와 깨지기 쉬운 기념품은 수하물 규정 다시 확인</li>
-      </ul>
-    </div>
-  </div>
+  </details>
 </section>
 
 <section id="food" class="section card">
