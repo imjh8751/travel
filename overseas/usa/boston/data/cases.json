@@ -14,7 +14,7 @@
         "icon": "bi-lightning-charge",
         "image": "https://images.unsplash.com/photo-1562664377-709f2c337eb2?auto=format&fit=crop&w=400",
         "desc": "번개 쇼와 공룡 화석은 7세 아이들이 가장 좋아하는 코스입니다. 음악 계단도 꼭 밟아보세요!",
-        "mapUrl": "https://maps.app.goo.gl/P6n9J3mUfC2"
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museum+of+Science+Boston"
       },
       {
         "time": "12:30 PM",
@@ -307,7 +307,7 @@
         "icon": "bi-book",
         "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=400",
         "desc": "아름다운 어린이 전용 열람실에서 동화책을 읽고 숨겨진 장식들을 찾아보세요.",
-        "mapUrl": "https://maps.app.goo.gl/1R2T3Y4U5I6"
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Public+Library+Central+Library"
       },
       {
         "time": "01:30 PM",
@@ -321,6 +321,11 @@
         "title": "캐슬 아일랜드 산책 & 비행기 구경",
         "icon": "bi-wind",
         "desc": "바닷바람을 맞으며 걷고, 로건 공항으로 내리는 비행기를 아주 가까이서 볼 수 있습니다."
+      }
+    ]
+  }
+]
+�주 가까이서 볼 수 있습니다."
       }
     ]
   }

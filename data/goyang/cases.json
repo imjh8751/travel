@@ -14,13 +14,14 @@
         "icon": "bi-sun",
         "image": "https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=400",
         "desc": "킥보드 타기 좋고 모래놀이터가 잘 되어 있어요. 나무 그늘 아래 돗자리 필수!",
-        "mapUrl": "https://maps.app.goo.gl/3f8H2kZz6Xp"
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%BC%EC%82%B0%ED%98%B8%EC%88%98%EA%B3%B5%EC%9B%90+%EC%A0%9C2%EC%A3%BC%EC%B0%A8%EC%9E%A5"
       },
       {
         "time": "12:00 PM",
         "title": "점심: 웨스턴돔 '만돈'",
         "icon": "bi-egg-fried",
         "desc": "아이들이 좋아하는 부드러운 히레카츠 맛집입니다. 앱 예약이 안 되니 도착하자마자 매장 번호표부터 뽑으세요!",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%BC%EC%82%B0+%EB%A7%8C%EB%8F%88",
         "reviewUrl": "https://m.blog.naver.com/search/result?query=%EC%9D%BC%EC%82%B0+%EC%9B%A8%EC%8A%A4%ED%84%B4%EB%8F%94+%EB%A7%8C%EB%8F%88+%EC%95%84%EC%9D%B4%EB%9E%91"
       },
       {
@@ -28,7 +29,7 @@
         "title": "고양어린이박물관 (사전예약 필수)",
         "icon": "bi-building-check",
         "desc": "'아이그루' 클라이밍 체험은 7세 아이의 성취감을 높여줍니다. 운동화 필수 착용!",
-        "mapUrl": "https://maps.app.goo.gl/p2U4J3mUfC2"
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B3%A0%EC%96%91%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%B0%95%EB%AC%BC%EA%B4%80"
       },
       {
         "time": "06:30 PM",
@@ -307,7 +308,7 @@
         "icon": "bi-cloud",
         "image": "https://paju.go.kr/res/paju/images/sub/contents/playcloud_img01.jpg",
         "desc": "번개맨, 뿡뿡이와 함께하는 테마파크! 정각마다 열리는 번개맨 공연은 필수입니다.",
-        "mapUrl": "https://maps.app.goo.gl/3f8H2kZz6Xp"
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=%ED%8C%8C%EC%A3%BC+%EB%86%80%EC%9D%B4%EA%B5%AC%EB%A6%84"
       },
       {
         "time": "01:30 PM",
@@ -321,6 +322,11 @@
         "title": "운정호수공원 산책",
         "icon": "bi-water",
         "desc": "놀이구름 바로 앞 호수공원에서 가볍게 산책하며 비눗방울 놀이를 즐기기 좋습니다."
+      }
+    ]
+  }
+]
+ 좋습니다."
       }
     ]
   }
