@@ -1,117 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>보스턴 3박 4일 근거형 여행 가이드</title>
-<style>
-:root{--bg:#f5f7fb;--card:#fff;--line:#dce4ef;--ink:#172033;--muted:#647086;--brand:#0b5cab}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)}
-a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1100px;margin:auto;padding:16px}
-.hero,.section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}.hero{background:linear-gradient(135deg,#0b5cab,#d95b43);color:#fff}.chips,.themes,.grid2{display:flex;gap:8px;flex-wrap:wrap}.chip,.btn{padding:8px 11px;border-radius:999px;font-size:13px;font-weight:700}.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.25)}
-.btn{border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}.btn.on{background:var(--brand);color:#fff;border-color:var(--brand)}
-.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px}.span6{grid-column:span 6}.span12{grid-column:span 12}
-.card{border:1px solid var(--line);border-radius:14px;padding:12px}.small{font-size:12px;color:var(--muted)} h1,h2,h3{margin:0 0 8px} table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px;border-bottom:1px solid #e8edf5;vertical-align:top;text-align:left}th{background:#f3f7fc} ul{margin:8px 0 0;padding-left:18px}
-@media(max-width:860px){.span6{grid-column:span 12}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👨‍👩‍👧 가족 일정 도우미 - 보스턴 10대 추천 코스</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #0b5cab;
+            --secondary-color: #d95b43;
+            --bg-color: #F8F9FA;
+            --card-bg: #FFFFFF;
+        }
+        body { background-color: var(--bg-color); font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; color: #333; padding-bottom: 50px; }
+        .sticky-header { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); padding: 15px 0; border-bottom: 1px solid #eee; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .nav-tabs-wrapper { overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; padding: 10px 0; margin-bottom: 0; }
+        .nav-tabs-wrapper::-webkit-scrollbar { display: none; }
+        .nav-tabs { border-bottom: none; display: flex; flex-wrap: nowrap; padding: 0 15px; }
+        .nav-link { border: 1px solid #eee !important; color: #777; border-radius: 25px !important; margin-right: 10px; padding: 8px 20px; font-weight: 600; font-size: 0.9rem; background: white; transition: all 0.3s; cursor: pointer; }
+        .nav-link.active { background-color: var(--primary-color) !important; color: white !important; border-color: var(--primary-color) !important; transform: scale(1.05); box-shadow: 0 4px 10px rgba(11, 92, 171, 0.3); }
+        .summary-card { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; border-radius: 25px; padding: 25px; margin: 20px 15px; box-shadow: 0 10px 25px rgba(11, 92, 171, 0.25); position: relative; overflow: hidden; }
+        .summary-card::after { content: '✈️'; position: absolute; right: -10px; top: -10px; font-size: 5rem; opacity: 0.1; }
+        .timeline-container { padding: 0 15px; }
+        .timeline-item { position: relative; padding-left: 30px; margin-bottom: 30px; }
+        .timeline-item::before { content: ''; position: absolute; left: 0; top: 0; bottom: -30px; width: 2px; background: #eee; }
+        .timeline-item:last-child::before { display: none; }
+        .timeline-dot { position: absolute; left: -6px; top: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--primary-color); border: 3px solid white; box-shadow: 0 0 0 2px var(--primary-color); }
+        .time-label { font-size: 0.85rem; font-weight: 700; color: var(--primary-color); margin-bottom: 5px; display: block; }
+        .activity-card { background: white; border-radius: 20px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; }
+        .activity-img { width: 100%; height: 180px; object-fit: cover; border-radius: 15px; margin-bottom: 15px; }
+        .btn-link-action { width: 100%; border-radius: 12px; margin-top: 10px; font-weight: 600; padding: 10px; border: 1px solid #ddd; background: white; color: #555; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 0.85rem; }
+        .btn-link-action i { margin-right: 8px; color: var(--primary-color); }
+        .btn-review { background: #f8f9fa; color: #666; border: 1px solid #eee; }
+        .btn-review:hover { background: #e9ecef; }
+        .info-card, .emergency-card { background: white; border-radius: 20px; padding: 20px; margin: 20px 15px; border: 1px solid #eee; }
+        .emergency-card { border-left: 5px solid #dc3545; }
+        .x-small { font-size: 0.75rem; }
+    </style>
 </head>
 <body>
-<div class="wrap">
-  <section class="hero">
-    <div class="small" id="eyebrow">Boston</div>
-    <h1 id="title">보스턴 3박 4일 근거형 여행 가이드</h1>
-    <p id="summary" style="margin:0 0 12px"></p>
-    <div id="tags" class="chips"></div>
-    <div style="margin-top:14px" class="themes">
-      <button class="btn on" data-theme="essential">필수 동선</button>
-      <button class="btn" data-theme="relaxed">여유 동선</button>
-      <button class="btn" data-theme="foodie">맛집 동선</button>
-      <a id="routeLink" class="btn" target="_blank">🗺️ 테마별 구글맵 동선</a>
-      <button class="btn" id="pdfBtn" type="button">🧾 현재 테마 PDF 저장</button>
-    </div>
-  </section>
+    <header class="sticky-header">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <h5 class="mb-0 fw-bold">👨‍👩‍👧 가족 일정 도우미 (보스턴)</h5>
+            <div id="header-meta" class="text-end">
+                <!-- Data driven meta -->
+            </div>
+        </div>
+        <div class="nav-tabs-wrapper mt-3">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <!-- Data driven tabs -->
+            </div>
+        </div>
+    </header>
 
-  <section class="section">
-    <h2>📅 일정표</h2>
-    <div class="small">테마를 바꾸면 일정표와 동선 링크가 함께 바뀝니다.</div>
-    <table>
-      <thead><tr><th>일차</th><th>시간</th><th>장소</th><th>핵심 행동</th><th>이동/팁</th><th>지도</th></tr></thead>
-      <tbody id="itineraryRows"></tbody>
-    </table>
-  </section>
-
-  <section class="section">
-    <div class="grid">
-      <div class="span6 card">
-        <h2>🍽️ 맛집 추천</h2>
-        <div id="foods"></div>
-      </div>
-      <div class="span6 card">
-        <h2>🛍️ 기념품 추천</h2>
-        <div id="souvenirs"></div>
-      </div>
-      <div class="span6 card">
-        <h2>🎁 대상별 선물</h2>
-        <div id="gifts"></div>
-      </div>
-      <div class="span6 card">
-        <h2>🏨 숙소 구역</h2>
-        <div id="hotels"></div>
-      </div>
-      <div class="span6 card">
-        <h2>☔ 현지 날씨</h2>
-        <div id="weather"></div>
-      </div>
-      <div class="span6 card">
-        <h2>✅ 체크리스트</h2>
-        <div id="checklist"></div>
-      </div>
-      <div class="span12 card">
-        <h2>🚇 교통 / 준비 메모</h2>
-        <div id="transport"></div>
-      </div>
-      <div class="span12 card">
-        <h2>🔎 근거 링크</h2>
-        <div id="sources" class="themes"></div>
-      </div>
+    <div id="case-content">
+        <!-- Data driven content -->
     </div>
-  </section>
-</div>
-<script>
-let state={theme:'essential'};
-const $=s=>document.querySelector(s);
-async function load(){
-  const bundle = await fetch('./data/bundle.json').then(r=>r.json());
-  Object.assign(state, bundle);
-  $('#eyebrow').textContent=`${state.page.city} · ${state.page.tripLength} · updated ${state.page.updatedAt}`;
-  $('#summary').textContent=state.page.summary;
-  $('#tags').innerHTML=(state.page.tags||[]).map(t=>`<span class="chip">${t}</span>`).join('');
-  document.querySelectorAll('[data-theme]').forEach(b=>b.onclick=()=>{state.theme=b.dataset.theme;document.querySelectorAll('[data-theme]').forEach(x=>x.classList.toggle('on',x===b));render();});
-  $('#pdfBtn').onclick=()=>printThemePdf();
-  render();
-}
-function byTheme(x){return state.theme==='all'||(x.themes||[]).includes(state.theme)}
-function render(){
-  $('#routeLink').href=state.page.routeUrlByTheme[state.theme]||'#';
-  $('#routeLink').textContent=`🗺️ ${document.querySelector('[data-theme].on').textContent} 구글맵 동선`; 
-  $('#itineraryRows').innerHTML=state.itinerary.filter(byTheme).map(x=>`<tr><td>${x.day}</td><td>${x.time}</td><td>${x.title}</td><td>${x.action}</td><td>${x.moveNote}<br><span class='small'>${x.tip}</span></td><td><a target='_blank' href='${x.mapUrl}'>지도</a></td></tr>`).join('');
-  $('#foods').innerHTML=state.foods.filter(byTheme).map(x=>`<div style='margin-bottom:12px'><b>${x.name}</b> · ${x.menu} · ${x.price}<br><span class='small'>${x.whyPopular||''}</span><br><a target='_blank' href='${x.mapUrl}'>지도</a> / <a target='_blank' href='${x.reviewUrl}'>리뷰</a> / <a target='_blank' href='${x.blogEvidenceLink}'>블로그 근거</a></div>`).join('');
-  $('#souvenirs').innerHTML=state.souvenirs.map(x=>`<div style='margin-bottom:12px'><b>${x.name}</b> · ${x.price}<br><span class='small'>${x.whyPopular||''}</span><br>${x.shopOptions.map(s=>`- <a target='_blank' href='${s.mapUrl}'>${s.shop}</a> (${s.price})`).join('<br>')}<br><a target='_blank' href='${x.blogEvidenceLink}'>블로그 근거</a></div>`).join('');
-  $('#gifts').innerHTML=state.gifts.map(x=>`<div style='margin-bottom:10px'><b>${x.recipient}</b> · ${x.budget}<br>${x.items.join(', ')}<br><span class='small'>${x.note}</span></div>`).join('');
-  $('#hotels').innerHTML=state.hotels.filter(byTheme).map(x=>`<div style='margin-bottom:10px'><b>${x.name}</b> · ${x.subtitle}<br><span class='small'>${x.desc}</span><br><a target='_blank' href='${x.mapUrl}'>지도</a></div>`).join('');
-  $('#weather').innerHTML=`현재 ${state.weather.current.tempC}°C / 체감 ${state.weather.current.feelsLikeC}°C / ${state.weather.current.condition}<br><span class='small'>${state.weather.summary}</span><ul>${state.weather.forecast.map(d=>`<li>${d.date}: ${d.minC}~${d.maxC}°C · ${d.condition} · 비확률 ${d.chanceOfRain}%</li>`).join('')}</ul><a target='_blank' href='https://wttr.in/Boston?format=j1'>날씨 근거</a>`;
-  $('#checklist').innerHTML=`<ul>${state.checklist.map(x=>`<li>${x}</li>`).join('')}</ul>`;
-  $('#transport').innerHTML=`공항↔도심: ${state.transport.airportToCity}<br>결제: ${state.transport.payment}<ul>${(state.transport.tips||[]).map(x=>`<li>${x}</li>`).join('')}</ul><a target='_blank' href='${state.transport.officialUrl}'>공식 교통 링크</a>`;
-  $('#sources').innerHTML=state.sources.map(x=>`<a target='_blank' href='${x.url}'>${x.name}</a>`).join('');
-}
-function printThemePdf(){
-  const oldTitle=document.title;
-  const label=document.querySelector('[data-theme].on')?.textContent||state.theme;
-  document.title=`보스턴-${label}-가이드`;
-  window.print();
-  setTimeout(()=>{document.title=oldTitle;},300);
-}
-load();
-</script>
+
+    <div id="common-info">
+        <!-- Data driven tips & emergency -->
+    </div>
+
+    <script>
+        let state = {
+            page: {},
+            cases: [],
+            common: {},
+            activeCaseId: 'case-01'
+        };
+
+        const $ = s => document.querySelector(s);
+
+        async function init() {
+            try {
+                // Fetch from the local data directory
+                const [page, cases, common] = await Promise.all([
+                    fetch('./data/page.json').then(r => r.json()),
+                    fetch('./data/cases.json').then(r => r.json()),
+                    fetch('./data/common.json').then(r => r.json())
+                ]);
+                
+                state.page = page;
+                state.cases = cases;
+                state.common = common;
+
+                renderHeader();
+                renderTabs();
+                renderCommon();
+                renderCase(state.activeCaseId);
+            } catch (err) {
+                console.error('Failed to load data:', err);
+                $('#case-content').innerHTML = `<div class="p-4 text-center">데이터를 불러오는 중 오류가 발생했습니다.</div>`;
+            }
+        }
+
+        function renderHeader() {
+            $('#header-meta').innerHTML = `
+                <small class="text-muted d-block">${state.page.date}</small>
+                <span class="badge bg-light text-dark border"><i class="bi ${state.page.weather.icon} text-warning"></i> ${state.page.weather.condition} ${state.page.weather.temp}</span>
+            `;
+        }
+
+        function renderTabs() {
+            $('#nav-tab').innerHTML = state.cases.map(c => `
+                <button class="nav-link ${c.id === state.activeCaseId ? 'active' : ''}" 
+                        onclick="switchCase('${c.id}')" type="button">${c.tabTitle}</button>
+            `).join('');
+        }
+
+        function switchCase(caseId) {
+            state.activeCaseId = caseId;
+            const item = state.cases.find(c => c.id === caseId);
+            document.querySelectorAll('.nav-link').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent === item.tabTitle);
+            });
+            renderCase(caseId);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function renderCase(caseId) {
+            const item = state.cases.find(c => c.id === caseId);
+            if (!item) return;
+
+            $('#case-content').innerHTML = `
+                <div class="summary-card">
+                    <span class="badge bg-white text-primary mb-2">테마: ${item.theme}</span>
+                    <h3 class="fw-bold mb-3">${item.title}</h3>
+                    <div class="row g-2">
+                        <div class="col-6"><small><i class="bi bi-clock"></i> ${item.duration}</small></div>
+                        <div class="col-6"><small><i class="bi bi-car-front"></i> ${item.transport}</small></div>
+                        <div class="col-12 mt-2"><small><i class="bi bi-wallet2"></i> 예상 예산: <strong>${item.budget}</strong></small></div>
+                    </div>
+                </div>
+                <div class="timeline-container">
+                    ${item.timeline.map(t => `
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="time-label">${t.time}</span>
+                            <div class="activity-card">
+                                <h6 class="fw-bold"><i class="bi ${t.icon}"></i> ${t.title}</h6>
+                                ${t.image ? `<img src="${t.image}" class="activity-img" alt="${t.title}">` : ''}
+                                <p class="small text-muted">${t.desc}</p>
+                                ${t.mapUrl ? `<a href="${t.mapUrl}" class="btn-link-action" target="_blank"><i class="bi bi-geo-alt"></i> 지도 보기</a>` : ''}
+                                ${t.reviewUrl ? `<a href="${t.reviewUrl}" class="btn-link-action btn-review" target="_blank"><i class="bi bi-pencil-square"></i> 최근 후기 보기</a>` : ''}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function renderCommon() {
+            $('#common-info').innerHTML = `
+                <div class="info-card">
+                    <h6 class="fw-bold mb-2"><i class="bi bi-lightbulb-fill text-warning"></i> 아빠를 위한 필수 꿀팁</h6>
+                    <ul class="small mb-0 ps-3">
+                        ${state.common.tips.map(tip => `<li>${tip}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h6 class="fw-bold mb-2"><i class="bi bi-check2-square text-success"></i> 7세 아이 동반 체크리스트</h6>
+                    <ul class="small mb-0 ps-3">
+                        ${state.common.checklist.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="emergency-card">
+                    <h6 class="fw-bold text-danger mb-2"><i class="bi bi-hospital-fill"></i> 비상시 연락처 (보스턴 소아과)</h6>
+                    ${state.common.emergency.map(e => `
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="small fw-bold">${e.name}</span>
+                                <a href="tel:${e.tel}" class="btn btn-sm btn-outline-danger py-0">전화</a>
+                            </div>
+                            <p class="x-small text-muted mb-0">${e.location} / ${e.hours}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        init();
+    </script>
 </body>
 </html>

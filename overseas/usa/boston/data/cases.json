@@ -1,0 +1,327 @@
+[
+  {
+    "id": "case-01",
+    "tabTitle": "01 풀코스",
+    "theme": "화창한 날 풀코스 (과학 & 역사)",
+    "title": "과학자와 탐험가 사이! 보스턴 과학박물관 & 덕투어",
+    "duration": "8시간 소요",
+    "transport": "대중교통/도보 권장 (그린라인 Science Park역)",
+    "budget": "약 $180 (성인1, 아동1)",
+    "timeline": [
+      {
+        "time": "10:00 AM",
+        "title": "보스턴 과학박물관 (Museum of Science)",
+        "icon": "bi-lightning-charge",
+        "image": "https://images.unsplash.com/photo-1562664377-709f2c337eb2?auto=format&fit=crop&w=400",
+        "desc": "번개 쇼와 공룡 화석은 7세 아이들이 가장 좋아하는 코스입니다. 음악 계단도 꼭 밟아보세요!",
+        "mapUrl": "https://maps.app.goo.gl/P6n9J3mUfC2"
+      },
+      {
+        "time": "12:30 PM",
+        "title": "점심: 퀸시 마켓 (Quincy Market)",
+        "icon": "bi-egg-fried",
+        "desc": "클램 차우더와 랍스터 롤, 그리고 아이를 위한 갓 구운 쿠키를 즐겨보세요.",
+        "reviewUrl": "https://www.google.com/maps/search/Quincy+Market+Boston+reviews"
+      },
+      {
+        "time": "02:30 PM",
+        "title": "보스턴 덕투어 (Duck Tour)",
+        "icon": "bi-water",
+        "desc": "수륙양용차를 타고 찰스강으로 풍덩! 운이 좋으면 아이가 직접 핸들을 잡아볼 수도 있습니다.",
+        "mapUrl": "https://maps.app.goo.gl/1R2T3Y4U5I6"
+      },
+      {
+        "time": "04:30 PM",
+        "title": "로즈 케네디 그린웨이 회전목마",
+        "icon": "bi-fan",
+        "desc": "바닷가재와 바다거북 모양의 독특한 회전목마를 타며 하루를 마무리하세요."
+      }
+    ]
+  },
+  {
+    "id": "case-02",
+    "tabTitle": "02 반나절",
+    "theme": "평화로운 반나절 (공원 산책)",
+    "title": "스완 보트 타고 오리 가족 만나기",
+    "duration": "4시간 소요",
+    "transport": "도보 중심 (다운타운 인근)",
+    "budget": "약 $60",
+    "timeline": [
+      {
+        "time": "10:30 AM",
+        "title": "보스턴 퍼블릭 가든 스완 보트",
+        "icon": "bi-water",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400",
+        "desc": "동화 같은 공원에서 백조 모양 보트를 타고 여유를 즐기세요. '아기 오리들께 길을 비켜주세요' 동상과 사진은 필수!"
+      },
+      {
+        "time": "12:00 PM",
+        "title": "점심: 비컨힐 북스 & 카페",
+        "icon": "bi-book",
+        "desc": "세상에서 가장 아름다운 서점 내 카페입니다. 아이들을 위한 작은 '쥐구멍' 문을 찾아보세요!",
+        "reviewUrl": "https://www.google.com/maps/search/Beacon+Hill+Books+Cafe+reviews"
+      },
+      {
+        "time": "01:30 PM",
+        "title": "보스턴 커먼 프로그 폰드 (Frog Pond)",
+        "icon": "bi-droplet",
+        "desc": "여름엔 물놀이장, 겨울엔 스케이트장으로 변신하는 아이들의 천국입니다."
+      }
+    ]
+  },
+  {
+    "id": "case-03",
+    "tabTitle": "03 실내/우천",
+    "theme": "비 오는 날 실내 코스",
+    "title": "어린이 박물관 & 핑크빛 아이스크림 월드",
+    "duration": "6시간 소요",
+    "transport": "대중교통 (실내 위주)",
+    "budget": "약 $100",
+    "timeline": [
+      {
+        "time": "11:00 AM",
+        "title": "보스턴 어린이 박물관",
+        "icon": "bi-building-check",
+        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400",
+        "desc": "3층 높이의 거대 클라이밍과 일본 가옥 체험 등 7세 아이가 하루 종일 놀기 좋습니다.",
+        "mapUrl": "https://maps.app.goo.gl/3f8H2kZz6Xp"
+      },
+      {
+        "time": "01:30 PM",
+        "title": "점심: Little Cocoa Bean Co.",
+        "icon": "bi-cup-straw",
+        "desc": "아이와 부모가 함께 건강한 한 끼를 즐길 수 있는 세련된 키즈 프렌들리 식당입니다.",
+        "reviewUrl": "https://www.google.com/maps/search/Little+Cocoa+Bean+Co+reviews"
+      },
+      {
+        "time": "03:00 PM",
+        "title": "Museum of Ice Cream (시포트)",
+        "icon": "bi-stars",
+        "desc": "온통 분홍색인 환상적인 공간! 스프링클 풀장에서 수영하고 무제한 아이스크림을 맛보세요."
+      }
+    ]
+  },
+  {
+    "id": "case-04",
+    "tabTitle": "04 동물",
+    "theme": "바다 동물 친구들",
+    "title": "뉴잉글랜드 아쿠아리움 & 바다표범 인사",
+    "duration": "5시간 소요",
+    "transport": "대중교통 (블루라인 Aquarium역)",
+    "budget": "약 $120",
+    "timeline": [
+      {
+        "time": "10:30 AM",
+        "title": "뉴잉글랜드 아쿠아리움",
+        "icon": "bi-water",
+        "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=400",
+        "desc": "거대한 원통형 수조를 따라 올라가며 바다거북과 상어를 만나요. 귀여운 펭귄들도 기다리고 있어요.",
+        "mapUrl": "https://maps.app.goo.gl/wJ1S2D3F4G5H6J7K8"
+      },
+      {
+        "time": "12:30 PM",
+        "title": "점심: 리걸 씨 푸드 (Legal Sea Foods)",
+        "icon": "bi-shop",
+        "desc": "아쿠아리움 바로 옆! 아이용 메뉴가 잘 갖춰진 보스턴 대표 해산물 맛집입니다.",
+        "reviewUrl": "https://www.google.com/maps/search/Legal+Sea+Foods+Boston+reviews"
+      },
+      {
+        "time": "02:00 PM",
+        "title": "하버워크 바다표범 구경",
+        "icon": "bi-camera",
+        "desc": "아쿠아리움 밖 무료 구역에서도 바다표범이 노는 모습을 가까이서 볼 수 있습니다."
+      }
+    ]
+  },
+  {
+    "id": "case-05",
+    "tabTitle": "05 에너지",
+    "theme": "에너지 발산형",
+    "title": "마틴스 파크 해적선 놀이터 & 시포트 질주",
+    "duration": "5시간 소요",
+    "transport": "도보/대중교통",
+    "budget": "약 $50",
+    "timeline": [
+      {
+        "time": "11:00 AM",
+        "title": "마틴스 파크 (Martin's Park)",
+        "icon": "bi-ship",
+        "image": "https://images.unsplash.com/photo-1520110120835-c96534a4c984?auto=format&fit=crop&w=400",
+        "desc": "거대한 나무 해적선 놀이터가 있는 보스턴 최고의 야외 놀이터입니다.",
+        "reviewUrl": "https://www.google.com/maps/search/Martin's+Park+Boston+reviews"
+      },
+      {
+        "time": "01:00 PM",
+        "title": "점심: 시포트 푸드홀",
+        "icon": "bi-egg-fried",
+        "desc": "다양한 메뉴가 있어 아이 입맛에 맞게 골라 먹기 좋습니다.",
+        "mapUrl": "https://maps.app.goo.gl/3f8H2kZz6Xp"
+      },
+      {
+        "time": "02:30 PM",
+        "title": "시포트 스노우포트 (겨울 한정)",
+        "icon": "bi-snow",
+        "desc": "겨울엔 컬링과 마켓을 즐기고, 여름엔 넓은 광장에서 마음껏 뛰어놀기 좋습니다."
+      }
+    ]
+  },
+  {
+    "id": "case-06",
+    "tabTitle": "06 대중교통",
+    "theme": "지하철 모험 (레드라인)",
+    "title": "레드라인 타고 하버드 대학교 탐방하기",
+    "duration": "6시간 소요",
+    "transport": "지하철 레드라인 (Harvard역)",
+    "budget": "약 $80",
+    "timeline": [
+      {
+        "time": "11:30 AM",
+        "title": "하버드 자연사 박물관",
+        "icon": "bi-bug",
+        "image": "https://images.unsplash.com/photo-1567449303078-57ad995bd301?auto=format&fit=crop&w=400",
+        "desc": "유명한 유리 꽃 전시와 거대한 공룡 뼈를 보며 미래의 과학자 꿈을 키워보세요."
+      },
+      {
+        "time": "01:30 PM",
+        "title": "점심: 찰리스 키친 (Charlie's Kitchen)",
+        "icon": "bi-cart",
+        "desc": "하버드 스퀘어의 활기찬 분위기를 느끼며 버거와 밀크쉐이크를 즐기세요.",
+        "reviewUrl": "https://www.google.com/maps/search/Charlie's+Kitchen+Cambridge+reviews"
+      },
+      {
+        "time": "03:00 PM",
+        "title": "하버드 샵 (The Harvard Shop) 쇼핑",
+        "icon": "bi-box-seam",
+        "desc": "아이용 하버드 후드티나 귀여운 테디베어 기념품을 골라보세요."
+      }
+    ]
+  },
+  {
+    "id": "case-07",
+    "tabTitle": "07 아빠휴식",
+    "theme": "아빠 휴식형",
+    "title": "뷰 보스턴 스카이워크 & 쇼핑몰 힐링",
+    "duration": "5시간 소요",
+    "transport": "대중교통 (그린라인 Prudential역)",
+    "budget": "약 $90",
+    "timeline": [
+      {
+        "time": "11:00 AM",
+        "title": "뷰 보스턴 (View Boston)",
+        "icon": "bi-rocket",
+        "image": "https://images.unsplash.com/photo-1531058285117-a5f2ec310fef?auto=format&fit=crop&w=400",
+        "desc": "보스턴 전경이 한눈에! 인터랙티브 화면으로 아이는 놀고 아빠는 경치를 즐기세요.",
+        "reviewUrl": "https://www.google.com/maps/search/View+Boston+Prudential+reviews"
+      },
+      {
+        "time": "01:00 PM",
+        "title": "점심: 이탈리 (Eataly Boston)",
+        "icon": "bi-tsunami",
+        "desc": "프루덴셜 센터 내 이탈리아 마켓입니다. 피자와 젤라또는 아이들의 최애 메뉴!",
+        "mapUrl": "https://maps.app.goo.gl/y5Z4X3C2V1"
+      },
+      {
+        "time": "02:30 PM",
+        "title": "프루덴셜 센터 쇼핑",
+        "icon": "bi-bag",
+        "desc": "쾌적한 실내 쇼핑몰에서 아이는 장난감을 구경하고 아빠는 잠시 커피 타임을 가질 수 있습니다."
+      }
+    ]
+  },
+  {
+    "id": "case-08",
+    "tabTitle": "08 역사탐험",
+    "theme": "역사 체험 여행",
+    "title": "티파티 박물관에서 차 상자 던지기!",
+    "duration": "5시간 소요",
+    "transport": "도보/대중교통 (시포트 인근)",
+    "budget": "약 $110",
+    "timeline": [
+      {
+        "time": "11:00 AM",
+        "title": "보스턴 티파티 배와 박물관",
+        "icon": "bi-ship",
+        "image": "https://images.unsplash.com/photo-1525869916826-972885c91c1e?auto=format&fit=crop&w=400",
+        "desc": "식민지 시대 복장을 한 배우들과 함께 차 상자를 바다에 던지는 신나는 역사 체험!",
+        "mapUrl": "https://maps.app.goo.gl/wJ1S2D3F4G5H6J7K8"
+      },
+      {
+        "time": "01:00 PM",
+        "title": "점심: 아비가일의 티룸 (Abigail's Tea Room)",
+        "icon": "bi-cup-hot",
+        "desc": "박물관 내 위치! 당시의 차와 스콘을 맛보며 우아한 티타임을 가져보세요.",
+        "reviewUrl": "https://www.google.com/maps/search/Abigail's+Tea+Room+Boston+reviews"
+      },
+      {
+        "time": "02:30 PM",
+        "title": "올드 스테이트 하우스 (Old State House)",
+        "icon": "bi-bank",
+        "desc": "프리덤 트레일을 따라 걷다 만나는 보스턴에서 가장 오래된 공공 건물입니다."
+      }
+    ]
+  },
+  {
+    "id": "case-09",
+    "tabTitle": "09 야경/노을",
+    "theme": "노을과 저녁",
+    "title": "시포트 하버워크 노을 산책 & 피자 저녁",
+    "duration": "4시간 소요",
+    "transport": "도보/택시",
+    "budget": "약 $70",
+    "timeline": [
+      {
+        "time": "05:00 PM",
+        "title": "시포트 하버워크 산책",
+        "icon": "bi-stars",
+        "image": "https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?auto=format&fit=crop&w=400",
+        "desc": "해가 지는 보스턴 항구를 바라보며 여유롭게 걷기 좋습니다.",
+        "reviewUrl": "https://www.google.com/maps/search/Boston+Harborwalk+Seaport+sunset"
+      },
+      {
+        "time": "06:30 PM",
+        "title": "저녁: 735 Congress (피자)",
+        "icon": "bi-fire",
+        "desc": "노을을 보며 화덕피자를 즐길 수 있는 분위기 좋은 식당입니다.",
+        "mapUrl": "https://maps.app.goo.gl/3f8H2kZz6Xp"
+      },
+      {
+        "time": "08:00 PM",
+        "title": "커스텀 하우스 타워 야경 관람",
+        "icon": "bi-lightbulb",
+        "desc": "은은한 조명이 켜진 보스턴의 밤 풍경을 감상하며 하루를 정리하세요."
+      }
+    ]
+  },
+  {
+    "id": "case-10",
+    "tabTitle": "10 가성비",
+    "theme": "가성비 알뜰 코스",
+    "title": "공공도서관 '쥐구멍' 찾기 & 캐슬 아일랜드",
+    "duration": "6시간 소요",
+    "transport": "대중교통 (버스/지하철)",
+    "budget": "약 $40",
+    "timeline": [
+      {
+        "time": "11:00 AM",
+        "title": "보스턴 공공 도서관 (어린이실)",
+        "icon": "bi-book",
+        "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=400",
+        "desc": "아름다운 어린이 전용 열람실에서 동화책을 읽고 숨겨진 장식들을 찾아보세요.",
+        "mapUrl": "https://maps.app.goo.gl/1R2T3Y4U5I6"
+      },
+      {
+        "time": "01:30 PM",
+        "title": "점심: 설리반스 (Sullivan's Castle Island)",
+        "icon": "bi-shop",
+        "desc": "캐슬 아일랜드의 명물! 저렴하고 맛있는 핫도그와 햄버거로 유명합니다.",
+        "reviewUrl": "https://www.google.com/maps/search/Sullivan's+Castle+Island+reviews"
+      },
+      {
+        "time": "03:00 PM",
+        "title": "캐슬 아일랜드 산책 & 비행기 구경",
+        "icon": "bi-wind",
+        "desc": "바닷바람을 맞으며 걷고, 로건 공항으로 내리는 비행기를 아주 가까이서 볼 수 있습니다."
+      }
+    ]
+  }
+]

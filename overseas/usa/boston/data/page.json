@@ -1,17 +1,10 @@
 {
-  "city": "Boston",
-  "country": "USA",
-  "tripLength": "3박 4일",
-  "updatedAt": "2026-05-12",
-  "summary": "필수/여유/맛집 테마와 함께 블로그 근거, 날씨, 체크리스트까지 바로 보는 보스턴 실전 일정표",
-  "tags": [
-    "Evidence Links",
-    "Weather + Checklist",
-    "Theme PDF"
-  ],
-  "routeUrlByTheme": {
-    "essential": "https://www.google.com/maps/dir/?api=1&origin=Boston%20Public%20Garden%2C%20Boston%2C%20MA&destination=Quincy%20Market%2C%20Boston%2C%20MA&travelmode=walking&waypoints=Boston%20Common%2C%20Boston%2C%20MA%7CFreedom%20Trail%2C%20Boston%2C%20MA",
-    "relaxed": "https://www.google.com/maps/dir/?api=1&origin=Back%20Bay%2C%20Boston%2C%20MA&destination=Seaport%20District%2C%20Boston%2C%20MA&travelmode=walking&waypoints=Boston%20Public%20Garden%2C%20Boston%2C%20MA%7CNewbury%20Street%2C%20Boston%2C%20MA%7CLong%20Wharf%2C%20Boston%2C%20MA",
-    "foodie": "https://www.google.com/maps/dir/?api=1&origin=Union%20Oyster%20House%2C%20Boston%2C%20MA&destination=Mike%27s%20Pastry%2C%20Boston%2C%20MA&travelmode=walking&waypoints=Neptune%20Oyster%2C%20Boston%2C%20MA%7CGiacomo%27s%20Ristorante%2C%20Boston%2C%20MA%7CQuincy%20Market%2C%20Boston%2C%20MA"
-  }
+  "city": "보스턴 (Boston)",
+  "date": "2026.05.16 (토)",
+  "weather": {
+    "condition": "맑음/구름 조금",
+    "temp": "18°C",
+    "icon": "bi-cloud-sun"
+  },
+  "summary": "7살 딸과 함께하는 보스턴 꿈의 여행 - 아빠와 딸을 위한 10대 테마별 완벽 가이드"
 }
