@@ -18,10 +18,10 @@
       },
       {
         "time": "12:00 PM",
-        "title": "점심: 일산 가로수길 '만돈'",
+        "title": "점심: 웨스턴돔 '만돈'",
         "icon": "bi-egg-fried",
-        "desc": "아이들이 좋아하는 고소한 돈카츠 맛집입니다. 대기가 있으니 미리 테이블링 체크!",
-        "reviewUrl": "https://m.blog.naver.com/search/result?query=%EC%9D%BC%EC%82%B0+%EA%B0%80%EB%A1%9C%EC%88%98%EA%B8%B8+%EB%A7%8C%EB%8F%88+%EC%95%84%EC%9D%B4%EB%9E%91"
+        "desc": "아이들이 좋아하는 부드러운 히레카츠 맛집입니다. 앱 예약이 안 되니 도착하자마자 매장 번호표부터 뽑으세요!",
+        "reviewUrl": "https://m.blog.naver.com/search/result?query=%EC%9D%BC%EC%82%B0+%EC%9B%A8%EC%8A%A4%ED%84%B4%EB%8F%94+%EB%A7%8C%EB%8F%88+%EC%95%84%EC%9D%B4%EB%9E%91"
       },
       {
         "time": "02:30 PM",
@@ -234,7 +234,7 @@
     "theme": "파주 근교 예술 여행",
     "title": "헤이리 예술마을 공룡 & 박물관 탐험",
     "duration": "7시간 소요",
-    "transport": "자차 (게이트 4번 주차)",
+    "transport": "자차 (게이트 6번 주차)",
     "budget": "약 80,000원",
     "timeline": [
       {
@@ -294,32 +294,33 @@
   },
   {
     "id": "case-10",
-    "tabTitle": "10 가성비",
-    "theme": "가성비 실속형",
-    "title": "하니랜드 & 공릉천 꽃밭 산책",
+    "tabTitle": "10 EBS체험",
+    "theme": "EBS 캐릭터 체험 (파주)",
+    "title": "파주 놀이구름 번개맨과 함께하는 하루",
     "duration": "5시간 소요",
-    "transport": "자차 (알뜰 코스)",
-    "budget": "약 35,000원",
+    "transport": "자차 (운정호수공원 주차장)",
+    "budget": "약 55,000원",
     "timeline": [
       {
-        "time": "10:30 AM",
-        "title": "파주 하니랜드 놀이기구",
-        "icon": "bi-sun",
-        "image": "https://images.unsplash.com/photo-1536431311719-398b6704d4cc?auto=format&fit=crop&w=400",
-        "desc": "가성비 최고의 놀이동산! 기다림 없이 7세 아이가 좋아하는 기구를 맘껏 탑니다.",
-        "reviewUrl": "https://m.blog.naver.com/search/result?query=%ED%8C%8C%EC%A3%BC+%ED%95%98%EB%8B%88%EB%9E%9C%EB%93%9C+7%EC%84%B8+%ED%9B%84%EA%B8%B0"
+        "time": "11:00 AM",
+        "title": "파주 놀이구름 입장",
+        "icon": "bi-cloud",
+        "image": "https://paju.go.kr/res/paju/images/sub/contents/playcloud_img01.jpg",
+        "desc": "번개맨, 뿡뿡이와 함께하는 테마파크! 정각마다 열리는 번개맨 공연은 필수입니다.",
+        "mapUrl": "https://maps.app.goo.gl/3f8H2kZz6Xp"
       },
       {
-        "time": "01:00 PM",
-        "title": "점심: 도시락 또는 근처 국수집",
-        "icon": "bi-egg-fried",
-        "desc": "하니랜드 앞 잔디밭에서 도시락을 먹거나 근처 잔치국수집을 추천합니다."
+        "time": "01:30 PM",
+        "title": "점심: 호수공원 인근 식당",
+        "icon": "bi-shop",
+        "desc": "호수가 보이는 돈가스나 파스타집이 많습니다. 아이가 좋아하는 메뉴를 골라보세요.",
+        "reviewUrl": "https://m.blog.naver.com/search/result?query=%ED%8C%8C%EC%A3%BC+%EB%86%80%EC%9D%B4%EA%B5%AC%EB%A6%84+%EA%B7%BC%EC%B2%98+%EB%A7%9B%EC%A7%91+%EC%95%84%EC%9D%B4%EB%9E%91"
       },
       {
-        "time": "02:30 PM",
-        "title": "공릉천 꽃길 산책",
-        "icon": "bi-flower1",
-        "desc": "하니랜드 바로 옆 공릉천 산책로에서 계절 꽃들을 구경하며 산책하세요."
+        "time": "03:30 PM",
+        "title": "운정호수공원 산책",
+        "icon": "bi-water",
+        "desc": "놀이구름 바로 앞 호수공원에서 가볍게 산책하며 비눗방울 놀이를 즐기기 좋습니다."
       }
     ]
   }
