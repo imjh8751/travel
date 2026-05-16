@@ -1,0 +1,287 @@
+[
+  {
+    "id": "case-01",
+    "tabTitle": "Case 01 풀코스",
+    "theme": "화창한 날 풀코스",
+    "title": "7살 딸과 일산 도심 정복",
+    "duration": "8시간 소요",
+    "transport": "자차 이동",
+    "timeline": [
+      {
+        "time": "10:00 AM",
+        "title": "일산호수공원 라이딩",
+        "icon": "bi-bicycle",
+        "image": "https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=400",
+        "desc": "7세 아이가 킥보드나 자전거 타기 가장 좋은 곳입니다. 가로수길 주차장을 이용하면 편리합니다.",
+        "mapUrl": "https://maps.app.goo.gl/3f8H2kZz6Xp"
+      },
+      {
+        "time": "12:30 PM",
+        "title": "점심: 가로수길 맛집",
+        "icon": "bi-egg-fried",
+        "desc": "'만돈' 돈카츠나 '포로피자' 화덕피자를 추천합니다. 아이들이 정말 좋아해요.",
+        "reviewUrl": "https://tistory.com/123"
+      },
+      {
+        "time": "02:30 PM",
+        "title": "고양어린이박물관",
+        "icon": "bi-building",
+        "desc": "사전예약 필수! '아이그루' 클라이밍 체험은 7세 아이의 성취감을 높여줍니다.",
+        "mapUrl": "https://maps.app.goo.gl/p2U4J3mUfC2"
+      }
+    ]
+  },
+  {
+    "id": "case-02",
+    "tabTitle": "Case 02 반나절",
+    "theme": "화창한 날 반나절",
+    "title": "임진각 평화누리공원 소풍",
+    "duration": "5시간 소요",
+    "transport": "자차 이동",
+    "timeline": [
+      {
+        "time": "10:30 AM",
+        "title": "평화랜드 놀이동산",
+        "icon": "bi-controller",
+        "image": "https://images.unsplash.com/photo-1533481406255-75b2ca8efff6?auto=format&fit=crop&w=400",
+        "desc": "미니 바이킹과 회전목마 등 7세 아이 눈높이에 딱 맞는 레트로 놀이공원입니다."
+      },
+      {
+        "time": "12:30 PM",
+        "title": "점심: 임진각 화로구이",
+        "icon": "bi-shop",
+        "desc": "대형 놀이방이 완비된 식당입니다. 아빠는 편하게 식사하고 아이는 신나게 놀아요.",
+        "reviewUrl": "https://tistory.com/456"
+      },
+      {
+        "time": "02:00 PM",
+        "title": "평화누리 연날리기",
+        "icon": "bi-wind",
+        "desc": "바람의 언덕에서 연을 날리며 넓은 잔디밭을 뛰어놀아 보세요."
+      }
+    ]
+  },
+  {
+    "id": "case-03",
+    "tabTitle": "Case 03 실내",
+    "theme": "실내 실속 코스",
+    "title": "현대모터스튜디오 & 킨텍스",
+    "duration": "6시간 소요",
+    "transport": "자차 이동",
+    "timeline": [
+      {
+        "time": "11:00 AM",
+        "title": "현대모터스튜디오 고양",
+        "icon": "bi-car-front",
+        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400",
+        "desc": "2026 티니핑 협업 전시 중! 자동차 제조 과정을 오감으로 체험합니다.",
+        "mapUrl": "https://maps.app.goo.gl/1R2T3Y4U5I6"
+      },
+      {
+        "time": "01:30 PM",
+        "title": "점심: 키친 바이 해비치",
+        "icon": "bi-cup-straw",
+        "desc": "스튜디오 내 고퀄리티 식당입니다. 아이용 키즈 메뉴가 아주 잘 나옵니다.",
+        "reviewUrl": "#"
+      },
+      {
+        "time": "03:00 PM",
+        "title": "상상체험 키즈월드",
+        "icon": "bi-rocket-takeoff",
+        "desc": "킨텍스 내 초대형 실내 놀이터에서 에너지를 100% 발산하세요."
+      }
+    ]
+  },
+  {
+    "id": "case-04",
+    "tabTitle": "Case 04 동물",
+    "theme": "동물 친구들",
+    "title": "파주 나눔농장 & 쥬쥬랜드",
+    "duration": "6시간 소요",
+    "transport": "자차 이동",
+    "timeline": [
+      {
+        "time": "10:30 AM",
+        "title": "파주 나눔농장",
+        "icon": "bi-rabbit",
+        "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=400",
+        "desc": "토끼, 병아리 등 다양한 동물들에게 직접 먹이를 주는 체험형 농장입니다."
+      },
+      {
+        "time": "01:00 PM",
+        "title": "점심: 근처 쌈밥집",
+        "icon": "bi-tree",
+        "desc": "아이와 함께 먹기 좋은 간장 돼지구이와 신선한 쌈채소를 즐기세요.",
+        "reviewUrl": "#"
+      },
+      {
+        "time": "02:30 PM",
+        "title": "고양 쥬쥬랜드",
+        "icon": "bi-monkey",
+        "desc": "로봇 공연과 야외 동물원 산책을 즐길 수 있는 복합 테마파크입니다."
+      }
+    ]
+  },
+  {
+    "id": "case-05",
+    "tabTitle": "Case 05 에너지",
+    "theme": "에너지 발산",
+    "title": "플레이월드 파주 액티비티",
+    "duration": "6시간 소요",
+    "transport": "자차 이동",
+    "timeline": [
+      {
+        "time": "10:30 AM",
+        "title": "플레이월드 파주",
+        "icon": "bi-lightning-charge",
+        "image": "https://images.unsplash.com/photo-1520110120835-c96534a4c984?auto=format&fit=crop&w=400",
+        "desc": "스카이워크와 자이언트 드랍! 7세 아이의 도전을 응원해주세요."
+      },
+      {
+        "time": "01:30 PM",
+        "title": "점심: 엠브로 돈까스",
+        "icon": "bi-egg-fried",
+        "desc": "키즈카페 내 맛집에서 든든하게 점심을 해결합니다.",
+        "reviewUrl": "#"
+      },
+      {
+        "time": "03:30 PM",
+        "title": "파주 지혜의숲",
+        "icon": "bi-book",
+        "desc": "신나게 놀았다면 이제 책과 함께 차분한 시간을 가져보세요."
+      }
+    ]
+  },
+  {
+    "id": "case-06",
+    "tabTitle": "Case 06 대중교통",
+    "theme": "대중교통 모험",
+    "title": "지하철 타고 떠나는 일산 여행",
+    "duration": "5시간 소요",
+    "transport": "지하철 3호선",
+    "timeline": [
+      {
+        "time": "11:00 AM",
+        "title": "백석역 벨라시타",
+        "icon": "bi-buildings",
+        "image": "https://images.unsplash.com/photo-1567449303078-57ad995bd301?auto=format&fit=crop&w=400",
+        "desc": "이국적인 유럽풍 광장을 산책하며 아이와 예쁜 사진을 남기세요."
+      },
+      {
+        "time": "12:30 PM",
+        "title": "점심: 지하 푸드코트",
+        "icon": "bi-cart",
+        "desc": "아이들이 먹기 좋은 다양한 메뉴가 한곳에 모여 있어 편리합니다.",
+        "reviewUrl": "#"
+      },
+      {
+        "time": "02:00 PM",
+        "title": "챔피언 키즈카페",
+        "icon": "bi-palette",
+        "desc": "벨라시타 내 키즈카페에서 즐거운 오후 시간을 보냅니다."
+      }
+    ]
+  },
+  {
+    "id": "case-07",
+    "tabTitle": "Case 07 아빠휴식",
+    "theme": "아빠 휴식형",
+    "title": "스타필드 고양 힐링 코스",
+    "duration": "6시간 소요",
+    "transport": "커피 & 쇼핑",
+    "timeline": [
+      {
+        "time": "10:30 AM",
+        "title": "챔피언 1250X",
+        "icon": "bi-rocket",
+        "image": "https://images.unsplash.com/photo-1531058285117-a5f2ec310fef?auto=format&fit=crop&w=400",
+        "desc": "아이는 고공 어드벤처를 즐기고, 아빠는 바로 옆 카페에서 휴식을 취하세요."
+      },
+      {
+        "time": "12:30 PM",
+        "title": "점심: 잇토피아 맛집",
+        "icon": "bi-tsunami",
+        "desc": "'스시마고'의 와사비 없는 초밥이나 '낙원타코'를 추천합니다.",
+        "reviewUrl": "#"
+      },
+      {
+        "time": "02:00 PM",
+        "title": "토이킹덤 쇼핑",
+        "icon": "bi-box-seam",
+        "desc": "아이들의 천국 토이킹덤에서 장난감 구경과 체험을 즐깁니다."
+      }
+    ]
+  },
+  {
+    "id": "case-08",
+    "tabTitle": "Case 08 파주양주",
+    "theme": "파주 근교 여행",
+    "title": "헤이리 예술마을 탐험",
+    "duration": "7시간 소요",
+    "transport": "예술 & 체험",
+    "timeline": [
+      {
+        "time": "11:00 AM",
+        "title": "파주 공룡박물관",
+        "icon": "bi-bug",
+        "image": "https://images.unsplash.com/photo-1525869916826-972885c91c1e?auto=format&fit=crop&w=400",
+        "desc": "화석 발굴 체험과 움직이는 공룡 모형으로 아이의 호기심을 충족하세요."
+      },
+      {
+        "time": "12:30 PM",
+        "title": "점심: 헤이리 맛집",
+        "icon": "bi-egg",
+        "desc": "'아이노스' 화덕피자나 '토향' 간장돼지구이가 아이와 먹기 좋습니다.",
+        "reviewUrl": "#"
+      }
+    ]
+  },
+  {
+    "id": "case-09",
+    "tabTitle": "Case 09 노을",
+    "theme": "저녁 노을",
+    "title": "퍼스트가든 빛의 정원",
+    "duration": "5시간 소요",
+    "transport": "야경 코스",
+    "timeline": [
+      {
+        "time": "05:00 PM",
+        "title": "퍼스트가든 입장",
+        "icon": "bi-stars",
+        "image": "https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?auto=format&fit=crop&w=400",
+        "desc": "놀이기구와 동물 농장을 즐기며 서서히 저물어가는 노을을 기다립니다."
+      },
+      {
+        "time": "07:00 PM",
+        "title": "LED 별빛 축제",
+        "icon": "bi-lightbulb",
+        "desc": "화려한 조명이 켜진 정원을 산책하며 환상적인 밤을 만드세요.",
+        "reviewUrl": "#"
+      }
+    ]
+  },
+  {
+    "id": "case-10",
+    "tabTitle": "Case 10 가성비",
+    "theme": "가성비 실속",
+    "title": "공릉천 산책 & 하니랜드",
+    "duration": "5시간 소요",
+    "transport": "알뜰 코스",
+    "timeline": [
+      {
+        "time": "10:30 AM",
+        "title": "파주 하니랜드",
+        "icon": "bi-sun",
+        "image": "https://images.unsplash.com/photo-1536431311719-398b6704d4cc?auto=format&fit=crop&w=400",
+        "desc": "입장료와 이용료가 저렴해 부담 없이 즐기는 실속형 놀이공원입니다."
+      },
+      {
+        "time": "01:30 PM",
+        "title": "공릉천 꽃밭 산책",
+        "icon": "bi-flower1",
+        "desc": "계절마다 다른 꽃들이 만발하는 공릉천 산책로를 걸어보세요.",
+        "reviewUrl": "#"
+      }
+    ]
+  }
+]
