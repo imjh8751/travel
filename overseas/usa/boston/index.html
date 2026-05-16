@@ -81,22 +81,11 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}.wra
 let state={theme:'essential'};
 const $=s=>document.querySelector(s);
 async function load(){
-  const [page,itinerary,foods,souvenirs,gifts,hotels,transport,sources,weather,checklist]=await Promise.all([
-    fetch('./data/page.json').then(r=>r.json()),
-    fetch('./data/itinerary.json').then(r=>r.json()),
-    fetch('./data/foods.json').then(r=>r.json()),
-    fetch('./data/souvenirs.json').then(r=>r.json()),
-    fetch('./data/recipient-gifts.json').then(r=>r.json()),
-    fetch('./data/hotels.json').then(r=>r.json()),
-    fetch('./data/transport.json').then(r=>r.json()),
-    fetch('./data/sources.json').then(r=>r.json()),
-    fetch('./data/weather.json').then(r=>r.json()),
-    fetch('./data/checklist.json').then(r=>r.json())
-  ]);
-  Object.assign(state,{page,itinerary,foods:foods.foods||[],souvenirs:souvenirs.souvenirs||[],gifts:gifts.gifts||[],hotels:hotels.districts||[],transport,sources:sources.sources||[],weather,checklist:checklist.items||[]});
-  $('#eyebrow').textContent=`${page.city} · ${page.tripLength} · updated ${page.updatedAt}`;
-  $('#summary').textContent=page.summary;
-  $('#tags').innerHTML=(page.tags||[]).map(t=>`<span class="chip">${t}</span>`).join('');
+  const bundle = await fetch('./data/bundle.json').then(r=>r.json());
+  Object.assign(state, bundle);
+  $('#eyebrow').textContent=`${state.page.city} · ${state.page.tripLength} · updated ${state.page.updatedAt}`;
+  $('#summary').textContent=state.page.summary;
+  $('#tags').innerHTML=(state.page.tags||[]).map(t=>`<span class="chip">${t}</span>`).join('');
   document.querySelectorAll('[data-theme]').forEach(b=>b.onclick=()=>{state.theme=b.dataset.theme;document.querySelectorAll('[data-theme]').forEach(x=>x.classList.toggle('on',x===b));render();});
   $('#pdfBtn').onclick=()=>printThemePdf();
   render();

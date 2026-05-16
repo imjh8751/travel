@@ -1,0 +1,638 @@
+{
+  "page": {
+    "city": "Boston",
+    "country": "USA",
+    "tripLength": "3박 4일",
+    "updatedAt": "2026-05-12",
+    "summary": "필수/여유/맛집 테마와 함께 블로그 근거, 날씨, 체크리스트까지 바로 보는 보스턴 실전 일정표",
+    "tags": [
+      "Evidence Links",
+      "Weather + Checklist",
+      "Theme PDF"
+    ],
+    "routeUrlByTheme": {
+      "essential": "https://www.google.com/maps/dir/?api=1&origin=Boston%20Public%20Garden%2C%20Boston%2C%20MA&destination=Quincy%20Market%2C%20Boston%2C%20MA&travelmode=walking&waypoints=Boston%20Common%2C%20Boston%2C%20MA%7CFreedom%20Trail%2C%20Boston%2C%20MA",
+      "relaxed": "https://www.google.com/maps/dir/?api=1&origin=Back%20Bay%2C%20Boston%2C%20MA&destination=Seaport%20District%2C%20Boston%2C%20MA&travelmode=walking&waypoints=Boston%20Public%20Garden%2C%20Boston%2C%20MA%7CNewbury%20Street%2C%20Boston%2C%20MA%7CLong%20Wharf%2C%20Boston%2C%20MA",
+      "foodie": "https://www.google.com/maps/dir/?api=1&origin=Union%20Oyster%20House%2C%20Boston%2C%20MA&destination=Mike%27s%20Pastry%2C%20Boston%2C%20MA&travelmode=walking&waypoints=Neptune%20Oyster%2C%20Boston%2C%20MA%7CGiacomo%27s%20Ristorante%2C%20Boston%2C%20MA%7CQuincy%20Market%2C%20Boston%2C%20MA"
+    }
+  },
+  "itinerary": [
+    {
+      "day": "1일차",
+      "time": "14:30",
+      "title": "호텔 체크인",
+      "action": "짐 정리 후 동선 적응",
+      "moveNote": "Back Bay 또는 Downtown 체크인 기준",
+      "tip": "도착 첫날은 도보 동선을 짧게 잡는 편이 편함",
+      "themes": ["essential", "relaxed", "hard", "foodie"],
+      "coord": [42.3493, -71.079],
+      "mapName": "Back Bay Boston",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Back+Bay+Boston+MA"
+    },
+    {
+      "day": "1일차",
+      "time": "16:00",
+      "title": "Boston Public Garden",
+      "action": "시차 적응 산책",
+      "moveNote": "숙소에서 도보 10~15분 내 이동 권장",
+      "tip": "비가 오면 Boston Public Library로 대체 가능",
+      "themes": ["essential", "relaxed"],
+      "coord": [42.3541, -71.0706],
+      "mapName": "Boston Public Garden",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Public+Garden+Boston+MA"
+    },
+    {
+      "day": "1일차",
+      "time": "17:30",
+      "title": "Newbury Street",
+      "action": "쇼핑과 카페 브레이크",
+      "moveNote": "Public Garden에서 도보 이동 가능",
+      "tip": "Harvard Shop 굿즈를 살 예정이면 이날은 동선만 익히는 정도로 충분",
+      "themes": ["essential", "relaxed", "foodie"],
+      "coord": [42.3496, -71.0825],
+      "mapName": "Newbury Street Boston",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Newbury+Street+Boston+MA"
+    },
+    {
+      "day": "1일차",
+      "time": "19:00",
+      "title": "Union Oyster House",
+      "action": "해산물 저녁",
+      "moveNote": "Back Bay 기준 Green Line + 도보 조합 또는 택시 이동",
+      "tip": "저녁 피크 전 도착하면 대기 시간을 줄이기 좋음",
+      "themes": ["essential", "foodie"],
+      "coord": [42.3614, -71.0567],
+      "mapName": "Union Oyster House Boston",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+Boston"
+    },
+    {
+      "day": "2일차",
+      "time": "08:30",
+      "title": "Boston Common",
+      "action": "Freedom Trail 시작",
+      "moveNote": "이날은 도보 비중이 높아 운동화 필수",
+      "tip": "빡센 일정 테마일수록 중간 카페 휴식 타이밍을 미리 잡는 편이 좋음",
+      "themes": ["essential", "hard"],
+      "coord": [42.355, -71.0656],
+      "mapName": "Boston Common",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Common+Boston+MA"
+    },
+    {
+      "day": "2일차",
+      "time": "10:00",
+      "title": "Old State House",
+      "action": "핵심 역사 구간 관람",
+      "moveNote": "Freedom Trail을 따라 자연스럽게 이동",
+      "tip": "우천 시에는 실내 체류 비중을 늘리기 좋음",
+      "themes": ["essential", "hard"],
+      "coord": [42.3588, -71.0579],
+      "mapName": "Old State House Boston",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Old+State+House+Boston"
+    },
+    {
+      "day": "2일차",
+      "time": "12:00",
+      "title": "Quincy Market",
+      "action": "푸드홀 점심",
+      "moveNote": "Old State House에서 도보 8분 내외",
+      "tip": "좌석 확보를 위해 11:30~12:00 사이 입장 추천",
+      "themes": ["essential", "foodie", "hard"],
+      "coord": [42.3601, -71.0547],
+      "mapName": "Quincy Market Boston",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston"
+    },
+    {
+      "day": "2일차",
+      "time": "14:00",
+      "title": "North End + Mike's Pastry",
+      "action": "디저트와 동네 산책",
+      "moveNote": "Quincy Market에서 도보 이동 가능",
+      "tip": "카놀리는 포장보다 현장 섭취가 식감이 좋음",
+      "themes": ["essential", "foodie"],
+      "coord": [42.3637, -71.0537],
+      "mapName": "Mike's Pastry Boston",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mike%27s+Pastry+Boston"
+    },
+    {
+      "day": "2일차",
+      "time": "16:30",
+      "title": "Long Wharf",
+      "action": "수변 휴식",
+      "moveNote": "North End에서 천천히 도보 이동",
+      "tip": "체력이 남으면 Aquarium 또는 Harborwalk를 추가 가능",
+      "themes": ["essential", "relaxed"],
+      "coord": [42.3599, -71.0495],
+      "mapName": "Long Wharf Boston",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Long+Wharf+Boston+MA"
+    },
+    {
+      "day": "3일차",
+      "time": "09:30",
+      "title": "Harvard Square",
+      "action": "캠브리지 이동",
+      "moveNote": "Park Street 기준 Red Line 직행",
+      "tip": "굿즈 쇼핑이 목적이면 Harvard Shop과 Coop 동선을 먼저 확인",
+      "themes": ["essential", "relaxed"],
+      "coord": [42.3734, -71.1182],
+      "mapName": "Harvard Square",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harvard+Square+Cambridge+MA"
+    },
+    {
+      "day": "3일차",
+      "time": "11:30",
+      "title": "Harvard Shop / The Coop",
+      "action": "대학 굿즈 쇼핑",
+      "moveNote": "Harvard Square 중심가에서 도보 이동",
+      "tip": "머그/후디는 부피가 있어 귀국 전 짐 공간 확인 필요",
+      "themes": ["essential", "relaxed"],
+      "coord": [42.3732, -71.1201],
+      "mapName": "The Harvard Shop",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=The+Harvard+Shop+Cambridge+MA"
+    },
+    {
+      "day": "3일차",
+      "time": "13:30",
+      "title": "Kendall / MIT",
+      "action": "강변 산책과 캠퍼스 분위기 보기",
+      "moveNote": "Harvard에서 Red Line 이동",
+      "tip": "빡센 일정 테마가 아니면 Kendall에서 카페 휴식 시간을 넣는 편이 좋음",
+      "themes": ["hard", "relaxed"],
+      "coord": [42.3624, -71.086],
+      "mapName": "Kendall MIT",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kendall+MIT+Cambridge+MA"
+    },
+    {
+      "day": "3일차",
+      "time": "18:00",
+      "title": "Luke's Lobster Back Bay",
+      "action": "랍스터롤 저녁",
+      "moveNote": "Cambridge 일정 후 Red Line + Green Line 또는 택시 이동",
+      "tip": "롤 가격은 시세 반영이 있어 현장 메뉴판 재확인 권장",
+      "themes": ["foodie", "relaxed"],
+      "coord": [42.3473, -71.0825],
+      "mapName": "Luke's Lobster Back Bay",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luke%27s+Lobster+Back+Bay+Boston"
+    },
+    {
+      "day": "4일차",
+      "time": "09:30",
+      "title": "Isabella Stewart Gardner Museum",
+      "action": "예약형 실내 일정",
+      "moveNote": "입장 시간 예약 확인 후 출발",
+      "tip": "우천일 대체 코스로도 우수함",
+      "themes": ["essential", "relaxed"],
+      "coord": [42.3381, -71.0994],
+      "mapName": "Isabella Stewart Gardner Museum",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Isabella+Stewart+Gardner+Museum+Boston"
+    },
+    {
+      "day": "4일차",
+      "time": "11:30",
+      "title": "Boston Tea Party Ships & Museum Gift Shop",
+      "action": "역사 테마 기념품 마무리 구매",
+      "moveNote": "출국 전 들르기 좋도록 Seaport 쪽에서 짐 상태 확인",
+      "tip": "차류와 머그는 파손 방지를 위해 별도 포장 권장",
+      "themes": ["essential", "relaxed"],
+      "coord": [42.3515, -71.0489],
+      "mapName": "Boston Tea Party Ships & Museum",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Tea+Party+Ships+%26+Museum+Boston"
+    },
+    {
+      "day": "4일차",
+      "time": "13:00",
+      "title": "공항 이동",
+      "action": "Logan 출국",
+      "moveNote": "Back Bay 기준 35~50분, 피크타임이면 추가 여유 확보",
+      "tip": "액체류와 깨지기 쉬운 기념품은 위탁 수하물 여부 재확인",
+      "themes": ["essential", "relaxed", "hard", "foodie"],
+      "coord": [42.3656, -71.0096],
+      "mapName": "Boston Logan International Airport",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Logan+International+Airport"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Union Oyster House",
+      "menu": "Clam Chowder / Lobster Roll",
+      "price": "$25~45",
+      "themes": ["essential", "foodie"],
+      "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+      "imageType": "real",
+      "imageSource": "Unsplash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Union+Oyster+House+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d321264-Reviews-Union_Oyster_House-Boston_Massachusetts.html",
+      "whyPopular": "처음 가는 한국 여행자에게 '보스턴 왔다'는 느낌을 가장 강하게 주는 클래식 해산물 코스",
+      "blogEvidence": "보스턴 먹거리 후기에서 랍스터롤/클램차우더가 대표로 반복 언급",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/jassooni/223966685526"
+    },
+    {
+      "name": "Neptune Oyster",
+      "menu": "Oyster Platter / Lobster Roll",
+      "price": "$30~60",
+      "themes": ["foodie", "relaxed"],
+      "imageUrl": "https://images.unsplash.com/photo-1477763858572-cda7deaa9bc5?auto=format&fit=crop&w=1200&q=80",
+      "imageType": "real",
+      "imageSource": "Unsplash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Neptune+Oyster+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d675436-Reviews-Neptune_Oyster-Boston_Massachusetts.html",
+      "whyPopular": "한국인도 선호하는 해산물 집중형 한 끼로 만족도가 높음",
+      "blogEvidence": "보스턴 해산물 추천 리스트에서 자주 등장",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/jassooni/223966685526"
+    },
+    {
+      "name": "Mike's Pastry",
+      "menu": "Cannoli",
+      "price": "$6~10",
+      "themes": ["foodie", "essential"],
+      "imageUrl": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1200&q=80",
+      "imageType": "real",
+      "imageSource": "Unsplash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mike%27s+Pastry+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d321908-Reviews-Mike_s_Pastry-Boston_Massachusetts.html",
+      "whyPopular": "보스턴/노스엔드 후기에 거의 빠지지 않는 디저트 스팟",
+      "blogEvidence": "한국 여행 후기에서 노스엔드=카놀리 코스로 자주 묶임",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/jassooni/223966685526"
+    },
+    {
+      "name": "Quincy Market Food Colonnade",
+      "menu": "Chowder / Lobster Mac / Sandwich",
+      "price": "$15~35",
+      "themes": ["foodie", "essential", "hard"],
+      "imageUrl": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+      "imageType": "real",
+      "imageSource": "Unsplash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Attraction_Review-g60745-d105250-Reviews-Quincy_Market-Boston_Massachusetts.html",
+      "whyPopular": "여러 메뉴를 한 자리에서 고를 수 있어서 한국 관광객이 실패 확률 낮게 접근하기 좋음",
+      "blogEvidence": "네이버 후기에서 '랍스터롤·클램차우더·오이스터 같은 해산물 위주'라는 언급 확인",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/jassooni/223966685526"
+    },
+    {
+      "name": "Giacomo's Ristorante",
+      "menu": "Seafood Pasta",
+      "price": "$28~55",
+      "themes": ["foodie"],
+      "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "imageType": "real",
+      "imageSource": "Unsplash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Giacomo%27s+Ristorante+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d799698-Reviews-Giacomo_s_Ristorante-Boston_Massachusetts.html",
+      "whyPopular": "노스엔드 식사 코스에서 디저트와 묶기 쉬워 한국인 일정에 잘 맞음",
+      "blogEvidence": "노스엔드 식사 동선 후기에서 자주 함께 거론되는 타입",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/jassooni/223966685526"
+    },
+    {
+      "name": "Tatte Bakery & Cafe",
+      "menu": "Brunch / Bakery",
+      "price": "$12~25",
+      "themes": ["relaxed", "foodie"],
+      "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+      "imageType": "real",
+      "imageSource": "Unsplash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tatte+Bakery+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d12100172-Reviews-Tatte_Bakery_Cafe-Boston_Massachusetts.html",
+      "whyPopular": "카페 감성과 브런치를 동시에 챙기려는 한국 여행자 선호와 잘 맞음",
+      "blogEvidence": "보스턴 감성 카페 추천 글에 자주 포함",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/graphicn/222050755435"
+    },
+    {
+      "name": "Saltie Girl",
+      "menu": "Raw Bar / Seafood Tower",
+      "price": "$35~80",
+      "themes": ["foodie", "relaxed"],
+      "imageUrl": "https://images.unsplash.com/photo-1541544181074-e48a7e2f3c8f?auto=format&fit=crop&w=1200&q=80",
+      "imageType": "real",
+      "imageSource": "Unsplash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Saltie+Girl+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d8687695-Reviews-Saltie_Girl-Boston_Massachusetts.html",
+      "whyPopular": "조금 비싸도 '보스턴 해산물 제대로' 먹고 싶은 여행자 만족도가 높음",
+      "blogEvidence": "보스턴 미식 추천 리스트에서 반복 등장",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/graphicn/222050755435"
+    },
+    {
+      "name": "Regina Pizzeria",
+      "menu": "Brick Oven Pizza",
+      "price": "$18~35",
+      "themes": ["essential", "foodie"],
+      "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80",
+      "imageType": "real",
+      "imageSource": "Unsplash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Regina+Pizzeria+Boston",
+      "reviewUrl": "https://www.tripadvisor.com/Restaurant_Review-g60745-d321976-Reviews-Regina_Pizzeria-Boston_Massachusetts.html",
+      "whyPopular": "해산물만 연속으로 먹기 부담스러운 한국 여행자에게 좋은 대안",
+      "blogEvidence": "노스엔드 식사 대안으로 자주 추천",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/jassooni/223966685526"
+    }
+  ],
+  "souvenirs": [
+    {
+      "name": "Harvard / MIT 로고 후드티 · 티셔츠",
+      "price": "$25~80",
+      "forWhom": ["본인", "친구", "10대/20대 가족"],
+      "whyPopular": "한국 여행자들이 '보스턴 다녀온 티'가 가장 확실하게 나는 기념품으로 많이 고릅니다.",
+      "shopOptions": [
+        {
+          "shop": "Harvard Coop",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harvard+Coop+Cambridge+MA",
+          "price": "$25~80"
+        },
+        {
+          "shop": "The MIT Coop",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=MIT+Coop+Cambridge+MA",
+          "price": "$25~75"
+        }
+      ],
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "네이버 블로그 검색 결과에서 하버드 굿즈/의류 구매 후기가 반복 확인됨",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/rolo_ggo/223955603717"
+    },
+    {
+      "name": "Red Sox 마그넷 · 키링 · 볼캡",
+      "price": "$10~45",
+      "forWhom": ["회사 동료", "친구", "자녀", "본인"],
+      "whyPopular": "부피가 작고 '보스턴' 지역성이 강해서 선물용 만족도가 높습니다.",
+      "shopOptions": [
+        {
+          "shop": "Fenway Park Team Store",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Fenway+Park+Team+Store",
+          "price": "$10~45"
+        }
+      ],
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "레드삭스 기념품 후기에서 마그넷·열쇠고리·핀 언급 확인",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/ddogtrip/224066596302"
+    },
+    {
+      "name": "Boston 로고 머그컵 · 샷글라스",
+      "price": "$8~22",
+      "forWhom": ["회사 동료", "친구", "부모님"],
+      "whyPopular": "가벼운 도시 기념품으로 무난하고, 퀸시마켓에서 쉽게 고를 수 있습니다.",
+      "shopOptions": [
+        {
+          "shop": "Quincy Market Gift Shops",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston",
+          "price": "$8~22"
+        },
+        {
+          "shop": "Faneuil Hall Marketplace",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Faneuil+Hall+Marketplace",
+          "price": "$8~22"
+        }
+      ],
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "퀸시마켓 후기에서 Boston 티셔츠/후드티/기프트류 반복 언급",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
+    },
+    {
+      "name": "랍스터 인형 · 보스턴 동물 모티프 봉제소품",
+      "price": "$12~30",
+      "forWhom": ["자녀", "친구", "연인"],
+      "whyPopular": "사진처럼 관광객 매대에서 직관적으로 집기 좋은 '귀엽고 보스턴스러운' 품목입니다.",
+      "shopOptions": [
+        {
+          "shop": "Quincy Market Gift Shops",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston",
+          "price": "$12~30"
+        }
+      ],
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "퀸시마켓 후기에서 귀여운 랍스터 인형 언급 확인",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
+    },
+    {
+      "name": "L.A. Burdick 초콜릿",
+      "price": "$18~45",
+      "forWhom": ["배우자", "연인", "부모님"],
+      "whyPopular": "한국인 취향에도 잘 맞는 '실패 확률 낮은' 프리미엄 먹거리 선물입니다.",
+      "shopOptions": [
+        {
+          "shop": "L.A. Burdick Harvard Square",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=L.A.+Burdick+Harvard+Square",
+          "price": "$18~45"
+        }
+      ],
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "보스턴/캠브리지 디저트 후기에서 선물용 초콜릿 추천 빈도 높음",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
+    },
+    {
+      "name": "메이플 시럽 · 뉴잉글랜드 로컬 잼",
+      "price": "$12~30",
+      "forWhom": ["부모님", "집들이 선물", "본인"],
+      "whyPopular": "미국 동북부 지역색이 확실하고 식재료 선물로 반응이 좋습니다.",
+      "shopOptions": [
+        {
+          "shop": "Boston Public Market",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boston+Public+Market+Boston+MA",
+          "price": "$12~25"
+        },
+        {
+          "shop": "Formaggio Kitchen",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Formaggio+Kitchen+Cambridge+MA",
+          "price": "$15~30"
+        }
+      ],
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "보스턴 먹거리/마켓 후기에 지역 특산 식재료 구매 동선 다수",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
+    },
+    {
+      "name": "Boston Baked Beans / 개별포장 캔디",
+      "price": "$6~15",
+      "forWhom": ["회사 동료", "학원/지인 나눔"],
+      "whyPopular": "여러 명에게 나눠주기 좋고 가격 부담이 적습니다.",
+      "shopOptions": [
+        {
+          "shop": "Faneuil Hall Marketplace",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Faneuil+Hall+Marketplace",
+          "price": "$6~15"
+        },
+        {
+          "shop": "Quincy Market",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quincy+Market+Boston",
+          "price": "$6~15"
+        }
+      ],
+      "imageType": "none",
+      "exactProductVerified": false,
+      "blogEvidence": "관광객 상점형 기념품/간식 구매 동선과 잘 맞음",
+      "checkedAt": "2026-05-12",
+      "blogEvidenceLink": "https://blog.naver.com/qhfk372/224228727829"
+    }
+  ],
+  "gifts": [
+    {
+      "recipient": "부모님",
+      "items": ["메이플 시럽", "L.A. Burdick 초콜릿", "Boston Tea 계열 차류"],
+      "budget": "$15~45",
+      "note": "먹거리 선물 선호도가 높고 지역성도 분명"
+    },
+    {
+      "recipient": "회사 동료",
+      "items": ["Red Sox 마그넷/키링", "Boston 머그컵", "개별포장 캔디"],
+      "budget": "$6~20",
+      "note": "가볍고 여러 명에게 나눠주기 좋은 조합"
+    },
+    {
+      "recipient": "배우자/연인",
+      "items": ["프리미엄 초콜릿", "Newbury 감성 소품", "랍스터 인형"],
+      "budget": "$18~50",
+      "note": "그냥 도시 로고보다 감성/디저트형 만족도 높음"
+    },
+    {
+      "recipient": "자녀",
+      "items": ["Red Sox 캡", "랍스터 인형"],
+      "budget": "$12~45",
+      "note": "사진 찍기 좋고 보스턴 느낌이 직관적"
+    },
+    {
+      "recipient": "본인",
+      "items": ["Harvard 후드티", "MIT 티셔츠", "Red Sox 캡"],
+      "budget": "$25~80",
+      "note": "여행 다녀온 티가 가장 확실하게 남는 품목"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Back Bay",
+      "subtitle": "첫 방문 / 쇼핑 / 커플",
+      "desc": "보스턴 첫 방문자에게 가장 안정적인 선택지입니다. 쇼핑, 식당, 지하철 접근성이 균형이 좋습니다.",
+      "themes": ["essential", "relaxed", "foodie"],
+      "recommendedFor": ["첫 방문", "커플", "부모님 동반"],
+      "recommended": ["Fairmont Copley Plaza", "The Westin Copley Place"],
+      "pros": "Newbury Street, Copley, Green Line 접근이 쉬움",
+      "cons": "숙박비가 상대적으로 높음",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Back+Bay+Boston+MA"
+    },
+    {
+      "name": "Downtown / Financial District",
+      "subtitle": "역사 코스 / 도보 이동",
+      "desc": "Freedom Trail, Quincy Market, 수변 동선을 짧게 묶고 싶을 때 효율적입니다.",
+      "themes": ["essential", "hard"],
+      "recommendedFor": ["역사 중심", "도보 선호", "짧은 일정"],
+      "recommended": ["Omni Parker House", "The Dagny Boston"],
+      "pros": "주요 관광지가 가까워 도보 비중을 높이기 좋음",
+      "cons": "야간 분위기는 Back Bay보다 조용할 수 있음",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Downtown+Boston+MA"
+    },
+    {
+      "name": "Seaport District",
+      "subtitle": "야경 / 신축 호텔 / 박물관",
+      "desc": "현대적인 호텔 선호, 박물관과 수변 산책, 마지막날 기념품 쇼핑을 한 번에 묶고 싶을 때 좋습니다.",
+      "themes": ["relaxed", "foodie"],
+      "recommendedFor": ["배우자", "여유로운 일정", "신축 호텔 선호"],
+      "recommended": ["The Envoy Hotel", "YOTEL Boston"],
+      "pros": "수변 풍경이 좋고 공간이 비교적 넓게 느껴짐",
+      "cons": "구도심보다는 대중교통 연결 확인이 필요함",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Seaport+District+Boston+MA"
+    },
+    {
+      "name": "Cambridge / Harvard Square",
+      "subtitle": "대학가 분위기 / 로컬 감성",
+      "desc": "하버드와 MIT 일정을 길게 쓰고 싶거나 대도시보다 차분한 분위기를 선호할 때 잘 맞습니다.",
+      "themes": ["relaxed", "essential"],
+      "recommendedFor": ["로컬 분위기", "대학가 산책", "장기 체류"],
+      "recommended": ["The Charles Hotel", "Sheraton Commander"],
+      "pros": "하버드 쇼핑과 산책 동선을 편하게 짤 수 있음",
+      "cons": "도심 복귀 시 Red Line 이동 시간을 감안해야 함",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harvard+Square+Cambridge+MA"
+    }
+  ],
+  "transport": {
+    "updatedAt": "2026-05-12",
+    "airportToCity": "SL1 + Red Line 또는 택시",
+    "payment": "Tap to Ride",
+    "coreLines": ["Red Line", "Green Line", "Silver Line SL1"],
+    "tips": [
+      "출근시간 20~30분 추가",
+      "귀국일 3시간 전 공항 도착",
+      "도보 비중이 큰 날은 Park Street 환승 시간을 넉넉히 잡는 편이 편함"
+    ],
+    "officialUrl": "https://www.mbta.com/"
+  },
+  "sources": [
+    {"name": "MBTA Official", "url": "https://www.mbta.com/"},
+    {
+      "name": "Tripadvisor Boston",
+      "url": "https://www.tripadvisor.com/Tourism-g60745-Boston_Massachusetts-Vacations.html"
+    },
+    {
+      "name": "네이버 블로그 - 보스턴 퀸시마켓 먹거리",
+      "url": "https://blog.naver.com/jassooni/223966685526"
+    },
+    {
+      "name": "네이버 블로그 - 하버드 기념품",
+      "url": "https://blog.naver.com/rolo_ggo/223955603717"
+    },
+    {
+      "name": "네이버 블로그 - 레드삭스 기념품",
+      "url": "https://blog.naver.com/ddogtrip/224066596302"
+    },
+    {
+      "name": "네이버 블로그 - 퀸시마켓 기념품",
+      "url": "https://blog.naver.com/qhfk372/224228727829"
+    },
+    {
+      "name": "Weather",
+      "url": "https://wttr.in/Boston?format=j1"
+    }
+  ],
+  "weather": {
+    "checkedAt": "2026-05-12",
+    "current": {"tempC": 3, "feelsLikeC": 0, "condition": "Partly cloudy"},
+    "forecast": [
+      {
+        "date": "2026-05-12",
+        "maxC": 18,
+        "minC": 5,
+        "condition": "Partly cloudy",
+        "chanceOfRain": 0
+      },
+      {
+        "date": "2026-05-13",
+        "maxC": 15,
+        "minC": 8,
+        "condition": "Patchy rain nearby",
+        "chanceOfRain": 87
+      },
+      {
+        "date": "2026-05-14",
+        "maxC": 15,
+        "minC": 12,
+        "condition": "Light rain",
+        "chanceOfRain": 100
+      }
+    ],
+    "summary": "오늘은 선선하지만 내일부터 비 가능성이 높아 우산/방수 신발 준비가 좋습니다.",
+    "source": "wttr.in/Boston"
+  },
+  "checklist": [
+    "우산 또는 방수 바람막이",
+    "Freedom Trail용 편한 운동화",
+    "MBTA 탭결제 가능한 카드",
+    "기념품용 여유 수하물 공간",
+    "클램차우더/해산물 식당 대기시간 대비 간단 간식",
+    "비 오는 날 실내 대체코스(도서관·미술관) 저장",
+    "공항 이동 3시간 전 출발 체크"
+  ]
+}

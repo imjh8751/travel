@@ -156,6 +156,12 @@
                         ${state.common.tips.map(tip => `<li>${tip}</li>`).join('')}
                     </ul>
                 </div>
+                <div class="info-card">
+                    <h6 class="fw-bold mb-2"><i class="bi bi-check2-square text-success"></i> 7세 아이 동반 체크리스트</h6>
+                    <ul class="small mb-0 ps-3">
+                        ${state.common.checklist.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
                 <div class="emergency-card">
                     <h6 class="fw-bold text-danger mb-2"><i class="bi bi-hospital-fill"></i> 비상시 연락처 (고양/파주 소아과)</h6>
                     ${state.common.emergency.map(e => `
